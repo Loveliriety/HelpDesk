@@ -1,0 +1,45 @@
+.login-btn {
+    width: 180px;
+    background-color: #3D729A;
+    color: #ffffff;
+}
+
+.register-btn {
+    border-color: #3D729A;
+    color: #3D729A;
+}
+
+    .register-btn:hover {
+        background-color: #3D729A;
+        color: #ffffff;
+    }
+
+
+
+.register-box {
+    width: 600px;
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+
+.login-background {
+    background-image: url('/img/background.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+}
+
+.forgot {
+    color: #3D729A;
+    font-size: 0.8rem;
+}

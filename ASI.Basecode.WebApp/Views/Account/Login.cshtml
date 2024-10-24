@@ -1,0 +1,57 @@
+﻿@model LoginViewModel
+@using static ASI.Basecode.Resources.Views.Screen
+@section styles {
+    <link rel="stylesheet" href="~/css/login.css" />
+}
+@{
+    ViewBag.LoginView = true;
+    ViewData["Title"] = "Login Page";
+    
+}
+<body class="login-background">
+    <div>
+        @Html.AntiForgeryToken()
+    </div>
+    <div class="container py-5" style="display:flex; align-content:center; justify-content:center; height:calc(100vh - 64px)">
+        <div class="card rounded-3 text-black">
+            <div class="card-body p-md-5 mx-md-4">
+                <div class="text-center">
+                    <img src="~/img/logo.png"
+                            style="width: 185px;" alt="logo">
+                </div>
+                <form method="post" action="/Account/Login" id="loginForm">
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example11">Email</label>
+                        <input type="text" id="form2Example11" class="form-control"
+                                asp-for="UserId" placeholder="Enter userid" />
+                        <span asp-validation-for="UserId" class="text-danger"></span>
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example22">@Password</label>
+                        <input type="password" id="form2Example22" class="form-control"
+                                asp-for="Password" placeholder="Enter password" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="text-center pt-1 mb-5 pb-1 d-flex flex-column align-items-center">
+                        <button class="btn btn-block login-btn mb-3" type="submit">
+                            @Login
+                        </button>
+                        <div>
+                            <a asp-controller="Account" asp-action="ForgotPass" class="forgot">Forgot my password</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+@section scripts {
+    <script>
+        // Check for error message and display Toastr notification
+        var errorMessage = '@TempData["ErrorMessage"]';
+        if (errorMessage) {
+            toastr.error(errorMessage);
+        }
+    </script>
+}

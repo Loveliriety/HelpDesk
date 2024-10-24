@@ -1,0 +1,34 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+<!-- Sidebar -->
+<div id="sidebar" class="@((ViewBag.LoginView == true) ? "hide-navbar" : "sidebar")">
+    <div id="toggleSidebar" class="logo">
+        <img src="~/img/sidenav-logo.png" alt="Logo">
+    </div>
+    <ul>
+        <li class="@(IsActive("Index", "Home") ? "active" : "")">
+            <a asp-action="Index" asp-controller="Home"><img class="menu-icon" src="~/img/dashboard-logo.svg"></img></a>
+        </li><li class="@(IsActive("Index", "User") ? "active" : "")">
+            <a asp-action="Index" asp-controller="User"><img class="menu-icon" src="~/img/user-management-logo.svg"></img></a>
+        </li><li class="@(IsActive("Index", "Ticket") ? "active" : "")">
+            <a asp-action="Index" asp-controller="Ticket"><img class="menu-icon" src="~/img/ticket-management-logo.svg"></img></a>
+        </li><li class="@(IsActive("Index", "Report") ? "active" : "")">
+            <a asp-action="Index" asp-controller="Report"><img class="menu-icon" src="~/img/report-&-analytics-logo.svg"></img></a>
+        </li><li class="@(IsActive("Index", "Feedback") ? "active" : "")">
+            <a asp-action="Index" asp-controller="Feedback"><img class="menu-icon" src="~/img/customer-feedback-logo.svg"></img></a>
+        </li><li class="@(IsActive("Index", "Settings") ? "active" : "")">
+            <a asp-action="Index" asp-controller="Settings"><img class="menu-icon" src="~/img/settings-logo.svg"></img></a>
+    </ul>
+</div>
+
+@functions {
+    public bool IsActive(string action, string controller)
+    {
+        var currentAction = HttpContextAccessor.HttpContext?.Request.RouteValues["action"]?.ToString();
+        var currentController = HttpContextAccessor.HttpContext?.Request.RouteValues["controller"]?.ToString();
+
+        return string.Equals(currentAction, action, StringComparison.OrdinalIgnoreCase) &&
+               string.Equals(currentController, controller, StringComparison.OrdinalIgnoreCase);
+    }
+}

@@ -1,0 +1,290 @@
+﻿body {
+    background-color: #F1F1F1;
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: #3D729A;
+    padding-top: 20px;
+    position: fixed;
+    transition: width 0.3s;
+    width: 70px;
+}
+
+    .sidebar.shrink {
+        width: 60px;
+    }
+
+    .sidebar .logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+        .sidebar .logo img {
+            width: 40px;
+        }
+
+        .sidebar .logo label {
+            color: white;
+            font-size: 18px;
+            display: block;
+            margin-top: 10px;
+            transition: opacity 0.3s;
+        }
+
+    .sidebar.shrink .logo label {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .sidebar ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+        .sidebar ul li {
+            padding: 10px 20px;
+        }
+
+            .sidebar ul li:hover {
+                background-color: #F1F1F1;
+            }
+
+                .sidebar ul li:hover .menu-icon {
+                    filter: invert(50%) sepia(33%) saturate(518%) hue-rotate(162deg) brightness(91%) contrast(89%);
+                }
+
+.active {
+    background-color: #F1F1F1;
+}
+
+    .active .menu-icon {
+        filter: invert(50%) sepia(33%) saturate(518%) hue-rotate(162deg) brightness(91%) contrast(89%);
+    }
+
+.sidebar ul li a {
+    color: ##F1F1F1;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+    .sidebar ul li a i {
+        margin-right: 15px;
+    }
+
+    .sidebar ul li a span {
+        transition: opacity 0.3s;
+        padding-left: 20px;
+    }
+
+.sidebar.shrink ul li a span {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.topbar {
+    background-color: #3D729A;
+    padding: 10px 15px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+    .topbar .logo img {
+        width: 40px;
+    }
+
+    .topbar .toggle-button {
+        color: white;
+        background: none;
+        border: none;
+        font-size: 24px;
+    }
+
+.dropdown-menu {
+    background-color: #3D729A;
+    position: absolute;
+    top: 100%;
+    width: 50%;
+    right: 0;
+    z-index: 1000;
+    display: none;
+}
+
+    .dropdown-menu.show {
+        display: block;
+    }
+
+    .dropdown-menu a {
+        color: white;
+        padding: 10px 20px;
+        display: block;
+        text-decoration: none;
+    }
+
+
+.page-header {
+    color: #3D729A;
+}
+
+.card-report {
+    border: 1px solid #3D729A;
+    border-radius: 9px;
+}
+
+
+.total {
+    color: #3D729A;
+}
+
+.txt-info {
+    color: #353535;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: -10px;
+}
+
+.labels {
+    color: #3D729A;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.chart-header {
+    text-align: center;
+    color: #3D729A;
+    margin-bottom: 40px;
+}
+
+table {
+   border-collapse: collapse;
+   width:100%;
+}
+
+th {
+    color: #3D729A;
+}
+
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #3D729A;
+}
+
+.category-cell {
+    color: #3D729A;
+}
+
+hr {
+    border-width: 1px;
+    border-color: #3D729A;
+    margin-top: -1px;
+    margin-left: -50px;
+    margin-right: -30px;
+}
+
+.active2 {
+    color: #3D729A;
+    font-weight: 600;
+    border-bottom: 2px solid #3D729A;
+}
+
+.nav-link {
+    color: #4f7a9a;
+}
+
+.col-3 {
+    border-right: 1px solid #3D729A;
+}
+
+.category-list {
+    color: #3D729A;
+}
+
+.category-header {
+    color: #3D729A;
+}
+
+.number-of-tickets {
+    margin-top: -2px;
+    color: #3D729A;
+    font-size: 1rem;
+}
+
+/* Custom drawer styles for Bootstrap 4 */
+.custom-drawer {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    background-color: #F1F1F1;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+    transition: right 0.3s ease;
+}
+
+    .custom-drawer.show {
+        right: 0;
+    }
+
+.custom-drawer-header {
+    padding: 15px;
+}
+
+.custom-drawer-body {
+    padding: 20px;
+}
+
+.drawer-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+    display: none;
+}
+
+    .drawer-backdrop.show {
+        display: block;
+    }
+
+
+.text-input {
+    background-color: #F1F1F1;
+    border: 1px solid #3D729A;
+    border-radius: 9px;
+}
+
+    .text-input:focus {
+        background-color: #F1F1F1;
+    }
+
+.select-input {
+    background-color: #F1F1F1;
+    border: 1px solid #3D729A;
+    border-radius: 9px;
+}
+
+    .select-input:focus {
+        background-color: #F1F1F1;
+    }
+
+.save-btn {
+    width: auto;
+    background-color: #3D729A;
+    color: #ffffff;
+    border-radius: 9px
+}
+
+.assign-btn {
+    width: auto;
+    background-color: #3D729A;
+    color: #ffffff;
+    border-radius: 9px
+}

@@ -1,0 +1,236 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="content p-4" style="margin-left: 80px;">
+    <h5 class="mt-1 page-header">Dashboard</h5>
+
+    <div class="row mt-4">
+        <!-- In Progress -->
+        <div class="col-md-3">
+            <div class="text-center p-3 card-report">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="~/img/progress.svg" alt="Progress Icon" class="mr-5" width="40" />
+                    <div>
+                        <h4 class="card-title total">204</h4>
+                        <p class="card-text txt-info">In Progress</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Open -->
+        <div class="col-md-3">
+            <div class="text-center p-3 card-report">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="~/img/open.svg" alt="Open Icon" class="mr-5" width="40" />
+                    <div>
+                        <h4 class="card-title total">24</h4>
+                        <p class="card-text txt-info">Open</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solved -->
+        <div class="col-md-3">
+            <div class="text-center p-3 card-report">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="~/img/Solved.svg" alt="Solved Icon" class="mr-5" width="40" />
+                    <div>
+                        <h4 class="card-title total">1029</h4>
+                        <p class="card-text txt-info">Solved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Tickets -->
+        <div class="col-md-3">
+            <div class="text-center p-3 card-report">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="~/img/total-tickets.svg" alt="Total Tickets Icon" class="mr-5" width="40" />
+                    <div>
+                        <h4 class="card-title total">3921</h4>
+                        <p class="card-text txt-info">Total Tickets</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer Satisfaction -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="p-3 card-report">
+                <h5 class="chart-header">Customer Satisfaction</h5>
+                <div class="d-flex align-items-center">
+                    <canvas id="csatChart" style="max-height: 170px; flex-grow: 1;"></canvas>
+                    <div class="ml-3">
+                        <ul class="list-unstyled" style="margin-top: -90px; margin-left: -150px;">
+                            <li class="labels"><span style="color: #74BDE0;">■</span> Good</li>
+                            <li class="labels"><span style="color: #3D729A;">■</span> Bad</li>
+                        </ul>
+                    </div>
+                </div>
+                <h6 class="mt-4" style="text-align: center;">Weekly CSAT Score</h6>
+            </div>
+
+            <!-- Total Solved -->
+            <div class="p-3 card-report mt-4">
+                <h5 class="chart-header">Total Solved: <span style="text-decoration-line:underline">100</span></h5>
+                <canvas id="solvedChart" style="height: 300px;"></canvas>
+            </div>
+        </div>
+
+        <!-- Running SLA -->
+        <div class="col-md-6">
+            <div class="p-3 card-report" style="height: 500px;">
+                <h5 class="chart-header">Running SLA</h5>
+                <table class="sla-table">
+                    <thead>
+                        <tr>
+                            <th>SLA</th>
+                            <th>Category</th>
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>24hrs</td>
+                            <td class="category-cell">Category 1</td>
+                            <td><span style="color: green;">22hrs</span></td>
+                        </tr>
+                        <tr>
+                            <td>36hrs</td>
+                            <td class="category-cell">Category 2</td>
+                            <td><span style="color: red;">28hrs</span></td>
+                        </tr>
+                        <tr>
+                            <td>16hrs</td>
+                            <td class="category-cell">Category 3</td>
+                            <td><span style="color: green;">12hrs</span></td>
+                        </tr>
+                        <tr>
+                            <td>48hrs</td>
+                            <td class="category-cell">Category 4</td>
+                            <td><span style="color: green;">42hrs</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    Chart.register({
+        id: 'textPlugin',
+        beforeDraw: function (chart) {
+            if (chart.config.type === 'doughnut') {
+                var width = chart.width,
+                    height = chart.height,
+                    ctx = chart.ctx;
+                ctx.restore();
+
+                var total = chart.data.datasets[0].data.reduce((a, b) => a + b, 0);
+                var goodPercentage = ((chart.data.datasets[0].data[0] / total) * 100).toFixed(0);
+
+                var fontSize = (height / 80).toFixed(2);
+                ctx.font = fontSize + "em Arial";
+                ctx.fillStyle = "#3D729A";
+                ctx.textBaseline = "middle";
+
+                var text = goodPercentage + "%",
+                    textX = Math.round((width - ctx.measureText(text).width) / 2),
+                    textY = height / 2;
+
+                ctx.fillText(text, textX, textY);
+                ctx.save();
+            }
+        }
+    });
+
+    // Customer Satisfaction Chart (static)
+    var ctx1 = document.getElementById('csatChart').getContext('2d');
+    var csatChart = new Chart(ctx1, {
+        type: 'doughnut',
+        data: {
+            labels: ['Good', 'Bad'],
+            datasets: [{
+                data: [88, 12],
+                backgroundColor: ['#74BDE0', '#3D729A'],
+                hoverBackgroundColor: ['#3D729A', '#74BDE0'],
+                borderColor: ['#ffffff'],
+                borderWidth: 2
+            }]
+        },
+        options: {
+            cutout: '70%',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+
+    // Total Solved Chart (static)
+    var ctx2 = document.getElementById('solvedChart').getContext('2d');
+    var solvedChart = new Chart(ctx2, {
+        type: 'bar',
+        data: {
+            labels: ['Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 6'],
+            datasets: [{
+                label: 'Total Solved',
+                data: [15, 20, 60, 45, 55, 20],
+                backgroundColor: [
+                    '#3D729A',
+                    '#A1E1FA',
+                    '#74BDE0'
+                ],
+                hoverBackgroundColor: [
+                    '#3D729A',
+                    '#A1E1FA',
+                    '#74BDE0'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            scales: {
+                x: {
+                    beginAtZero: false,
+                    min: 10,
+                    max: 100,
+                    ticks: {
+                        color: '#216496' 
+                    },
+                    border: {
+                        color: '#3D729A',
+                        borderWidth: 1
+                    }
+                },
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        color: '#216496' 
+                    },
+                    border: {
+                        color: '#3D729A',
+                        borderWidth: 1
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                },
+            },
+        }
+    });
+</script>

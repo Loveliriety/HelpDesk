@@ -1,0 +1,313 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\custom.css",
+      "PackagePath": "staticwebassets\\css\\custom.css"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\fonts\\roboto.css",
+      "PackagePath": "staticwebassets\\fonts\\roboto.css"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.js",
+      "PackagePath": "staticwebassets\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.min.js",
+      "PackagePath": "staticwebassets\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\LiveIT.png",
+      "PackagePath": "staticwebassets\\img\\LiveIT.png"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\asi-logo-invert.svg",
+      "PackagePath": "staticwebassets\\img\\asi-logo-invert.svg"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\background.png",
+      "PackagePath": "staticwebassets\\img\\background.png"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\customer-feedback-logo.svg",
+      "PackagePath": "staticwebassets\\img\\customer-feedback-logo.svg"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\dashboard-logo.svg",
+      "PackagePath": "staticwebassets\\img\\dashboard-logo.svg"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\open.svg",
+      "PackagePath": "staticwebassets\\img\\open.svg"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\profile-logo.png",
+      "PackagePath": "staticwebassets\\img\\profile-logo.png"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\progress.svg",
+      "PackagePath": "staticwebassets\\img\\progress.svg"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\report-&-analytics-logo.svg",
+      "PackagePath": "staticwebassets\\img\\report-&-analytics-logo.svg"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\settings-logo.svg",
+      "PackagePath": "staticwebassets\\img\\settings-logo.svg"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\sidenav-logo.png",
+      "PackagePath": "staticwebassets\\img\\sidenav-logo.png"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\solved.svg",
+      "PackagePath": "staticwebassets\\img\\solved.svg"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\ticket-management-logo.svg",
+      "PackagePath": "staticwebassets\\img\\ticket-management-logo.svg"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\total-tickets.svg",
+      "PackagePath": "staticwebassets\\img\\total-tickets.svg"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\user-management-logo.svg",
+      "PackagePath": "staticwebassets\\img\\user-management-logo.svg"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-server.browser.development.js",
+      "PackagePath": "staticwebassets\\lib\\react-dom\\dist\\react-dom-server.browser.development.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-server.browser.production.min.js",
+      "PackagePath": "staticwebassets\\lib\\react-dom\\dist\\react-dom-server.browser.production.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-test-utils.development.js",
+      "PackagePath": "staticwebassets\\lib\\react-dom\\dist\\react-dom-test-utils.development.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-test-utils.production.min.js",
+      "PackagePath": "staticwebassets\\lib\\react-dom\\dist\\react-dom-test-utils.production.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-fizz.browser.development.js",
+      "PackagePath": "staticwebassets\\lib\\react-dom\\dist\\react-dom-unstable-fizz.browser.development.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-fizz.browser.production.min.js",
+      "PackagePath": "staticwebassets\\lib\\react-dom\\dist\\react-dom-unstable-fizz.browser.production.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-native-dependencies.development.js",
+      "PackagePath": "staticwebassets\\lib\\react-dom\\dist\\react-dom-unstable-native-dependencies.development.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-native-dependencies.production.min.js",
+      "PackagePath": "staticwebassets\\lib\\react-dom\\dist\\react-dom-unstable-native-dependencies.production.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom.development.js",
+      "PackagePath": "staticwebassets\\lib\\react-dom\\dist\\react-dom.development.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom.production.min.js",
+      "PackagePath": "staticwebassets\\lib\\react-dom\\dist\\react-dom.production.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom.profiling.min.js",
+      "PackagePath": "staticwebassets\\lib\\react-dom\\dist\\react-dom.profiling.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react\\dist\\react.development.js",
+      "PackagePath": "staticwebassets\\lib\\react\\dist\\react.development.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react\\dist\\react.production.min.js",
+      "PackagePath": "staticwebassets\\lib\\react\\dist\\react.production.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react\\dist\\react.profiling.min.js",
+      "PackagePath": "staticwebassets\\lib\\react\\dist\\react.profiling.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ASI.Basecode.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ASI.Basecode.WebApp.props",
+      "PackagePath": "build\\ASI.Basecode.WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ASI.Basecode.WebApp.props",
+      "PackagePath": "buildMultiTargeting\\ASI.Basecode.WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ASI.Basecode.WebApp.props",
+      "PackagePath": "buildTransitive\\ASI.Basecode.WebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

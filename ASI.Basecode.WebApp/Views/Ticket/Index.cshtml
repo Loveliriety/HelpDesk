@@ -1,0 +1,219 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Ticket Management";
+}
+
+<div class="content p-4" style="margin-left: 80px;">
+    <h5 class="mt-1 page-header">Ticket Management</h5>
+
+    <nav class="nav mt-3 nav-header">
+        <a class="@(IsActive("Index", "Ticket") ? "active2" : "") nav-link" asp-action="Index" asp-controller="Ticket">Ticket Views</a>
+        <a class="@(IsActive("MyTicket", "Ticket") ? "active2" : "") nav-link" asp-action="MyTicket" asp-controller="Ticket">My Tickets</a>
+    </nav>
+    <hr />
+
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar for Category Views and Statuses -->
+            <div class="col-3" style="margin-left: -70px;">
+                <div class="category-list">
+                    <p class="fw-bold">Views</p>
+                    <ul class="list-group mb-4" style="list-style-type: none; padding-left: 0;">
+                        <li class="d-flex justify-content-between align-items-center py-2">
+                            <span>Category 1</span>
+                            <span>15</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-2">
+                            <span>Category 2</span>
+                            <span>21</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-2">
+                            <span>Category 3</span>
+                            <span>3</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-2">
+                            <span>Category 4</span>
+                            <span>12</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-2">
+                            <span>Category 5</span>
+                            <span>142</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-2">
+                            <span>Category 6</span>
+                            <span>10</span>
+                        </li>
+                    </ul>
+
+                    <p class="fw-bold">Statuses</p>
+                    <ul class="list-group" style="list-style-type: none; padding-left: 0;">
+                        <li class="d-flex justify-content-between align-items-center py-2">
+                            <span>New</span>
+                            <span>28</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-2">
+                            <span>Open</span>
+                            <span>43</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-2">
+                            <span>In Progress</span>
+                            <span>8</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-2">
+                            <span>Resolved</span>
+                            <span>280</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-2">
+                            <span>Closed</span>
+                            <span>329</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Ticket Table -->
+            <div class="col-9">
+                <h3 class="category-header">Category 1</h3>
+                <p class="number-of-tickets">13 Tickets</p>
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-sm assign-btn">Assign</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <input type="checkbox" id="select-all">
+                            </th>
+                            <th scope="col">Ticket</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Subject</th>
+                            <th scope="col">Requester</th>
+                            <th scope="col">Assignee</th>
+                            <th scope="col">Priority</th>
+                            <th scope="col">Requested At</th>
+                            <th scope="col">Updated At</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" class="select-checkbox"></td>
+                            <td class="category-cell">#16548</td>
+                            <td><span class="badge bg-danger">Open</span></td>
+                            <td>Login Issue</td>
+                            <td>John Smith</td>
+                            <td>Alice Johnson</td>
+                            <td>P1</td>
+                            <td>Today 8:15</td>
+                            <td>33 minutes ago</td>
+                            <td>
+                                <button class="btn btn-secondary btn-sm">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="select-checkbox"></td>
+                            <td class="category-cell">#16549</td>
+                            <td><span class="badge bg-success">New</span></td>
+                            <td>Email Not Syncing</td>
+                            <td>Sarah Brown</td>
+                            <td>Alice Johnson</td>
+                            <td>P1</td>
+                            <td>2024-09-08</td>
+                            <td>2024-09-08 10:00</td>
+                            <td>
+                                <button class="btn btn-secondary btn-sm">View</button>
+                            </td>
+                        </tr>
+                        <!-- More tickets go here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Custom Drawer -->
+<div class="custom-drawer" id="customDrawer">
+    <img src="~/img/side-caret.svg" type="button" class="mt-4 ml-3 btn" onclick="toggleDrawer()">
+    <div class="custom-drawer-header d-flex justify-content-between">
+        <h5>Assign ticket/s</h5>
+    </div>
+    <div class="custom-drawer-body">
+        <div class="mb-3">
+            <label for="categorySelect" class="form-label">Category</label>
+            <select class="form-select select-input" id="categorySelect">
+                <option selected>Category 1</option>
+                <option>Category 2</option>
+                <option>Category 3</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="ticketInput" class="form-label">Ticket/s</label>
+            <textarea type="text" class="form-control text-input" id="ticketInput" rows="3">#16548, #16549</textarea>
+        </div>
+        <div class="mb-3">
+            <label for="assigneeSelect" class="form-label">Assignee</label>
+            <select class="form-select select-input" id="assigneeSelect">
+                <option selected>Alice Johnson</option>
+                <option>John Doe</option>
+                <option>Jane Smith</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="prioritySelect" class="form-label">Priority</label>
+            <select class="form-select select-input" id="prioritySelect">
+                <option selected>P1</option>
+                <option>P2</option>
+                <option>P3</option>
+            </select>
+        </div>
+        <div class="mt-2 d-flex justify-content-end">
+            <button class="btn save-btn">Save Changes</button>
+        </div>
+    </div>
+</div>
+
+<!-- Drawer Backdrop -->
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+@section Scripts {
+    <script>
+        // Toggle the drawer
+        function toggleDrawer() {
+            const drawer = document.getElementById("customDrawer");
+            const backdrop = document.getElementById("drawerBackdrop");
+            drawer.classList.toggle("show");
+            backdrop.classList.toggle("show");
+        }
+
+        // Open drawer when "Assign" button is clicked
+        document.querySelectorAll('.assign-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                toggleDrawer();
+            });
+        });
+
+        // Close drawer when backdrop is clicked
+        document.getElementById("drawerBackdrop").addEventListener('click', function() {
+            toggleDrawer();
+        });
+
+        document.getElementById('select-all').addEventListener('click', function () {
+            let checkboxes = document.querySelectorAll('.select-checkbox');
+            checkboxes.forEach(checkbox => checkbox.checked = this.checked);
+        });
+    </script>
+}
+
+
+@functions {
+    public bool IsActive(string action, string controller)
+    {
+        var currentAction = HttpContextAccessor.HttpContext?.Request.RouteValues["action"]?.ToString();
+        var currentController = HttpContextAccessor.HttpContext?.Request.RouteValues["controller"]?.ToString();
+
+        return string.Equals(currentAction, action, StringComparison.OrdinalIgnoreCase) &&
+               string.Equals(currentController, controller, StringComparison.OrdinalIgnoreCase);
+    }
+}
