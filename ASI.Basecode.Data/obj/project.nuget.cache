@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZimD6DhFTCk=",
+  "dgSpecHash": "ZCmofkGS+CA=",
   "success": true,
-  "projectFilePath": "D:\\Projects\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+  "projectFilePath": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ri Shin\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
     "C:\\Users\\Ri Shin\\.nuget\\packages\\dotmorten.microsoft.sqlserver.types\\1.4.0\\dotmorten.microsoft.sqlserver.types.1.4.0.nupkg.sha512",

@@ -5,6 +5,7 @@ using ASI.Basecode.Services.Manager;
 using ASI.Basecode.Services.ServiceModels;
 using AutoMapper;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using static ASI.Basecode.Resources.Constants.Enums;
@@ -49,6 +50,70 @@ namespace ASI.Basecode.Services.Services
             else
             {
                 throw new InvalidDataException(Resources.Messages.Errors.UserExists);
+            }
+        }
+
+        public List<User> GetUsers()
+        {
+            var users = _repository.GetUsers().ToList();
+            return users;
+        }
+
+
+        public void AddUser(User user)
+        {
+            if (user == null)
+            {
+                throw new ArgumentNullException(nameof(user), "User cannot be null");
+            }
+
+            var newUser = new User
+            {
+                UserId = user.UserId,
+                Name = user.Name,
+                Email = user.Email,
+                Password = PasswordManager.EncryptPassword(user.Password),
+                Role = user.Role,
+                TeamId = user.TeamId,
+                CreatedTime = DateTime.Now,
+                UpdatedTime = DateTime.Now,
+                CreatedBy = Environment.UserName,
+                UpdatedBy = Environment.UserName
+            };
+
+            _repository.AddUser(newUser);
+        }
+
+        public void UpdateUser(User user)
+        {
+            var existingUser = _repository.GetUsers().FirstOrDefault(u => u.UserId == user.UserId);
+            if (existingUser != null)
+            {
+                existingUser.Name = user.Name;
+                existingUser.Email = user.Email;
+                if (!string.IsNullOrEmpty(user.Password))
+                {
+                    existingUser.Password = PasswordManager.EncryptPassword(user.Password); // Optional: Encrypt password if necessary
+                }
+                existingUser.Role = user.Role;
+                existingUser.TeamId = user.TeamId;
+                existingUser.UpdatedTime = DateTime.Now;
+                existingUser.UpdatedBy = Environment.UserName;
+
+                _repository.UpdateUser(existingUser);
+            }
+        }
+
+        public void DeleteUser(User user)
+        {
+            var existingUser = _repository.GetUsers().FirstOrDefault(u => u.UserId == user.UserId);
+            if (existingUser != null)
+            {
+                existingUser.IsActive = user.IsActive == false;
+                existingUser.UpdatedTime = DateTime.Now;
+                existingUser.UpdatedBy = Environment.UserName;
+
+                _repository.UpdateUser(existingUser);
             }
         }
     }

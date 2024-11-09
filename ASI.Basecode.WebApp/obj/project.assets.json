@@ -12672,11 +12672,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
+      "projectUniqueName": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
       "projectName": "ASI.Basecode.WebApp",
-      "projectPath": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
+      "projectPath": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
       "packagesPath": "C:\\Users\\Ri Shin\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\obj\\",
+      "outputPath": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ri Shin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -12694,11 +12694,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Projects\\HelpDesk\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
-              "projectPath": "D:\\Projects\\HelpDesk\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj"
+            "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
+              "projectPath": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj"
             },
-            "D:\\Projects\\HelpDesk\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj": {
-              "projectPath": "D:\\Projects\\HelpDesk\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj"
+            "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj": {
+              "projectPath": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj"
             }
           }
         }

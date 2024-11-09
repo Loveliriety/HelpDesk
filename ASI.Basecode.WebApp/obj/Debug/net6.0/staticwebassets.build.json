@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5hzA7hAHel0oHKuUPzbeqQaw+STJ7sQrkQ5xDDiOs6c=",
+  "Hash": "5hXMhBsMbFFJGVmxtkQNJS5TB1hIGj2IfRUb8TvTGq8=",
   "Source": "ASI.Basecode.WebApp",
   "BasePath": "_content/ASI.Basecode.WebApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ASI.Basecode.WebApp\\wwwroot",
       "Source": "ASI.Basecode.WebApp",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\custom.css",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\custom.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "css/custom.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\custom.css"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\login.css",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\login.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "css/login.css",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\main.css",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\main.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "css/main.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\main.css"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\site.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\style.css",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\style.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\favicon.ico",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\fonts\\roboto.css",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\fonts\\roboto.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "fonts/roboto.css",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\roboto.css"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "html/assets/js/plugins/jquery-slimscroll/jquery.slimscroll.js",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.min.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "html/assets/js/plugins/jquery-slimscroll/jquery.slimscroll.min.js",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.min.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\asi-logo-invert.svg",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\asi-logo-invert.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/asi-logo-invert.svg",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\img\\asi-logo-invert.svg"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\background.png",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\background.png",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/background.png",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\img\\background.png"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\customer-feedback-logo.svg",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\customer-feedback-logo.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/customer-feedback-logo.svg",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\img\\customer-feedback-logo.svg"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\dashboard-logo.svg",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\dashboard-logo.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/dashboard-logo.svg",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\img\\dashboard-logo.svg"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\LiveIT.png",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\LiveIT.png",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/LiveIT.png",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\img\\LiveIT.png"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\logo.png",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\logo.png",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/logo.png",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\img\\logo.png"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\open.svg",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\open.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/open.svg",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\img\\open.svg"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\profile-logo.png",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\profile-logo.png",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/profile-logo.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\img\\profile-logo.png"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\progress.svg",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\progress.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/progress.svg",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\img\\progress.svg"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\report-&-analytics-logo.svg",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\report-&-analytics-logo.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/report-&-analytics-logo.svg",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\img\\report-&-analytics-logo.svg"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\settings-logo.svg",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\settings-logo.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/settings-logo.svg",
       "AssetKind": "All",
@@ -397,10 +397,29 @@
       "OriginalItemSpec": "wwwroot\\img\\settings-logo.svg"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\sidenav-logo.png",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\side-caret.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "BasePath": "_content/ASI.Basecode.WebApp",
+      "RelativePath": "img/side-caret.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\side-caret.svg"
+    },
+    {
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\sidenav-logo.png",
+      "SourceId": "ASI.Basecode.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/sidenav-logo.png",
       "AssetKind": "All",
@@ -416,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\img\\sidenav-logo.png"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\solved.svg",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\solved.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/solved.svg",
       "AssetKind": "All",
@@ -435,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\img\\solved.svg"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\ticket-management-logo.svg",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\ticket-management-logo.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/ticket-management-logo.svg",
       "AssetKind": "All",
@@ -454,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ticket-management-logo.svg"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\total-tickets.svg",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\total-tickets.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/total-tickets.svg",
       "AssetKind": "All",
@@ -473,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\img\\total-tickets.svg"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\user-management-logo.svg",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\user-management-logo.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/user-management-logo.svg",
       "AssetKind": "All",
@@ -492,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\img\\user-management-logo.svg"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\js\\site.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\js\\site.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -511,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -530,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -549,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -568,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -587,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -606,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -625,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -644,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -663,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -682,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -701,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -720,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -739,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -758,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -777,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -796,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -815,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -834,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -853,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -872,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -891,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -910,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -929,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -948,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -967,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -986,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1005,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1024,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1043,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1062,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1081,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1100,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1119,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1138,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react\\dist\\react.development.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react\\dist\\react.development.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react/dist/react.development.js",
       "AssetKind": "All",
@@ -1157,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react\\dist\\react.development.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react\\dist\\react.production.min.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react\\dist\\react.production.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react/dist/react.production.min.js",
       "AssetKind": "All",
@@ -1176,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react\\dist\\react.production.min.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react\\dist\\react.profiling.min.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react\\dist\\react.profiling.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react/dist/react.profiling.min.js",
       "AssetKind": "All",
@@ -1195,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react\\dist\\react.profiling.min.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom.development.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom.development.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom.development.js",
       "AssetKind": "All",
@@ -1214,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom.development.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom.production.min.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom.production.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom.production.min.js",
       "AssetKind": "All",
@@ -1233,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom.production.min.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom.profiling.min.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom.profiling.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom.profiling.min.js",
       "AssetKind": "All",
@@ -1252,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom.profiling.min.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-server.browser.development.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-server.browser.development.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom-server.browser.development.js",
       "AssetKind": "All",
@@ -1271,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom-server.browser.development.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-server.browser.production.min.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-server.browser.production.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom-server.browser.production.min.js",
       "AssetKind": "All",
@@ -1290,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom-server.browser.production.min.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-test-utils.development.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-test-utils.development.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom-test-utils.development.js",
       "AssetKind": "All",
@@ -1309,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom-test-utils.development.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-test-utils.production.min.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-test-utils.production.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom-test-utils.production.min.js",
       "AssetKind": "All",
@@ -1328,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom-test-utils.production.min.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-fizz.browser.development.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-fizz.browser.development.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom-unstable-fizz.browser.development.js",
       "AssetKind": "All",
@@ -1347,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-fizz.browser.development.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-fizz.browser.production.min.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-fizz.browser.production.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom-unstable-fizz.browser.production.min.js",
       "AssetKind": "All",
@@ -1366,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-fizz.browser.production.min.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-native-dependencies.development.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-native-dependencies.development.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom-unstable-native-dependencies.development.js",
       "AssetKind": "All",
@@ -1385,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-native-dependencies.development.js"
     },
     {
-      "Identity": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-native-dependencies.production.min.js",
+      "Identity": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-native-dependencies.production.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom-unstable-native-dependencies.production.min.js",
       "AssetKind": "All",

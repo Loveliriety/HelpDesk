@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {}
+    "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
+    "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+        "projectUniqueName": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
         "projectName": "ASI.Basecode.Data",
-        "projectPath": "D:\\Projects\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+        "projectPath": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
         "packagesPath": "C:\\Users\\Ri Shin\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\HelpDesk\\ASI.Basecode.Data\\obj\\",
+        "outputPath": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ri Shin\\AppData\\Roaming\\NuGet\\NuGet.Config",
