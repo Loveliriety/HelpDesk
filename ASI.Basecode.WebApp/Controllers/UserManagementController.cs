@@ -51,7 +51,9 @@ namespace ASI.Basecode.WebApp.Controllers
                 {
                     existingUser.Name = user.Name;
                     existingUser.Email = user.Email;
+                    existingUser.Team = user.Team;
                     existingUser.Role = user.Role;
+                    
 
                     if (!string.IsNullOrWhiteSpace(user.Password))
                     {

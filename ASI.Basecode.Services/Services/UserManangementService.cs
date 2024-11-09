@@ -35,6 +35,7 @@ namespace ASI.Basecode.Services.Services
                 Email = user.Email,
                 Password = user.Password,
                 Role = user.Role,
+                Team = user.Team,
                 CreatedAt = DateTime.UtcNow
             };
 

@@ -26,6 +26,7 @@
                 <th scope="col">User ID</th>
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
+                <th scope="col">Team</th>
                 <th scope="col">Role</th>
                 <th scope="col">Action</th>
             </tr>
@@ -38,12 +39,14 @@
                     <td>@user.UserMID</td>
                     <td>@user.Name</td>
                     <td>@user.Email</td>
+                    <td>@user.Team</td>
                     <td>@user.Role</td>
                     <td>
                         <button class="btn btn-sm btn-primary edit-user-btn"
                                 data-id="@user.UserMID"
                                 data-name="@user.Name"
                                 data-email="@user.Email"
+                                data-team="@user.Team"
                                 data-role="@user.Role"
                                 data-password="@user.Password">
                             Edit
@@ -71,6 +74,17 @@
             <div class="mb-3">
                 <label for="emailInput" class="form-label">Email</label>
                 <input type="email" class="form-control" id="emailInput" name="Email" required />
+            </div>
+            <div class="mb-3">
+                <label for="teamSelect" class="form-label">Team</label>
+                <select class="form-select" id="teamSelect" name="Team" required>
+                    <option selected disabled value="">Select a team</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="IT Support">IT Support</option>
+                    <option value="Accounting">Accounting</option>
+                    <option value="Customer Support">Customer Support</option>
+                    <option value="Development">Development</option>
+                </select>
             </div>
             <div class="mb-3">
                 <label for="roleSelect" class="form-label">Role</label>
@@ -114,6 +128,17 @@
             <div class="mb-3">
                 <label for="editEmailInput" class="form-label">Email</label>
                 <input type="email" class="form-control" id="editEmailInput" name="Email" required />
+            </div>
+            <div class="mb-3">
+                <label for="editTeamSelect" class="form-label">Team</label>
+                <select class="form-select" id="editTeamSelect" name="Team" required>
+                    <option selected disabled value="">Select a team</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="IT Support">IT Support</option>
+                    <option value="Accounting">Accounting</option>
+                    <option value="Customer Support">Customer Support</option>
+                    <option value="Development">Development</option>
+                </select>
             </div>
             <div class="mb-3">
                 <label for="editRoleSelect" class="form-label">Role</label>
@@ -169,6 +194,7 @@
                 document.getElementById("editUserIdInput").value = this.getAttribute("data-id");
                 document.getElementById("editNameInput").value = this.getAttribute("data-name");
                 document.getElementById("editEmailInput").value = this.getAttribute("data-email");
+                document.getElementById("editTeamSelect").value = this.getAttribute("data-team");
                 document.getElementById("editRoleSelect").value = this.getAttribute("data-role");
                 document.getElementById("editPasswordInput").value = this.getAttribute("data-password");
                 toggleEditDrawer();
@@ -201,6 +227,7 @@
                 icon.classList.add('fa-eye-slash');
             }
         });
+
         document.getElementById('toggleAddPassword').addEventListener('click', function () {
             const passwordInput = document.getElementById('passwordInput');
             const icon = this.querySelector('i');
