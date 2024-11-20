@@ -43,8 +43,18 @@ namespace ASI.Basecode.Services.Services
             var user = new User();
             if (!_repository.UserExists(model.UserId))
             {
+                if (!_repository.GetUsers().Any())
+                {
+                    model.Role = "Superadmin";
+                }
+                else
+                {
+                    model.Role = model.Role ?? "User";
+                }
+
                 _mapper.Map(model, user);
                 user.Password = PasswordManager.EncryptPassword(model.Password);
+                user.Role = model.Role;
                 user.CreatedTime = DateTime.Now;
                 user.UpdatedTime = DateTime.Now;
                 user.CreatedBy = System.Environment.UserName;
