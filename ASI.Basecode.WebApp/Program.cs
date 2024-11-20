@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using ASI.Basecode.Data;
 using ASI.Basecode.WebApp;
 using ASI.Basecode.WebApp.Extensions.Configuration;
 using Microsoft.AspNetCore.Builder;
@@ -12,6 +11,7 @@ var appBuilder = WebApplication.CreateBuilder(new WebApplicationOptions
     ContentRootPath = Directory.GetCurrentDirectory(),
 });
 
+// Adding configuration for appsettings.json
 appBuilder.Configuration.AddJsonFile("appsettings.json",
     optional: true,
     reloadOnChange: true);
@@ -28,6 +28,9 @@ configurer.ConfigureServices(appBuilder.Services);
 
 var app = appBuilder.Build();
 
+// Add Session Middleware here to make it accessible in the entire app
+app.UseSession();  // **Session Middleware Added here**
+
 configurer.ConfigureApp(app, app.Environment);
 
 app.MapControllerRoute(
@@ -36,5 +39,5 @@ app.MapControllerRoute(
 app.MapControllers();
 app.MapRazorPages();
 
-// Run application
+// Run the application
 app.Run();

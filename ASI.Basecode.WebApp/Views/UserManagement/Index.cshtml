@@ -1,15 +1,19 @@
-﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+﻿@using ASI.Basecode.Services.Interfaces
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@model IEnumerable<ASI.Basecode.Data.Models.User>
+@inject ITeamService TeamService
 
 @{
     ViewData["Title"] = "User Management";
+    string theme = HttpContextAccessor.HttpContext.Session.GetString("Theme") ?? "light";
 }
 
 <div class="content p-4" style="margin-left: 80px;">
     <h5 class="mt-1 page-header">User Management</h5>
 
     <nav class="nav mt-3 nav-header">
-        <a class="nav-link" asp-action="Index" asp-controller="UserManagement">User List</a>
-        <a class="nav-link" asp-action="MyTicket" asp-controller="Users">Team List</a>
+        <a class="@(IsActive("Index", "UserManagement") ? "active2" : "") nav-link text-color" asp-action="Index" asp-controller="UserManagement">User List</a>
+        <a class="@(IsActive("Index", "TeamManagement") ? "active2" : "") nav-link text-color" asp-action="Index" asp-controller="TeamManagement">Team List</a>
     </nav>
     <hr />
 
@@ -23,13 +27,13 @@
     <table class="table table-striped table-bordered" id="userTable">
         <thead>
             <tr>
-                <th scope="col"><input type="checkbox" id="select-all" /></th>
-                <th scope="col">User ID</th>
-                <th scope="col">Name</th>
-                <th scope="col">Email</th>
-                <th scope="col">Team</th>
-                <th scope="col">Role</th>
-                <th scope="col">Action</th>
+                <th class="text-color" scope="col"><input type="checkbox" id="select-all" /></th>
+                <th class="text-color" scope="col">User ID</th>
+                <th class="text-color" scope="col">Name</th>
+                <th class="text-color" scope="col">Email</th>
+                <th class="text-color" scope="col">Team</th>
+                <th class="text-color" scope="col">Role</th>
+                <th class="text-color" scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -37,22 +41,21 @@
             {
                 <tr>
                     <td><input type="checkbox" class="select-checkbox" /></td>
-                    <td>@user.UserId</td>
-                    <td>@user.Name</td>
-                    <td>@user.Email</td>
-                    <td>@user.TeamId</td>
-                    <td>@user.Role</td>
+                    <td class="text-color">@user.UserId</td>
+                    <td class ="text-color">@user.Name</td>
+                    <td class="text-color">@user.Email</td>
+                    <td class="text-color">@(user.TeamId.HasValue ? TeamService.GetTeamNameById(user.TeamId.Value) : "None")</td>
+                    <td class="text-color">@user.Role</td>
                     <td>
                         <button class="btn btn-sm btn-primary edit-user-btn"
                                 data-id="@user.UserId"
                                 data-name="@user.Name"
                                 data-email="@user.Email"
                                 data-team="@user.TeamId"
-                                data-role="@user.Role"
-                                data-password="@user.Password">
+                                data-role="@user.Role">
                             Edit
                         </button>
-                        <a asp-action="Delete" asp-route-id="@user.UserId" class="btn btn-sm btn-danger">Delete</a>
+                        <a asp-action="Delete" data-bs-toggle="modal" data-bs-target="#deleteUserModal-@user.UserId" class="btn btn-sm btn-danger">Delete</a>
                     </td>
                 </tr>
             }
@@ -82,13 +85,8 @@
             </div>
             <div class="mb-3">
                 <label for="teamSelect" class="form-label">Team</label>
-                <select class="form-select" id="teamSelect" name="TeamId" required>
+                <select for="teamSelect" class="form-select" id="teamSelect" name="TeamId" asp-items="ViewBag.Teams" required>
                     <option selected disabled value="">Select a team</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="4">4</option>
                 </select>
             </div>
             <div class="mb-3">
@@ -135,14 +133,9 @@
                 <input type="email" class="form-control" id="editEmailInput" name="Email" required />
             </div>
             <div class="mb-3">
-                <label for="editTeamSelect" class="form-label">Team</label>
-                <select class="form-select" id="editTeamSelect" name="TeamId" required>
+                <label for="teamSelect" class="form-label">Team</label>
+                <select for="teamSelect" class="form-select" id="editTeamSelect" name="TeamId" asp-items="ViewBag.Teams" required>
                     <option selected disabled value="">Select a team</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="4">4</option>
                 </select>
             </div>
             <div class="mb-3">
@@ -171,10 +164,36 @@
     </div>
 </div>
 
+@foreach (var user in Model)
+{
+    <div class="modal fade" id="deleteUserModal-@user.UserId" tabindex="-1" aria-labelledby="deleteUserModalLabel-@user.UserId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteUserModalLabel-@user.UserId">Delete User</h5>
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to delete this user?</p>
+                    <p><strong>User ID: </strong>@user.UserId</p>
+                    <p><strong>Name: </strong>@user.Name</p>
+                    <form asp-action="Delete" method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="UserId" value="@user.UserId" />
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
 <!-- Drawer Backdrop -->
 <div class="drawer-backdrop" id="drawerBackdrop"></div>
 
 @section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         function toggleAddDrawer() {
             const drawer = document.getElementById("addUserDrawer");
@@ -267,6 +286,13 @@
     </script>
 }
 
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMf8A6sa1XbKf7RQkvIQ1KHB12XhlD8/Wr11T5z" crossorigin="anonymous">
-</head>
+@functions {
+    public bool IsActive(string action, string controller)
+    {
+        var currentAction = HttpContextAccessor.HttpContext?.Request.RouteValues["action"]?.ToString();
+        var currentController = HttpContextAccessor.HttpContext?.Request.RouteValues["controller"]?.ToString();
+
+        return string.Equals(currentAction, action, StringComparison.OrdinalIgnoreCase) &&
+               string.Equals(currentController, controller, StringComparison.OrdinalIgnoreCase);
+    }
+}

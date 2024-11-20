@@ -1,5 +1,16 @@
-﻿body {
-    background-color: #F1F1F1;
+﻿:root {
+    --background-color1: #f1f1f1;
+    --background-color2: #212529;
+    --text-color-main: #3D729A;
+    --text-color-dark: #FFFFFF;
+    --data-color1: #212529;
+    --data-color2: #FFFFFF;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+    background-color: var(--background-color1);
 }
 
 .sidebar {
@@ -63,7 +74,7 @@
     }
 
 .sidebar ul li a {
-    color: ##F1F1F1;
+    color: #F1F1F1;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -126,7 +137,7 @@
 
 
 .page-header {
-    color: #3D729A;
+    color: var(--text-color-main);
 }
 
 .card-report {
@@ -136,7 +147,7 @@
 
 
 .total {
-    color: #3D729A;
+    color: var(--text-color-main);
 }
 
 .txt-info {
@@ -147,14 +158,14 @@
 }
 
 .labels {
-    color: #3D729A;
+    color: var(--text-color-main);
     font-size: 1rem;
     font-weight: 500;
 }
 
 .chart-header {
     text-align: center;
-    color: #3D729A;
+    color: var(--text-color-main);
     margin-bottom: 40px;
 }
 
@@ -164,18 +175,19 @@ table {
 }
 
 th {
-    color: #3D729A;
+    color: var(--text-color-main);
 }
 
 
 th, td {
     padding: 8px;
     text-align: left;
-    border-bottom: 1px solid #3D729A;
+    border-bottom: 1px solid var(--text-color-main);
+    color: var(--data-color);
 }
 
 .category-cell {
-    color: #3D729A;
+    color: var(--text-color-main);
 }
 
 hr {
@@ -187,9 +199,9 @@ hr {
 }
 
 .active2 {
-    color: #3D729A;
+    color: var(--text-color-main);
     font-weight: 600;
-    border-bottom: 2px solid #3D729A;
+    border-bottom: 2px solid var(--text-color-main);
 }
 
 .nav-link {
@@ -197,20 +209,41 @@ hr {
 }
 
 .col-3 {
-    border-right: 1px solid #3D729A;
+    border-right: 1px solid var(--text-color-main);
+}
+
+.line {
+    border-top: 1px solid var(--text-color-main);
 }
 
 .category-list {
-    color: #3D729A;
+    color: var(--text-color-main);
+}
+
+.setting-list {
+    color: var(--text-color-main);
+}
+
+.text-color {
+    color: var(--data-color1);
+}
+
+.set-card {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid #999999;
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 .category-header {
-    color: #3D729A;
+    color: var(--text-color-main);
 }
 
 .number-of-tickets {
     margin-top: -2px;
-    color: #3D729A;
+    color: var(--text-color-main);
     font-size: 1rem;
 }
 

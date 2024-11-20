@@ -18,6 +18,7 @@ namespace ASI.Basecode.Data
         }
 
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Team> Teams { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>(entity =>

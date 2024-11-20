@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Ticket Management";
+    string theme = HttpContextAccessor.HttpContext.Session.GetString("Theme") ?? "light";
 }
 
 <div class="content p-4" style="margin-left: 80px;">
@@ -101,12 +102,12 @@
                             <td><input type="checkbox" class="select-checkbox"></td>
                             <td class="category-cell">#16548</td>
                             <td><span class="badge bg-danger">Open</span></td>
-                            <td>Login Issue</td>
-                            <td>John Smith</td>
-                            <td>Alice Johnson</td>
-                            <td>P1</td>
-                            <td>Today 8:15</td>
-                            <td>33 minutes ago</td>
+                            <td class="text-color">Login Issue</td>
+                            <td class="text-color">John Smith</td>
+                            <td class="text-color">Alice Johnson</td>
+                            <td class="text-color">P1</td>
+                            <td class="text-color">Today 8:15</td>
+                            <td class="text-color">33 minutes ago</td>
                             <td>
                                 <button class="btn btn-secondary btn-sm">View</button>
                             </td>
@@ -115,12 +116,12 @@
                             <td><input type="checkbox" class="select-checkbox"></td>
                             <td class="category-cell">#16549</td>
                             <td><span class="badge bg-success">New</span></td>
-                            <td>Email Not Syncing</td>
-                            <td>Sarah Brown</td>
-                            <td>Alice Johnson</td>
-                            <td>P1</td>
-                            <td>2024-09-08</td>
-                            <td>2024-09-08 10:00</td>
+                            <td class="text-color">Email Not Syncing</td>
+                            <td class="text-color">Sarah Brown</td>
+                            <td class="text-color">Alice Johnson</td>
+                            <td class="text-color">P1</td>
+                            <td class="text-color">2024-09-08</td>
+                            <td class="text-color">2024-09-08 10:00</td>
                             <td>
                                 <button class="btn btn-secondary btn-sm">View</button>
                             </td>

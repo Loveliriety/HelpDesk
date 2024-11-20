@@ -18,5 +18,8 @@ namespace ASI.Basecode.Data.Models
         public string? UpdatedBy { get; set; }
         public DateTime? UpdatedTime { get; set; }
         public bool IsActive { get; set; } = true;
+
+        // Navigation Property
+        public Team Team { get; set; }
     }
 }

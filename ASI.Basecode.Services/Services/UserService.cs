@@ -6,6 +6,7 @@ using ASI.Basecode.Services.ServiceModels;
 using AutoMapper;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.IO;
 using System.Linq;
 using static ASI.Basecode.Resources.Constants.Enums;
@@ -15,12 +16,16 @@ namespace ASI.Basecode.Services.Services
     public class UserService : IUserService
     {
         private readonly IUserRepository _repository;
+        private readonly ITeamRepository _teamRepository;
         private readonly IMapper _mapper;
 
-        public UserService(IUserRepository repository, IMapper mapper)
+        public UserService(IUserRepository repository,
+                            IMapper mapper,
+                            ITeamRepository teamRepository)
         {
             _mapper = mapper;
             _repository = repository;
+            _teamRepository = teamRepository;
         }
 
         public LoginResult AuthenticateUser(string userId, string password, ref User user)
@@ -62,6 +67,13 @@ namespace ASI.Basecode.Services.Services
 
         public void AddUser(User user)
         {
+            // Validate if TeamId Exists before adding user
+            var team = _teamRepository.GetTeamById(user.TeamId);
+            if (team == null)
+            {
+                throw new InvalidDataException("invalid TeamId provided!");
+            }
+
             if (user == null)
             {
                 throw new ArgumentNullException(nameof(user), "User cannot be null");
@@ -86,6 +98,13 @@ namespace ASI.Basecode.Services.Services
 
         public void UpdateUser(User user)
         {
+            // Validate if TeamId Exists before adding user
+            var team = _teamRepository.GetTeamById(user.TeamId);
+            if (team == null)
+            {
+                throw new InvalidDataException("invalid TeamId provided!");
+            }
+
             var existingUser = _repository.GetUsers().FirstOrDefault(u => u.UserId == user.UserId);
             if (existingUser != null)
             {
@@ -97,6 +116,7 @@ namespace ASI.Basecode.Services.Services
                 }
                 existingUser.Role = user.Role;
                 existingUser.TeamId = user.TeamId;
+                existingUser.IsActive = user.IsActive;
                 existingUser.UpdatedTime = DateTime.Now;
                 existingUser.UpdatedBy = Environment.UserName;
 
@@ -113,7 +133,7 @@ namespace ASI.Basecode.Services.Services
                 existingUser.UpdatedTime = DateTime.Now;
                 existingUser.UpdatedBy = Environment.UserName;
 
-                _repository.UpdateUser(existingUser);
+                _repository.DeleteUser(existingUser);
             }
         }
     }

@@ -1,6 +1,10 @@
 ﻿@using Microsoft.AspNetCore.Http
 @inject IHttpContextAccessor HttpContextAccessor
 
+@{
+    string theme = HttpContextAccessor.HttpContext.Session.GetString("Theme") ?? "light";
+}
+
 <!-- Sidebar -->
 <div id="sidebar" class="@((ViewBag.LoginView == true) ? "hide-navbar" : "sidebar")">
     <div id="toggleSidebar" class="logo">
@@ -9,16 +13,25 @@
     <ul>
         <li class="@(IsActive("Index", "Home") ? "active" : "")">
             <a asp-action="Index" asp-controller="Home"><img class="menu-icon" src="~/img/dashboard-logo.svg"></img></a>
-        </li><li class="@(IsActive("Index", "UserManagement") ? "active" : "")">
+        </li>
+        <li class="@(IsActive("Index", "UserManagement") ? "active" : "")">
             <a asp-action="Index" asp-controller="UserManagement"><img class="menu-icon" src="~/img/user-management-logo.svg"></img></a>
-        </li><li class="@(IsActive("Index", "Ticket") ? "active" : "")">
+        </li>
+        <li class="@(IsActive("Index", "Ticket") ? "active" : "")">
             <a asp-action="Index" asp-controller="Ticket"><img class="menu-icon" src="~/img/ticket-management-logo.svg"></img></a>
-        </li><li class="@(IsActive("Index", "Report") ? "active" : "")">
+        </li>
+        <li class="@(IsActive("Index", "Report") ? "active" : "")">
             <a asp-action="Index" asp-controller="Report"><img class="menu-icon" src="~/img/report-&-analytics-logo.svg"></img></a>
-        </li><li class="@(IsActive("Index", "Feedback") ? "active" : "")">
+        </li>
+        <li class="@(IsActive("Index", "Feedback") ? "active" : "")">
             <a asp-action="Index" asp-controller="Feedback"><img class="menu-icon" src="~/img/customer-feedback-logo.svg"></img></a>
-        </li><li class="@(IsActive("Index", "Settings") ? "active" : "")">
+        </li>
+        <li class="@(IsActive("Index", "Settings") ? "active" : "")">
             <a asp-action="Index" asp-controller="Settings"><img class="menu-icon" src="~/img/settings-logo.svg"></img></a>
+        </li>
+        <li>
+            <a asp-action="SignOutUser" asp-controller="Account"><img class="menu-icon" src="~/img/logout.svg"></img></a>
+        </li>
     </ul>
 </div>
 

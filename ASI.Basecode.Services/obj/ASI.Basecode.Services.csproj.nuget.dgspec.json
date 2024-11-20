@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj": {}
+    "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
+    "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+        "projectUniqueName": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
         "projectName": "ASI.Basecode.Data",
-        "projectPath": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
-        "packagesPath": "C:\\Users\\Ri Shin\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Data\\obj\\",
+        "projectPath": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ri Shin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -109,17 +109,17 @@
         }
       }
     },
-    "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
+    "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
+        "projectUniqueName": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
         "projectName": "ASI.Basecode.Resources",
-        "projectPath": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
-        "packagesPath": "C:\\Users\\Ri Shin\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Resources\\obj\\",
+        "projectPath": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Resources\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ri Shin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -170,17 +170,17 @@
         }
       }
     },
-    "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj": {
+    "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj",
+        "projectUniqueName": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj",
         "projectName": "ASI.Basecode.Services",
-        "projectPath": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj",
-        "packagesPath": "C:\\Users\\Ri Shin\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Services\\obj\\",
+        "projectPath": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Services\\ASI.Basecode.Services.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ri Shin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -195,11 +195,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
-                "projectPath": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj"
+              "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj": {
+                "projectPath": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj"
               },
-              "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
-                "projectPath": "D:\\Projects\\elasi\\HelpDesk\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj"
+              "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
+                "projectPath": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj"
               }
             }
           }

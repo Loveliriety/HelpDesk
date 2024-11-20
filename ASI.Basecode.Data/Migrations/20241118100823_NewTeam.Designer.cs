@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASI.Basecode.Data.Migrations
 {
     [DbContext(typeof(AsiBasecodeDBContext))]
-    [Migration("20241109124042_Initial")]
-    partial class Initial
+    [Migration("20241118100823_NewTeam")]
+    partial class NewTeam
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,6 +23,41 @@ namespace ASI.Basecode.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("ASI.Basecode.Data.Models.Team", b =>
+                {
+                    b.Property<int>("TeamId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TeamId"), 1L, 1);
+
+                    b.Property<string>("Company")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Manager")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TeamName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Tier")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("TeamId");
+
+                    b.ToTable("Teams");
+                });
 
             modelBuilder.Entity("ASI.Basecode.Data.Models.User", b =>
                 {
@@ -42,6 +77,9 @@ namespace ASI.Basecode.Data.Migrations
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -72,10 +110,21 @@ namespace ASI.Basecode.Data.Migrations
 
                     b.HasKey("UserId");
 
+                    b.HasIndex("TeamId");
+
                     b.HasIndex(new[] { "UserId" }, "UQ__Users__1788CC4D5F4A160F")
                         .IsUnique();
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("ASI.Basecode.Data.Models.User", b =>
+                {
+                    b.HasOne("ASI.Basecode.Data.Models.Team", "Team")
+                        .WithMany()
+                        .HasForeignKey("TeamId");
+
+                    b.Navigation("Team");
                 });
 #pragma warning restore 612, 618
         }

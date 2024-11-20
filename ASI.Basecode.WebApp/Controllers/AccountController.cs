@@ -98,6 +98,7 @@ namespace ASI.Basecode.WebApp.Controllers
                 // 認証OK
                 await this._signInManager.SignInAsync(user);
                 this._session.SetString("UserName", user.Name);
+                HttpContext.Session.SetString("UserRole", user.Role);
                 return RedirectToAction("Index", "Home");
             }
             else
@@ -117,7 +118,7 @@ namespace ASI.Basecode.WebApp.Controllers
 
         [HttpPost]
         [AllowAnonymous]
-        public IActionResult Register(UserViewModel model)
+        public IActionResult Register(Services.ServiceModels.UserViewModel model)
         {
             try
             {
@@ -147,6 +148,9 @@ namespace ASI.Basecode.WebApp.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> SignOutUser()
         {
+            _httpContextAccessor.HttpContext.Session.Remove("Theme");
+
+
             await this._signInManager.SignOutAsync();
             return RedirectToAction("Login", "Account");
         }

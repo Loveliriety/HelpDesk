@@ -1,0 +1,123 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Settings & Preferences";
+    string currentTheme = HttpContextAccessor.HttpContext.Session.GetString("Theme") ?? "light";
+}
+
+<div class="content p-4" style="margin-left: 80px;">
+    <h5 class="mt-1 page-header mb-5">Settings & Preferences</h5>
+
+    <p class="line"></p>
+
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar for Preferences -->
+            <div class="col-3" style="margin-left: -100px;">
+                <div class="setting-list">
+                    <p style="padding: 7px; margin-left: 50px;">Set Preferences</p>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-9">
+                <div class="setting-list mb-5">
+                    <h4>Interface Theme</h4>
+                    <p>Set or customize your UI theme</p>
+                </div>
+
+                <form id="themeForm">
+                    <!-- Add this form around the theme settings -->
+                    @Html.AntiForgeryToken() <!-- Add anti-forgery token -->
+
+                    <div class="row">
+                        <!-- Dark Mode Card -->
+                        <div class="col-md-6 mb-3">
+                            <div class="card set-card">
+                                <div class="card-body">
+                                    <label for="darkMode" class="form-check-label fw-bold text-color">🌙 Dark Mode</label>
+                                    <input type="radio" id="darkMode" name="theme" class="form-check-input me-2"
+                                           value="dark" @(currentTheme == "dark" ? "checked" : "")>
+                                    <p class="text-color mt-2 mb-2">Switch to dark mode for eye-friendly interfaces in low-light conditions</p>
+                                    <div class="mt-4 preview">
+                                        <img src="~/img/Dark-Mode.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Light Mode Card -->
+                        <div class="col-md-6 mb-3">
+                            <div class="card set-card">
+                                <div class="card-body">
+                                    <label for="lightMode" class="form-check-label fw-bold text-color">☀️ Light Mode</label>
+                                    <input type="radio" id="lightMode" name="theme" class="form-check-input me-2" checked
+                                           value="light" @(currentTheme == "light" ? "checked" : "")>
+                                    <p class="text-color mt-2 mb-2">Switch to light mode for a brighter and more vibrant display</p>
+                                    <div class="mt-5 preview">
+                                        <img src="~/img/Light-Mode.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="d-flex justify-content-end mt-5">
+                    <button id="saveChanges" class="btn assign-btn add-user-btn">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+        document.getElementById('saveChanges').addEventListener('click', function () {
+        const selectedTheme = document.querySelector('input[name="theme"]:checked').value;
+        const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+        fetch('/Settings/SaveTheme', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'RequestVerificationToken': token
+            },
+            body: JSON.stringify({ theme: selectedTheme })
+        }).then(response => {
+            if (response.ok) {
+                // Display success notification
+                toastr.success("Changes saved successfully!");
+
+                // Apply the new theme without reloading
+                setTimeout(function() {
+                    updateTheme(selectedTheme); // Apply theme after toastr delay
+                }, 500);  // 500ms delay to ensure toastr is visible
+            } else {
+                toastr.error("Failed to save changes.");
+            }
+        });
+    });
+
+    // Function to apply the theme dynamically
+    function updateTheme(theme) {
+        const root = document.documentElement;
+
+        if (theme === 'dark') {
+            root.style.setProperty('--background-color1', '#212529');
+            root.style.setProperty('--text-color-main', '#FFFFFF');
+            root.style.setProperty('--text-color-dark', '#FFFFFF');
+            root.style.setProperty('--data-color1', '#FFFFFF');
+        } else {
+            root.style.setProperty('--background-color1', '#f1f1f1');
+            root.style.setProperty('--text-color-main', '#3D729A');
+            root.style.setProperty('--text-color-dark', '#212529');
+            root.style.setProperty('--data-color1', '#212529');
+        }
+    }
+</script>
+
+<script>
+    // Apply the current theme when the page loads
+    const currentTheme = '@HttpContextAccessor.HttpContext.Session.GetString("Theme") ?? "light"';
+    updateTheme(currentTheme);  // Apply the initial theme when the page loads
+</script>

@@ -1,4 +1,9 @@
 ﻿@using static ASI.Basecode.Resources.Views.Screen
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    string theme = HttpContextAccessor.HttpContext.Session.GetString("Theme") ?? "light";
+}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +17,7 @@
     <link rel="stylesheet" href="~/css/style.css" />
     <link rel="stylesheet" href="~/css/custom.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     @RenderSection("Styles", required: false)
 </head>
 <body>
@@ -36,6 +42,33 @@
             progressBar: true
         };
     </script>
+
+    <script>
+        function updateTheme(theme) {
+            const root = document.documentElement;
+
+            if (theme === 'dark') {
+                root.style.setProperty('--background-color1', '#212529');
+                root.style.setProperty('--text-color-main', '#FFFFFF');
+                root.style.setProperty('--text-color-dark', '#FFFFFF');
+                root.style.setProperty('--data-color1', '#FFFFFF');
+            } else {
+                root.style.setProperty('--background-color1', '#f1f1f1');
+                root.style.setProperty('--text-color-main', '#3D729A');
+                root.style.setProperty('--text-color-dark', '#212529');
+                root.style.setProperty('--data-color1', '#212529');
+            }
+        }
+    </script>
+
+    <script>
+        // Dynamically apply the theme on every page load
+        const theme = '@theme';
+        document.addEventListener('DOMContentLoaded', () => {
+            updateTheme(theme); // Assuming updateTheme function is available globally
+        });
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

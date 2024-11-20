@@ -95,11 +95,15 @@ namespace ASI.Basecode.WebApp
 
             //Configuration
             services.Configure<TokenAuthentication>(Configuration.GetSection("TokenAuthentication"));
-            
+
             // Session
+            services.AddDistributedMemoryCache();
             services.AddSession(options =>
             {
                 options.Cookie.Name = Const.Issuer;
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true; // Ensure session persists even without explicit consent
+                options.IdleTimeout = TimeSpan.FromMinutes(30); // Adjust as needed
             });
 
             // DI Services AutoMapper(Add Profile)
