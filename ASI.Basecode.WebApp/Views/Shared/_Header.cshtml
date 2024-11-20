@@ -3,6 +3,7 @@
 
 @{
     string theme = HttpContextAccessor.HttpContext.Session.GetString("Theme") ?? "light";
+    var userRole = HttpContextAccessor.HttpContext.Session.GetString("UserRole");
 }
 
 <!-- Sidebar -->
@@ -14,9 +15,12 @@
         <li class="@(IsActive("Index", "Home") ? "active" : "")">
             <a asp-action="Index" asp-controller="Home"><img class="menu-icon" src="~/img/dashboard-logo.svg"></img></a>
         </li>
-        <li class="@(IsActive("Index", "UserManagement") ? "active" : "")">
-            <a asp-action="Index" asp-controller="UserManagement"><img class="menu-icon" src="~/img/user-management-logo.svg"></img></a>
-        </li>
+        @if (userRole == "Superadmin" || userRole == "Admin")
+        {
+            <li class="@(IsActive("Index", "UserManagement") ? "active" : "")">
+                <a asp-action="Index" asp-controller="UserManagement"><img class="menu-icon" src="~/img/user-management-logo.svg"></img></a>
+            </li>
+        }
         <li class="@(IsActive("Index", "Ticket") ? "active" : "")">
             <a asp-action="Index" asp-controller="Ticket"><img class="menu-icon" src="~/img/ticket-management-logo.svg"></img></a>
         </li>
