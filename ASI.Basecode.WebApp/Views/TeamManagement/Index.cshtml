@@ -12,13 +12,14 @@
     <nav class="nav mt-3 nav-header">
         <a class="@(IsActive("Index", "UserManagement") ? "active2" : "") nav-link text-color" asp-action="Index" asp-controller="UserManagement">User List</a>
         <a class="@(IsActive("Index", "TeamManagement") ? "active2" : "") nav-link text-color" asp-action="Index" asp-controller="TeamManagement">Team List</a>
+        <div style="width: 100%; border-bottom: 1px solid #3D729A; margin-bottom: 5px;"></div>
     </nav>
-    <hr />
+
 
     <!-- Search bar and Add User button -->
     <div class="d-flex justify-content-between align-items-center mb-3">
         <input type="text" class="form-control w-25" id="searchInput" placeholder="Search..." />
-        <button class="btn btn-sm assign-btn add-user-btn">+ Add Table</button>
+        <button class="btn btn-sm assign-btn add-user-btn">+ Add Team</button>
     </div>
 
     <!-- Team Table -->

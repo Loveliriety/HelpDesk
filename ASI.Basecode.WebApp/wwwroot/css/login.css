@@ -37,9 +37,29 @@
     background-image: url('/img/background.png') !important;
     background-repeat: no-repeat !important;
     background-size: cover;
+    overflow: hidden;
 }
 
 .forgot {
     color: #3D729A;
     font-size: 0.8rem;
+}
+
+.login-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.13);
+    border-radius: 15px;
+    border: none;
+}
+
+.flex-cent {
+    display: block;
+    align-content: center;
+    justify-content: center;
 }
