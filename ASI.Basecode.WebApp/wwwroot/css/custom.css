@@ -11,6 +11,7 @@
 
 body {
     background-color: var(--background-color1);
+    overflow: hidden;
 }
 
 .sidebar {
@@ -54,11 +55,46 @@ body {
     }
 
         .sidebar ul li {
-            padding: 10px 20px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+    .tooltip {
+        display: none !important;
+        position: absolute;
+        top: -20px;
+        left: calc(100% + 15px);
+        z-index: 3;
+        background: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-size: 15px;
+        font-weight: 400;
+        opacity: 0;
+        white-space: nowrap;
+        pointer-events: none;
+        transition: 0s;
+        z-index: 1;
+    }
+
+        .sidebar ul li img{
+            width: 22px;
         }
 
             .sidebar ul li:hover {
                 background-color: #F1F1F1;
+            }
+
+            .sidebar li:hover .tooltip {
+                opacity: 1;
+                pointer-events: auto;
+                transition: all 0.4s ease;
+                top: 50%;
+                transform: translateY(-50%);
             }
 
                 .sidebar ul li:hover .menu-icon {
@@ -78,6 +114,7 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
+    z-index: 1000;
 }
 
     .sidebar ul li a i {
@@ -208,7 +245,7 @@ hr {
     color: #4f7a9a;
 }
 
-.col-3 {
+.col-2 {
     border-right: 1px solid var(--text-color-main);
 }
 
@@ -315,9 +352,37 @@ hr {
     border-radius: 9px
 }
 
-.assign-btn {
+.assign-btn, .add-btn {
     width: auto;
-    background-color: #3D729A;
-    color: #ffffff;
-    border-radius: 9px
+    color: #3D729A;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 9px;
+    padding: 5px 20px;
+    border: 1px solid #3D729A;
 }
+
+    .assign-btn:hover, .add-btn:hover {
+        background-color: #3D729A;
+        color: #fff;
+        border: 1px solid #3D729A;
+    }
+
+.container {
+    max-width: none !important;
+    margin: 0 !important;
+}
+
+.view-filter {
+    width: 100%;
+    padding: 7px 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+    .view-filter:hover {
+        background-color: #dcdcdc;
+    }
+
+
+/*//working*/

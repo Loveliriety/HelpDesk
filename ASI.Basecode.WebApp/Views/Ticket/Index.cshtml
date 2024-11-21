@@ -1,152 +1,137 @@
 ﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
-
+@model ASI.Basecode.Services.ServiceModels.TicketListViewModel
 @{
     ViewData["Title"] = "Ticket Management";
     string theme = HttpContextAccessor.HttpContext.Session.GetString("Theme") ?? "light";
-}
 
-<div class="content p-4" style="margin-left: 80px;">
+}
+<!--Working-->
+<div class="content p-4" style="width: calc(100vw - 80px); margin-left: 80px;">
     <h5 class="mt-1 page-header">Ticket Management</h5>
 
     <nav class="nav mt-3 nav-header">
         <a class="@(IsActive("Index", "Ticket") ? "active2" : "") nav-link" asp-action="Index" asp-controller="Ticket">Ticket Views</a>
         <a class="@(IsActive("MyTicket", "Ticket") ? "active2" : "") nav-link" asp-action="MyTicket" asp-controller="Ticket">My Tickets</a>
+        <div style="width: 100%; border-bottom: 1px solid #3D729A; margin-bottom: 5px;"></div>
     </nav>
-    <hr />
 
     <div class="container">
-        <div class="row">
+        <div class="row" style="width: 100%;">
             <!-- Sidebar for Category Views and Statuses -->
-            <div class="col-3" style="margin-left: -70px;">
+            <div class="col-2" >
                 <div class="category-list">
-                    <p class="fw-bold">Views</p>
+                    <div class="d-flex flex-row justify-content-between align-items-center py-2">
+                        <h5 class="fw-500">Categories</h5>
+                        @if (ViewData["SelectedCategory"] != null)
+                        {
+                            <a href="@Url.Action("Index")" class="btn btn-link p-0" style="text-decoration: none; color: #3D729A; cursor:pointer; outline:none;">Clear</a>
+                        }
+                    </div>
                     <ul class="list-group mb-4" style="list-style-type: none; padding-left: 0;">
-                        <li class="d-flex justify-content-between align-items-center py-2">
-                            <span>Category 1</span>
-                            <span>15</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center py-2">
-                            <span>Category 2</span>
-                            <span>21</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center py-2">
-                            <span>Category 3</span>
-                            <span>3</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center py-2">
-                            <span>Category 4</span>
-                            <span>12</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center py-2">
-                            <span>Category 5</span>
-                            <span>142</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center py-2">
-                            <span>Category 6</span>
-                            <span>10</span>
-                        </li>
+                        @foreach (var category in Model.Categories)
+                        {
+                            <li class="d-flex justify-content-between align-items-center">
+                                <a href="@Url.Action("Index", new { categoryId = category.CategoryId })"
+                                   class="view-filter @(ViewData["SelectedCategory"] != null && (int)ViewData["SelectedCategory"] == category.CategoryId ? "active" : "")" style="text-decoration: none; color: #3D729A;">
+                                    @category.CategoryName
+                                </a>
+                            </li>
+                        }
                     </ul>
 
-                    <p class="fw-bold">Statuses</p>
-                    <ul class="list-group" style="list-style-type: none; padding-left: 0;">
-                        <li class="d-flex justify-content-between align-items-center py-2">
-                            <span>New</span>
-                            <span>28</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center py-2">
-                            <span>Open</span>
-                            <span>43</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center py-2">
-                            <span>In Progress</span>
-                            <span>8</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center py-2">
-                            <span>Resolved</span>
-                            <span>280</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center py-2">
-                            <span>Closed</span>
-                            <span>329</span>
-                        </li>
-                    </ul>
+
                 </div>
             </div>
 
             <!-- Ticket Table -->
-            <div class="col-9">
-                <h3 class="category-header">Category 1</h3>
-                <p class="number-of-tickets">13 Tickets</p>
-                <div class="d-flex justify-content-end">
-                    <button class="btn btn-sm assign-btn">Assign</button>
-                </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">
-                                <input type="checkbox" id="select-all">
-                            </th>
-                            <th scope="col">Ticket</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Subject</th>
-                            <th scope="col">Requester</th>
-                            <th scope="col">Assignee</th>
-                            <th scope="col">Priority</th>
-                            <th scope="col">Requested At</th>
-                            <th scope="col">Updated At</th>
-                            <th scope="col">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><input type="checkbox" class="select-checkbox"></td>
-                            <td class="category-cell">#16548</td>
-                            <td><span class="badge bg-danger">Open</span></td>
-                            <td class="text-color">Login Issue</td>
-                            <td class="text-color">John Smith</td>
-                            <td class="text-color">Alice Johnson</td>
-                            <td class="text-color">P1</td>
-                            <td class="text-color">Today 8:15</td>
-                            <td class="text-color">33 minutes ago</td>
-                            <td>
-                                <button class="btn btn-secondary btn-sm">View</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" class="select-checkbox"></td>
-                            <td class="category-cell">#16549</td>
-                            <td><span class="badge bg-success">New</span></td>
-                            <td class="text-color">Email Not Syncing</td>
-                            <td class="text-color">Sarah Brown</td>
-                            <td class="text-color">Alice Johnson</td>
-                            <td class="text-color">P1</td>
-                            <td class="text-color">2024-09-08</td>
-                            <td class="text-color">2024-09-08 10:00</td>
-                            <td>
-                                <button class="btn btn-secondary btn-sm">View</button>
-                            </td>
-                        </tr>
-                        <!-- More tickets go here -->
-                    </tbody>
-                </table>
+            <div class="col-10">
+                <div class="d-flex flex-row justify-content-between align-items-center">
+                    <h3 class="category-header">Tickets</h3>
+                    <div class="d-flex flex-row gap-3">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm add-btn">+ New Ticket</button>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm assign-btn">Assign</button>
+                        </div>
+                    </div>
+                </div>                
+                <p class="number-of-tickets">@Model.Tickets.Count Tickets</p>
+                @if (!Model.Tickets.Any())
+                {
+                    <p>No Available Data</p>
+                }
+                else
+                {
+                    <div class="ticket-table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <input type="checkbox" id="select-all">
+                                    </th>
+                                    <th scope="col">Ticket</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Subject</th>
+                                    <th scope="col">Requester</th>
+                                    <th scope="col">Assignee</th>
+                                    <th scope="col">Priority</th>
+                                    <th scope="col">Requested At</th>
+                                    <th scope="col">Updated At</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var ticket in Model.Tickets)
+                                {
+                                    <tr>
+                                        <td><input type="checkbox" class="select-checkbox"></td>
+                                        <td class="category-cell">#@ticket.TicketId</td> <!-- Display TicketId -->
+                                        <td>
+                                            <span class="badge bg-@(ticket.Status == "Open" ? "danger" : "success")">
+                                                @ticket.Status  <!-- Display Status Name -->
+                                            </span>
+                                        </td>
+                                        <td class="text-color">@ticket.Subject</td>
+                                        <td class="text-color">@ticket.RequesterEmail</td>
+                                        <td class="text-color">@ticket.Assignee</td>
+                                        <td class="text-color">@ticket.Priority</td> <!-- Display Priority Name -->
+                                        <td class="text-color">@ticket.CreatedTime.ToString("g")</td> <!-- Format CreatedTime -->
+                                        <td class="text-color">@ticket.UpdatedTime.ToString("g")</td> <!-- Format UpdatedTime -->
+                                        <td>
+                                            <button class="btn btn-secondary btn-sm">View</button>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
             </div>
+
         </div>
     </div>
 </div>
 
-<!-- Custom Drawer -->
-<div class="custom-drawer" id="customDrawer">
-    <img src="~/img/side-caret.svg" type="button" class="mt-4 ml-3 btn" onclick="toggleDrawer()">
+
+
+
+
+<!-- Assign Ticket -->
+<div class="custom-drawer" id="customDrawerAssign">
+    <img src="~/img/side-caret.svg" type="button" class="mt-4 ml-3 btn" onclick="toggleAssignDrawer()">
     <div class="custom-drawer-header d-flex justify-content-between">
         <h5>Assign ticket/s</h5>
     </div>
     <div class="custom-drawer-body">
         <div class="mb-3">
             <label for="categorySelect" class="form-label">Category</label>
-            <select class="form-select select-input" id="categorySelect">
-                <option selected>Category 1</option>
-                <option>Category 2</option>
-                <option>Category 3</option>
+            <select class="form-select select-input" id="categorySelect" name="CategoryId">
+                <option selected>--</option>
+                @foreach (var category in Model.Categories)
+                {
+                    <option value="@category.CategoryId">@category.CategoryName</option>
+                }
             </select>
         </div>
         <div class="mb-3">
@@ -164,7 +149,7 @@
         <div class="mb-3">
             <label for="prioritySelect" class="form-label">Priority</label>
             <select class="form-select select-input" id="prioritySelect">
-                <option selected>P1</option>
+                <option selected>P1</option> 
                 <option>P2</option>
                 <option>P3</option>
             </select>
@@ -175,34 +160,133 @@
     </div>
 </div>
 
+<!-- Add Ticket -->
+<div class="custom-drawer" id="customDrawerAdd">
+    <img src="~/img/side-caret.svg" type="button" class="mt-4 ml-3 btn" onclick="toggleAddDrawer()">
+    <div class="custom-drawer-header d-flex justify-content-between">
+        <h5>New Ticket</h5>
+    </div>
+    <div class="custom-drawer-body">
+        <form asp-action="AddTicket" method="post" id="addTicketForm">
+            <div class="mb-3">
+                <label for="categorySelect" class="form-label">Category</label>
+                <select class="form-select select-input" id="Category" name="Category" required>
+                    <option selected>--</option>
+                    @foreach (var category in Model.Categories)
+                    {
+                        <option value="@category.CategoryId">@category.CategoryName</option>
+                    }
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control text-input" id="Subject" name="Subject" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="requesterEmail" class="form-label">Requester Email</label>
+                <input type="email" class="form-control text-input" id="RequesterEmail" name="RequesterEmail" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="assigneeSelect" class="form-label">Assignee</label>
+                <select class="form-select select-input" id="Assignee" name="Assignee">
+                    <option selected>--</option>
+                    @foreach (var user in Model.Users)
+                    {
+                        <option value="@user.UserId">@user.Name</option>
+                    }
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="priority" class="form-label">Priority</label>
+                <select class="form-select select-input" id="Priority" name="Priority">
+                    <option selected>--</option>
+                    <option value="P5">P5 (Lowest)</option>
+                    <option value="P4">P4 (Low)</option>
+                    <option value="P3">P3 (Medium)</option>
+                    <option value="P2">P2 (High)</option>
+                    <option value="P1">P1 (Critical)</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="status" class="form-label">Status</label>
+                <select class="form-select select-input" id="Status" name="Status">
+                    <option selected>--</option>
+                    <option value="Open">Open</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Resolved">Resolved</option>
+                    <option value="Closed">Closed</option>
+                </select>
+            </div>
+
+            <div class="mt-2 d-flex justify-content-end">
+                <button type="submit" class="btn save-btn">Save Changes</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
 <!-- Drawer Backdrop -->
 <div class="drawer-backdrop" id="drawerBackdrop"></div>
 
 @section Scripts {
     <script>
-        // Toggle the drawer
-        function toggleDrawer() {
-            const drawer = document.getElementById("customDrawer");
+        function toggleAssignDrawer() {
+            const drawer = document.getElementById("customDrawerAssign");
             const backdrop = document.getElementById("drawerBackdrop");
             drawer.classList.toggle("show");
             backdrop.classList.toggle("show");
         }
 
-        // Open drawer when "Assign" button is clicked
         document.querySelectorAll('.assign-btn').forEach(btn => {
             btn.addEventListener('click', function() {
-                toggleDrawer();
+                toggleAssignDrawer();
             });
         });
 
-        // Close drawer when backdrop is clicked
         document.getElementById("drawerBackdrop").addEventListener('click', function() {
-            toggleDrawer();
+            toggleAssignDrawer();
+            toggleAddDrawer();
         });
 
-        document.getElementById('select-all').addEventListener('click', function () {
+        function toggleAddDrawer() {
+            const drawer = document.getElementById("customDrawerAdd");
+            const backdrop = document.getElementById("drawerBackdrop");
+            drawer.classList.toggle("show");
+            backdrop.classList.toggle("show");
+        }
+
+        document.querySelectorAll('.add-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                toggleAddDrawer();
+            });
+        });
+
+        document.getElementById('select-all').addEventListener('click', function() {
             let checkboxes = document.querySelectorAll('.select-checkbox');
             checkboxes.forEach(checkbox => checkbox.checked = this.checked);
+        });
+
+        document.querySelector('.ticket-table-container').addEventListener('click', function(e) {
+            if (e.target && e.target.classList.contains('view-filter')) {
+                e.preventDefault();
+                const categoryId = e.target.getAttribute('data-category-id');
+
+                fetch(`/Ticket/Index?categoryId=${categoryId}`)
+                    .then(response => response.text())
+                    .then(html => {
+                        const tableContainer = document.querySelector('.ticket-table-container');
+                        // Replace only the ticket table content
+                        tableContainer.innerHTML = html;
+                    });
+            }
         });
     </script>
 }

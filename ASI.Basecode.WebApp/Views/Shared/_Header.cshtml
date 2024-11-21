@@ -1,36 +1,40 @@
 ﻿@using Microsoft.AspNetCore.Http
 @inject IHttpContextAccessor HttpContextAccessor
-
+@section styles {
+    <link rel="stylesheet" href="~/css/custom.css" />
+}
 @{
     string theme = HttpContextAccessor.HttpContext.Session.GetString("Theme") ?? "light";
     var userRole = HttpContextAccessor.HttpContext.Session.GetString("UserRole");
 }
-
+<!--Working-->
 <!-- Sidebar -->
 <div id="sidebar" class="@((ViewBag.LoginView == true) ? "hide-navbar" : "sidebar")">
     <div id="toggleSidebar" class="logo">
         <img src="~/img/sidenav-logo.png" alt="Logo">
     </div>
     <ul>
-        <li class="@(IsActive("Index", "Home") ? "active" : "")">
-            <a asp-action="Index" asp-controller="Home"><img class="menu-icon" src="~/img/dashboard-logo.svg"></img></a>
+        <li class="@(IsActive("Index", "Home") ? "active" : "")option" data-toggle="tooltip" data-placement="right" title="Dashboard">
+            <a asp-action="Index" asp-controller="Home" ><img class="menu-icon" src="~/img/dashboard-logo.svg"></img></a>
         </li>
         @if (userRole == "Superadmin" || userRole == "Admin")
         {
-            <li class="@(IsActive("Index", "UserManagement") ? "active" : "")">
-                <a asp-action="Index" asp-controller="UserManagement"><img class="menu-icon" src="~/img/user-management-logo.svg"></img></a>
+            <li class="@(IsActive("Index", "UserManagement") || IsActive("Index", "TeamManagement") ? "active" : "") option" data-toggle="tooltip" data-placement="right" title="User Management">
+                <a asp-action="Index" asp-controller="UserManagement">
+                    <img class="menu-icon" src="~/img/user-management-logo.svg" />
+                </a>
             </li>
         }
-        <li class="@(IsActive("Index", "Ticket") ? "active" : "")">
+        <li class="@(IsActive("Index", "Ticket") ? "active" : "")option" data-toggle="tooltip" data-placement="right" title="Ticket Management">
             <a asp-action="Index" asp-controller="Ticket"><img class="menu-icon" src="~/img/ticket-management-logo.svg"></img></a>
         </li>
-        <li class="@(IsActive("Index", "Report") ? "active" : "")">
+        <li class="@(IsActive("Index", "Report") ? "active" : "") option" data-toggle="tooltip" data-placement="right" title="Report & Analytics">
             <a asp-action="Index" asp-controller="Report"><img class="menu-icon" src="~/img/report-&-analytics-logo.svg"></img></a>
         </li>
-        <li class="@(IsActive("Index", "Feedback") ? "active" : "")">
+        <li class="@(IsActive("Index", "Feedback") ? "active" : "") option" data-toggle="tooltip" data-placement="right" title="Customer Feedback">
             <a asp-action="Index" asp-controller="Feedback"><img class="menu-icon" src="~/img/customer-feedback-logo.svg"></img></a>
         </li>
-        <li class="@(IsActive("Index", "Settings") ? "active" : "")">
+        <li class="@(IsActive("Index", "Settings") ? "active" : "") option" data-toggle="tooltip" data-placement="right" title="Settings">
             <a asp-action="Index" asp-controller="Settings"><img class="menu-icon" src="~/img/settings-logo.svg"></img></a>
         </li>
         <li>
