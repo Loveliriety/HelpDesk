@@ -38,6 +38,9 @@ namespace ASI.Basecode.Services.Services
         public void DeleteCategory(int categoryId)
         {
             _categoryRepository.DeleteCategory(categoryId);
+
         }
+
+        //working
     }
 }

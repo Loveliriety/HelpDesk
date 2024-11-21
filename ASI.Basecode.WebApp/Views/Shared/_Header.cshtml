@@ -7,7 +7,7 @@
     string theme = HttpContextAccessor.HttpContext.Session.GetString("Theme") ?? "light";
     var userRole = HttpContextAccessor.HttpContext.Session.GetString("UserRole");
 }
-
+<!--Working-->
 <!-- Sidebar -->
 <div id="sidebar" class="@((ViewBag.LoginView == true) ? "hide-navbar" : "sidebar")">
     <div id="toggleSidebar" class="logo">

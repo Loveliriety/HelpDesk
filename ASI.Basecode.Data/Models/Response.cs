@@ -18,5 +18,7 @@ namespace ASI.Basecode.Data.Models
         public string Description { get; set; }
         public byte[] Attachment { get; set; }
         public DateTime CreatedTime { get; set; }
+
+        //working
     }
 }

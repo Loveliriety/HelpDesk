@@ -16,8 +16,11 @@ namespace ASI.Basecode.Data
             : base(options)
         {
         }
+
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Team> Teams { get; set; }
+
+        //working
         public virtual DbSet<Ticket> Tickets { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Response> Responses { get; set; }

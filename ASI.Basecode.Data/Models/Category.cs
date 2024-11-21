@@ -16,5 +16,7 @@ namespace ASI.Basecode.Data.Models
         public string CategoryName { get; set; }
         public bool IsActive { get; set; }
 
+        //working
+
     }
 }

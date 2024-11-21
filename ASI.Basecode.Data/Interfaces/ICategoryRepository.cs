@@ -14,5 +14,7 @@ namespace ASI.Basecode.Data.Interfaces
         public void AddCategory(Category category);
         public void UpdateCategory(Category category);
         public void DeleteCategory(int categoryId);
+
+        //working
     }
 }

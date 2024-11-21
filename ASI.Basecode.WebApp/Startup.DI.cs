@@ -41,6 +41,7 @@ namespace ASI.Basecode.WebApp
             this._services.AddScoped<IResponseService, ResponseService>();
             this._services.AddScoped<ICategoryService, CategoryService>();
 
+            //working
 
             // Repositories
             this._services.AddScoped<UnitOfWork>();
