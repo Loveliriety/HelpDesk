@@ -52,18 +52,29 @@ namespace ASI.Basecode.Services.Services
                 throw new ArgumentNullException(nameof(response));
             }
 
-            _responseRepository.AddResponse(response);
+            var newResponse = new Response
+            {
+                TicketId = response.TicketId,
+                Sender = response.Sender,
+                Description = response.Description,
+                CreatedTime = response.CreatedTime
+            };
+
+            _responseRepository.AddResponse(newResponse);
             return response.ResponseId; 
         }
 
-        public void DeleteResponse(int responseId)
+        public void DeleteResponse(int ticketId)
         {
-            if (responseId <= 0)
+            try
             {
-                throw new ArgumentException("Invalid response ID", nameof(responseId));
+                _responseRepository.DeleteResponsesByTicketId(ticketId);
             }
+            catch (InvalidOperationException ex)
+            {
 
-            _responseRepository.DeleteResponse(responseId);
+                Console.WriteLine(ex.Message); 
+            }
         }
 
         public void UpdateResponse(Response response)
@@ -83,9 +94,9 @@ namespace ASI.Basecode.Services.Services
                 throw new ArgumentException("Invalid ticket ID", nameof(ticketId));
             }
 
-            return _responseRepository.GetAllResponses()
-                                       .Where(r => r.TicketId == ticketId)
-                                       .ToList();
+            var responses = _responseRepository.GetResponsesByTicketId(ticketId).ToList();
+
+            return responses ?? new List<Response>();
         }
 
         //working

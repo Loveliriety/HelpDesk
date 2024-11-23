@@ -1,0 +1,41 @@
+﻿﻿@{
+    ViewData["Title"] = "Contact Us Form";
+}
+
+
+<!--Contact Us Form-->
+<div class="ContactUs-Section">
+    <h5 class="contact-header mb-4">Contact Us Form</h5>
+    <div class="card shadow-sm border-2 bg-transparent contact-card">
+        <div class="ContactUs-Inner">
+            <form asp-action="Create" asp-controller="Users" method="post">
+                <div class="mb-4">
+                    <label for="issueCategorySelect" class="contact-label form-label">Issue Category</label>
+                    <select class="form-select select-input" id="issueCategorySelect" asp-items="ViewBag.Categories" name="CategoryId">
+                        <option selected>--</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="issueDescription" class="contact-label form-label">Issue Description</label>
+                    <textarea type="text" class="form-control text-input" id="Description" rows="4" placeholder="Provide details of the issue here..."></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="priorityLevel" class="form-label">Priority Level</label>
+                    <select class="form-select select-input" id="priorityLevel" name="Priority">
+                        <option selected>--</option>
+                        <option value="P5">Lowest (P5 - Minimal impact)</option>
+                        <option value="P4">Low (P4 - Minor inconvenience)</option>
+                        <option value="P3">Medium (P3 - Affects usability but functional)</option>
+                        <option value="P2">High (P2 - Blocking access to critical features)</option>
+                        <option value="P1">Critical (P1 - Immediate attention required)</option>
+                    </select>
+                </div>
+                <!-- Buttons -->
+                <div class="d-flex justify-content-center mt-4">
+                    <a asp-action="Index" asp-controller="Users" class="btn cancel-btn mx-2">Cancel</a>
+                    <button class="btn submit-btn mx-2">Submit Ticket</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

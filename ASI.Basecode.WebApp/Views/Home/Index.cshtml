@@ -1,18 +1,19 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Dashboard";
 }
 
 <div class="content p-4" style="margin-left: 80px;">
-    <h5 class="mt-1 page-header">Dashboard</h5>
+    <h5 class="mt-1 page-header">Ticket Summary</h5>
 
     <div class="row mt-4">
         <!-- In Progress -->
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="text-center p-3 card-report">
-                <div class="d-flex align-items-center justify-content-center">
+                <div class="d-flex align-items-center justify-content-center gap-2">
                     <img src="~/img/progress.svg" alt="Progress Icon" class="mr-5" width="40" />
                     <div>
-                        <h4 class="card-title total">204</h4>
+                        <h4 class="card-title total">@ViewBag.InProgressCount</h4>
                         <p class="card-text txt-info text-color">In Progress</p>
                     </div>
                 </div>
@@ -20,12 +21,12 @@
         </div>
 
         <!-- Open -->
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="text-center p-3 card-report">
-                <div class="d-flex align-items-center justify-content-center">
+                <div class="d-flex align-items-center justify-content-center gap-2">
                     <img src="~/img/open.svg" alt="Open Icon" class="mr-5" width="40" />
                     <div>
-                        <h4 class="card-title total">24</h4>
+                        <h4 class="card-title total">@ViewBag.OpenCount</h4>
                         <p class="card-text txt-info text-color">Open</p>
                     </div>
                 </div>
@@ -33,25 +34,38 @@
         </div>
 
         <!-- Solved -->
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="text-center p-3 card-report">
-                <div class="d-flex align-items-center justify-content-center">
+                <div class="d-flex align-items-center justify-content-center gap-2">
                     <img src="~/img/Solved.svg" alt="Solved Icon" class="mr-5" width="40" />
                     <div>
-                        <h4 class="card-title total">1029</h4>
+                        <h4 class="card-title total">@ViewBag.SolvedCount</h4>
                         <p class="card-text txt-info text-color">Solved</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Total Tickets -->
-        <div class="col-md-3">
+        <!-- Close -->
+        <div class="col-md-2">
             <div class="text-center p-3 card-report">
-                <div class="d-flex align-items-center justify-content-center">
+                <div class="d-flex align-items-center justify-content-center gap-2">
+                    <img src="~/img/closed.svg" alt="Solved Icon" class="mr-5" width="40" />
+                    <div>
+                        <h4 class="card-title total">@ViewBag.ClosedCount</h4>
+                        <p class="card-text txt-info text-color">Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Tickets -->
+        <div class="col-md-2">
+            <div class="text-center p-3 card-report">
+                <div class="d-flex align-items-center justify-content-center gap-2">
                     <img src="~/img/total-tickets.svg" alt="Total Tickets Icon" class="mr-5" width="40" />
                     <div>
-                        <h4 class="card-title total">3921</h4>
+                        <h4 class="card-title total">@ViewBag.TotalTicketsCount</h4>
                         <p class="card-text txt-info text-color">Total Tickets</p>
                     </div>
                 </div>
@@ -59,10 +73,19 @@
         </div>
     </div>
 
+
     <!-- Customer Satisfaction -->
-    <div class="row mt-4">
-        <div class="col-md-6">
-            <div class="p-3 card-report">
+    <div class="mt-4">
+        <div class="d-flex flex-row gap-5" style="width: 100%;">
+      
+            <div class="p-3 card-report mt-4 mb-2">
+                <h5 class="chart-header">
+                    Total Solved: <span style="text-decoration-line:underline">@ViewBag.TotalTicketsCount</span>
+                </h5>
+                <canvas id="solvedChart" style="height: 300px;"></canvas>
+            </div>
+
+            <div class="p-3 card-report" style="width: 500px;">
                 <h5 class="chart-header">Customer Satisfaction</h5>
                 <div class="d-flex align-items-center">
                     <canvas id="csatChart" style="max-height: 170px; flex-grow: 1;"></canvas>
@@ -76,14 +99,10 @@
                 <h6 class="mt-4" style="text-align: center;">Weekly CSAT Score</h6>
             </div>
 
-            <!-- Total Solved -->
-            <div class="p-3 card-report mt-4">
-                <h5 class="chart-header">Total Solved: <span style="text-decoration-line:underline">100</span></h5>
-                <canvas id="solvedChart" style="height: 300px;"></canvas>
-            </div>
+
         </div>
 
-        <!-- Running SLA -->
+        <!-- Running SLA
         <div class="col-md-6">
             <div class="p-3 card-report" style="height: 500px;">
                 <h5 class="chart-header">Running SLA</h5>
@@ -120,6 +139,7 @@
                 </table>
             </div>
         </div>
+         -->
     </div>
 </div>
 
@@ -178,15 +198,19 @@
         }
     });
 
-    // Total Solved Chart (static)
-    var ctx2 = document.getElementById('solvedChart').getContext('2d');
+    // Chart by Category
+   var ctx2 = document.getElementById('solvedChart').getContext('2d');
+
+    var categories = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.CategoryCounts?.Keys ?? new List<string>()));
+    var counts = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.CategoryCounts?.Values ?? new List<int>()));
+
     var solvedChart = new Chart(ctx2, {
         type: 'bar',
         data: {
-            labels: ['Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 6'],
+            labels: categories,
             datasets: [{
                 label: 'Total Solved',
-                data: [15, 20, 60, 45, 55, 20],
+                data: counts,
                 backgroundColor: [
                     '#3D729A',
                     '#A1E1FA',
@@ -204,11 +228,9 @@
             indexAxis: 'y',
             scales: {
                 x: {
-                    beginAtZero: false,
-                    min: 10,
-                    max: 100,
+                    beginAtZero: true,
                     ticks: {
-                        color: '#216496' 
+                        color: '#216496'
                     },
                     border: {
                         color: '#3D729A',
@@ -218,7 +240,7 @@
                 y: {
                     beginAtZero: true,
                     ticks: {
-                        color: '#216496' 
+                        color: '#216496'
                     },
                     border: {
                         color: '#3D729A',

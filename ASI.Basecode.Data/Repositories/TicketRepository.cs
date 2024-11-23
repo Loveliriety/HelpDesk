@@ -64,7 +64,10 @@ namespace ASI.Basecode.Data.Repositories
         {
             return _dbContext.Set<Ticket>().Where(t => t.Priority == priority).ToList();
         }
-
+        public List<Ticket> GetTicketsByAssignee(string assignee)
+        {
+            return _dbContext.Set<Ticket>().Where(t => t.Assignee == assignee).ToList();
+        }
         //working
     }
 }

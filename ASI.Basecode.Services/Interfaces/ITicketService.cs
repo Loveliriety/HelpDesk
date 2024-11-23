@@ -13,6 +13,8 @@ namespace ASI.Basecode.Services.Interfaces
         IEnumerable<Ticket> GetTicketsByCategory(int category);
         IEnumerable<Ticket> GetTicketsByStatus(string status);
         IEnumerable<Ticket> GetTicketsByPriority(string priority);
+        IEnumerable<Ticket> GetTicketsByAssignee(string assignee);
+        //bool DeleteTicketWithResponses(int ticketId);
 
         //working
     }

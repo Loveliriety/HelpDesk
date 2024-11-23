@@ -1,14 +1,18 @@
-﻿using ASI.Basecode.Data.Models;
+﻿using ASI.Basecode.Data.Interfaces;
+using ASI.Basecode.Data.Models;
 using ASI.Basecode.Data.Repositories;
 using ASI.Basecode.Services.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ASI.Basecode.Services.Services
 {
     public class TicketService : ITicketService
     {
         private readonly ITicketRepository _ticketRepository;
+        private readonly ResponseRepository _responseRepository;
+        private readonly ResponseService _responseService;
 
         public TicketService(ITicketRepository ticketRepository)
         {
@@ -64,6 +68,31 @@ namespace ASI.Basecode.Services.Services
             _ticketRepository.UpdateTicket(ticket);
         }
 
+        //public bool DeleteTicketWithResponses(int ticketId)
+        //{
+        //    try
+        //    {
+        //        var responses = _responseService != null ? _responseService.GetResponsesByTicketId(ticketId) : new List<Response>();
+
+        //        if (responses.Any())
+        //        {
+        //            foreach (var response in responses)
+        //            {
+        //                _responseRepository.DeleteResponse(response.ResponseId);
+        //            }
+        //        }
+
+        //        _ticketRepository.DeleteTicket(ticketId);
+
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine($"Error deleting ticket and responses: {ex.Message}");
+        //        return false;
+        //    }
+        //}
+
         public Ticket GetTicketById(int ticketId)
         {
             return _ticketRepository.GetTicketById(ticketId);
@@ -82,6 +111,11 @@ namespace ASI.Basecode.Services.Services
         public IEnumerable<Ticket> GetTicketsByPriority(string priority)
         {
             return _ticketRepository.GetTicketsByPriority(priority);
+        }
+
+        public IEnumerable<Ticket> GetTicketsByAssignee(string assignee)
+        {
+            return _ticketRepository.GetTicketsByAssignee(assignee);
         }
 
         //working

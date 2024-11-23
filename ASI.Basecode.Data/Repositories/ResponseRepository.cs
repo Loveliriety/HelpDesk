@@ -1,4 +1,5 @@
 ﻿using ASI.Basecode.Data.Interfaces;
+using ASI.Basecode.Data.Migrations;
 using ASI.Basecode.Data.Models;
 using Basecode.Data.Repositories;
 using System;
@@ -41,14 +42,23 @@ namespace ASI.Basecode.Data.Repositories
             _dbContext.SaveChanges();
         }
 
-        public void DeleteResponse(int responseId)
+        public void DeleteResponsesByTicketId(int ticketId)
         {
-            var response = _dbContext.Set<Response>().Find(responseId);
-            if (response != null)
+            var responses = _dbContext.Set<Response>().Where(r => r.TicketId == ticketId).ToList();
+            
+            foreach (var response in responses)
             {
                 _dbContext.Set<Response>().Remove(response);
-                _dbContext.SaveChanges();
+                
             }
+            _dbContext.SaveChanges();
+           
+        }
+        public IEnumerable<Response> GetResponsesByTicketId(int ticketId)
+        {
+            return _dbContext.Responses
+                             .Where(response => response.TicketId == ticketId)
+                             .ToList();
         }
 
         //working

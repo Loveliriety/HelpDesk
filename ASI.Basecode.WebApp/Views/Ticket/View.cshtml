@@ -1,0 +1,265 @@
+﻿@model ASI.Basecode.Services.ServiceModels.TicketListViewModel
+@{
+    ViewData["Title"] = "Ticket Management";
+    string theme = HttpContextAccessor.HttpContext.Session.GetString("Theme") ?? "light";
+}
+<!--Working-->
+
+<form method="post" asp-action="UpdateTicket">
+    <div class="content p-4" style="width: calc(100vw - 80px); margin-left: 80px;">
+        <h5 class="mt-1 page-header">Ticket Management</h5>
+
+        <nav class="nav mt-3 nav-header">
+            <a class="@(IsActive("Index", "Ticket") ? "active2" : "") nav-link" asp-action="Index" asp-controller="Ticket">Ticket Views</a>
+            <a class="@(IsActive("MyTicket", "Ticket") ? "active2" : "") nav-link" asp-action="MyTicket" asp-controller="Ticket">My Tickets</a>
+            <div style="width: 100%; border-bottom: 1px solid #3D729A; margin-bottom: 5px;"></div>
+        </nav>
+
+        <div class="container" style="padding: 0 !important;">
+            <div class="row" style="width: 100%;">
+
+                <div class="col-2">
+                    <div class="category-list">
+                        <div class="d-flex flex-column align-items-lg-start py-2">
+                            <h5 class="fw-500 lh-1">Ticket Details</h5>
+                            <p class="lh-1">Ticket #@Model.Tickets.FirstOrDefault()?.TicketId</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="categorySelect" class="form-label">Category</label>
+                            <select class="form-select select-input" id="Category" name="Category" required>
+                                @foreach (var category in Model.Categories)
+                                {
+                                    <option value="@category.CategoryId" selected="@(Model.Tickets.FirstOrDefault()?.CategoryId == @category.CategoryId ? "selected" : null)">
+                                        @category.CategoryName
+                                    </option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control text-input" id="Subject" name="Subject" value="@Model.Tickets.FirstOrDefault()?.Subject" disabled />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="requesterEmail" class="form-label">Requester Email</label>
+                            <input type="email" class="form-control text-input" id="RequesterEmail" name="RequesterEmail" value="@Model.Tickets.FirstOrDefault()?.RequesterEmail" disabled />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="assigneeSelect" class="form-label">Assignee</label>
+                            <select class="form-select select-input" id="Assignee" name="Assignee">
+                                <option selected>--</option>
+                                @foreach (var user in Model.Users)
+                                {
+                                    <option value="@user.UserId" selected="@(user.UserId == Model.Tickets.FirstOrDefault()?.Assignee ? "selected" : "")">
+                                        @user.Name
+                                    </option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="priority" class="form-label">Priority</label>
+                            <select class="form-select select-input" id="Priority" name="Priority">
+                                <option value="P5" selected="@(Model.Tickets.FirstOrDefault()?.Priority == "P5" ? "selected" : null)">P5 (Lowest)</option>
+                                <option value="P4" selected="@(Model.Tickets.FirstOrDefault()?.Priority == "P4" ? "selected" : null)">P4 (Low)</option>
+                                <option value="P3" selected="@(Model.Tickets.FirstOrDefault()?.Priority == "P3" ? "selected" : null)">P3 (Medium)</option>
+                                <option value="P2" selected="@(Model.Tickets.FirstOrDefault()?.Priority == "P2" ? "selected" : null)">P2 (High)</option>
+                                <option value="P1" selected="@(Model.Tickets.FirstOrDefault()?.Priority == "P1" ? "selected" : null)">P1 (Critical)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ticket Responses -->
+                <div class="col-10 borderleft">
+                    <div class="d-flex flex-column justify-content-between align-items-center">
+                        <div class="px-4 py-2 bb d-flex flex-row justify-content-between">
+                            <div>
+                                <h4 class="fw-normal lh-1">Subject: @Model.Tickets.FirstOrDefault()?.Subject</h4>
+                                <span class="lh-1">From: @Model.Tickets.FirstOrDefault()?.RequesterEmail</span>
+                            </div>
+                            <div class="position-relative">
+                                    <img src="~/img/dot-option.svg" alt="Option" onclick="openDeleteModal(@Model.Tickets.FirstOrDefault()?.TicketId)" style="cursor: pointer;">
+                            </div>
+
+                        </div>
+                        <div class="bb responses">
+                            @foreach (var response in Model.Responses)
+                            {
+                                <div class="w-100 px-4 py-2 @(response.Sender == "Customer" ? "c-reply" : "s-reply")" style="border-bottom: 1px solid #498dbf;">
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+                                            <img class="pp" src="~/img/user-profile.svg" alt="User">
+                                            <span class="fs-6" style="font-weight: 500;">@response.Sender</span>
+                                        </div>
+                                        <span style="font-size:14px;">@response.CreatedTime.ToString("MMMM d, yyyy hh:mm")</span>
+                                    </div>
+                                    <div class="px-5 py-2">
+                                        <div class="d-flex flex-row gap-3 mb-2">
+                                            <span>Description:</span>
+                                            <div class="r-desc">@response.Description</div>
+                                        </div>
+                                        <div class="d-flex flex-row gap-3">
+                                            <span>Attachment:</span>
+                                            <div class="r-desc" style="background-color: #FAFAFA;">No attachment found.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                    <!-- New Response -->
+                    <div class="description">
+                        <textarea placeholder="Write your response..." name="description"></textarea>
+                        <div id="fileList" class="d-flex flex-row"></div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between submit-ticket">
+                        <div class="attachment-container">
+                            <label for="fileInput">
+                                <img src="~/img/attachment.svg" alt="Add Attachment" class="attachment-icon">
+                            </label>
+                            <input type="file" id="fileInput" multiple hidden>
+                        </div>
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Submit ticket as
+                        </button>
+                        <div class="dropdown-menu">
+                            <input type="hidden" name="ticketId" value="@Model.Tickets.FirstOrDefault()?.TicketId">
+                            <button type="submit" name="Status" value="Open" class="dropdown-item">Open</button>
+                            <button type="submit" name="Status" value="In Progress" class="dropdown-item">In Progress</button>
+                            <button type="submit" name="Status" value="Resolved" class="dropdown-item">Resolved</button>
+                            <button type="submit" name="Status" value="Closed" class="dropdown-item">Closed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div id="deleteModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Delete Ticket</h2>
+        <p>Are you sure you want to delete this ticket?</p>
+        <form id="deleteTicketForm" method="post" action="/Ticket/Delete">
+            <input type="hidden" name="id" id="ticketIdInput">
+            <button type="submit" class="btn btn-danger">Delete</button>
+            <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+@section Scripts {
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+            const fileList = document.getElementById('fileList');
+            fileList.innerHTML = ""; 
+
+            const filesArray = Array.from(event.target.files);
+
+            filesArray.forEach((file, index) => {
+                const listItem = document.createElement('div');
+                listItem.classList.add('file-item');
+                listItem.setAttribute('data-index', index);
+
+                const fileName = document.createElement('span');
+                fileName.textContent = file.name;
+
+                const removeButton = document.createElement('button');
+                removeButton.classList.add('remove-btn');
+                removeButton.textContent = 'x';
+
+                removeButton.addEventListener('click', function() {
+                    filesArray.splice(index, 1); 
+                    updateFileList(filesArray); 
+                });
+
+                listItem.appendChild(fileName);
+                listItem.appendChild(removeButton);
+                fileList.appendChild(listItem);
+            });
+
+            function updateFileList(updatedFiles) {
+                fileList.innerHTML = "";
+                updatedFiles.forEach((file, newIndex) => {
+                    const newItem = document.createElement('div');
+                    newItem.classList.add('file-item');
+                    newItem.setAttribute('data-index', newIndex);
+
+                    const newFileName = document.createElement('span');
+                    newFileName.textContent = file.name;
+
+                    const newRemoveButton = document.createElement('button');
+                    newRemoveButton.classList.add('remove-btn');
+                    newRemoveButton.textContent = 'x';
+
+                    newRemoveButton.addEventListener('click', function() {
+                        updatedFiles.splice(newIndex, 1);
+                        updateFileList(updatedFiles); 
+                    });
+
+                    newItem.appendChild(newFileName);
+                    newItem.appendChild(newRemoveButton);
+                    fileList.appendChild(newItem);
+                });
+            }
+        });
+
+        function toggleDropdown(element) {
+            const dropdown = element.nextElementSibling;
+            dropdown.style.display = dropdown.style.display === 'none' || dropdown.style.display === '' ? 'block' : 'none';
+        }
+
+        function openDeleteModal(ticketId) {
+            if (!ticketId) {
+                console.error("Ticket ID is null or undefined.");
+                return;
+            }
+            console.log("Opening modal for ticket ID:", ticketId); 
+            document.getElementById("ticketIdInput").value = ticketId;
+            document.getElementById("deleteModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("deleteModal").style.display = "none";
+        }
+
+        function closeModal() {
+            document.getElementById("deleteModal").style.display = "none";
+        }
+
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('deleteModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+    </script>
+}
+
+
+@functions {
+    public bool IsActive(string action, string controller)
+    {
+        var currentAction = HttpContextAccessor.HttpContext?.Request.RouteValues["action"]?.ToString();
+        var currentController = HttpContextAccessor.HttpContext?.Request.RouteValues["controller"]?.ToString();
+
+        return string.Equals(currentAction, action, StringComparison.OrdinalIgnoreCase) &&
+               string.Equals(currentController, controller, StringComparison.OrdinalIgnoreCase);
+    }
+}
+
+<style>
+
+</style>

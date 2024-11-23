@@ -1,0 +1,246 @@
+﻿﻿.topnav-bg {
+    background-color: #F1F1F1;
+}
+
+.hero-banner {
+    background: rgb(173,198,217);
+    background: linear-gradient(0deg, rgba(173,198,217,1) 0%, rgba(61,114,154,1) 100%);
+}
+
+.banner-image {
+    margin-bottom: -125px;
+}
+
+.banner-image2 {
+    margin-bottom: -100px;
+}
+
+.history-section {
+    margin-top: 50px;
+    padding: 70px;
+}
+
+.welcome-message {
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: #ffff;
+    margin-top: 30px;
+}
+
+.greet-message {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffff;
+    margin-top: -8px;
+    margin-bottom: 30px;
+}
+
+.form {
+    position: relative;
+}
+
+    .form .fa-search {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: #9ca3af;
+    }
+
+    .form span {
+        position: absolute;
+        right: 17px;
+        top: 13px;
+        padding: 2px;
+        border-left: 1px solid #d1d5db;
+    }
+
+.left-pan {
+    padding-left: 7px;
+}
+
+    .left-pan i {
+        padding-left: 10px;
+    }
+
+.form-input {
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 50px;
+}
+
+    .form-input:focus {
+        box-shadow: none;
+        border: none;
+    }
+
+    .form-input::placeholder {
+        color: #9ca3af;
+        font-weight: 600;
+    }
+
+.contact-btn {
+    display: flex;
+    position: absolute;
+    margin-left: 255px;
+    margin-top: 40px;
+    background-color: #3D729A;
+    height: 60px;
+    width: 250px;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 9px;
+    padding: 5px 20px;
+    border: 1px solid #3D729A;
+    justify-content: center;
+    align-items: center;
+}
+
+    .contact-btn:hover {
+        background-color: #214b6a;
+        color: #ffff;
+        border: 1px solid #3D729A;
+    }
+
+.nav-menu {
+    font-size: 18px;
+    font-weight: 500;
+    color: #3D729A;
+}
+
+    .nav-menu:hover {
+        color: #17537F;
+    }
+
+.topnav-active {
+    color: #17537F;
+    font-weight: 650;
+}
+
+.history-line {
+    border-top: 1px solid #3D729A;
+}
+
+.tickets-list {
+    margin-top: 50px;
+    border: 1px solid #3D729A;
+    padding: 30px;
+}
+
+table.tickets-table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+    table.tickets-table td, table.tickets-table th {
+        border-bottom: 1px solid #3D729A;
+    }
+
+    table.tickets-table tbody td {
+        font-size: 14px;
+    }
+
+    table.tickets-table thead {
+        border-bottom: 1px solid #3D729A;
+    }
+
+        table.tickets-table thead th {
+            font-size: 14px;
+            font-weight: 600;
+            color: #353535;
+        }
+
+.nav-user-info {
+    font-size: 18px;
+    font-weight: 600;
+    color: #353535;
+}
+
+.user-icon {
+    margin-left: -7px;
+    margin-top: -5px;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+}
+
+.ContactUs-Section {
+    margin: 0 auto;
+    width: 930px;
+    color: #3D729A;
+    padding: 60px;
+}
+
+.contact-card {
+    border-radius: 10px;
+}
+
+.ContactUs-Inner {
+    margin-top: -20px;
+    padding: 80px;
+}
+
+.contact-header {
+    text-align: center;
+}
+
+.contact-label {
+    text-align: left;
+}
+
+.cancel-btn {
+    width: 170px;
+    color: #3D729A;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 9px;
+    padding: 5px 20px;
+    border: 1px solid #3D729A;
+}
+
+    .cancel-btn:hover {
+        background-color: #6C757D;
+        color: #fff;
+        border: 1px solid #6C757D;
+    }
+
+.submit-btn {
+    background-color: #3D729A;
+    width: 170px;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 9px;
+    padding: 5px 20px;
+    border: 1px solid #3D729A;
+}
+
+    .submit-btn:hover {
+        background-color: #214b6a;
+        color: #ffff;
+        border: 1px solid #3D729A;
+    }
+
+.mytickets-section {
+    margin: 0 auto;
+    width: 930px;
+    color: #3D729A;
+    padding: 60px;
+}
+
+.mytickets-card {
+    border-radius: 10px;
+    border: 1px solid #3D729A;
+}
+
+.mytickets-inner {
+    margin-top: -20px;
+    padding: 80px;
+}
+
+.mytickets-header {
+    text-align: left;
+    margin-bottom: 40px;
+}

@@ -5,6 +5,7 @@
     string theme = HttpContextAccessor.HttpContext.Session.GetString("Theme") ?? "light";
 
 }
+
 <!--Working-->
 <div class="content p-4" style="width: calc(100vw - 80px); margin-left: 80px;">
     <h5 class="mt-1 page-header">Ticket Management</h5>
@@ -15,9 +16,8 @@
         <div style="width: 100%; border-bottom: 1px solid #3D729A; margin-bottom: 5px;"></div>
     </nav>
 
-    <div class="container">
+    <div class="container max-height">
         <div class="row" style="width: 100%;">
-            <!-- Sidebar for Category Views and Statuses -->
             <div class="col-2" >
                 <div class="category-list">
                     <div class="d-flex flex-row justify-content-between align-items-center py-2">
@@ -28,12 +28,22 @@
                         }
                     </div>
                     <ul class="list-group mb-4" style="list-style-type: none; padding-left: 0;">
+                        @{
+                            var categoryCounts = ViewData["CategoryCounts"] as Dictionary<int, int>;
+                        }
+
                         @foreach (var category in Model.Categories)
                         {
+                            var count = categoryCounts != null && categoryCounts.ContainsKey(category.CategoryId)
+                            ? categoryCounts[category.CategoryId]
+                            : 0;
+
                             <li class="d-flex justify-content-between align-items-center">
                                 <a href="@Url.Action("Index", new { categoryId = category.CategoryId })"
-                                   class="view-filter @(ViewData["SelectedCategory"] != null && (int)ViewData["SelectedCategory"] == category.CategoryId ? "active" : "")" style="text-decoration: none; color: #3D729A;">
+                                   class="view-filter @(ViewData["SelectedCategory"] != null && (int)ViewData["SelectedCategory"] == category.CategoryId ? "active3" : "")"
+                                   style="text-decoration: none; color: #3D729A;">
                                     @category.CategoryName
+                                    <span>@count</span>
                                 </a>
                             </li>
                         }
@@ -44,7 +54,7 @@
             </div>
 
             <!-- Ticket Table -->
-            <div class="col-10">
+            <div class="col-10 borderleft">
                 <div class="d-flex flex-row justify-content-between align-items-center">
                     <h3 class="category-header">Tickets</h3>
                     <div class="d-flex flex-row gap-3">
@@ -64,7 +74,7 @@
                 else
                 {
                     <div class="ticket-table-container">
-                        <table>
+                        <table class="header">
                             <thead>
                                 <tr>
                                     <th scope="col">
@@ -81,30 +91,35 @@
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                @foreach (var ticket in Model.Tickets)
-                                {
-                                    <tr>
-                                        <td><input type="checkbox" class="select-checkbox"></td>
-                                        <td class="category-cell">#@ticket.TicketId</td> <!-- Display TicketId -->
-                                        <td>
-                                            <span class="badge bg-@(ticket.Status == "Open" ? "danger" : "success")">
-                                                @ticket.Status  <!-- Display Status Name -->
-                                            </span>
-                                        </td>
-                                        <td class="text-color">@ticket.Subject</td>
-                                        <td class="text-color">@ticket.RequesterEmail</td>
-                                        <td class="text-color">@ticket.Assignee</td>
-                                        <td class="text-color">@ticket.Priority</td> <!-- Display Priority Name -->
-                                        <td class="text-color">@ticket.CreatedTime.ToString("g")</td> <!-- Format CreatedTime -->
-                                        <td class="text-color">@ticket.UpdatedTime.ToString("g")</td> <!-- Format UpdatedTime -->
-                                        <td>
-                                            <button class="btn btn-secondary btn-sm">View</button>
-                                        </td>
-                                    </tr>
-                                }
-                            </tbody>
                         </table>
+                        <div class="hide-scrollbar" style="max-height: 70vh; overflow: auto;">
+                            <table class="body">
+                                <tbody>
+                                    @foreach (var ticket in Model.Tickets)
+                                    {
+                                        <tr>
+                                            <td><input type="checkbox" class="select-checkbox"></td>
+                                            <td class="category-cell">#@ticket.TicketId</td> 
+                                            <td>
+                                                <span class="badge bg-@(ticket.Status == "Open" ? "danger" : "success")">
+                                                    @ticket.Status 
+                                                </span>
+                                            </td>
+                                            <td class="text-color">@ticket.Subject</td>
+                                            <td class="text-color">@ticket.RequesterEmail</td>
+                                            <td class="text-color">@ticket.Assignee</td>
+                                            <td class="text-color">@ticket.Priority</td>
+                                            <td class="text-color">@ticket.CreatedTime.ToString("g")</td> 
+                                            <td class="text-color">@ticket.UpdatedTime.ToString("g")</td>
+                                            <td>
+                                                <a href="@Url.Action("View", "Ticket", new { ticketId = ticket.TicketId })" class="btn btn-secondary btn-sm">View</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+
                     </div>
                 }
             </div>
@@ -283,7 +298,6 @@
                     .then(response => response.text())
                     .then(html => {
                         const tableContainer = document.querySelector('.ticket-table-container');
-                        // Replace only the ticket table content
                         tableContainer.innerHTML = html;
                     });
             }
@@ -302,3 +316,8 @@
                string.Equals(currentController, controller, StringComparison.OrdinalIgnoreCase);
     }
 }
+
+<style>
+
+
+</style>

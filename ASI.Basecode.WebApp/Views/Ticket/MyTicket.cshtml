@@ -1,0 +1,143 @@
+﻿@model ASI.Basecode.Services.ServiceModels.TicketListViewModel
+@{
+    ViewData["Title"] = "Ticket Management";
+    string theme = HttpContextAccessor.HttpContext.Session.GetString("Theme") ?? "light";
+}
+
+<!--Working-->
+<div class="content p-4" style="width: calc(100vw - 80px); margin-left: 80px;">
+    <h5 class="mt-1 page-header">Ticket Management</h5>
+
+    <nav class="nav mt-3 nav-header">
+        <a class="@(IsActive("Index", "Ticket") ? "active2" : "") nav-link" asp-action="Index" asp-controller="Ticket">Ticket Views</a>
+        <a class="@(IsActive("MyTicket", "Ticket") ? "active2" : "") nav-link" asp-action="MyTicket" asp-controller="Ticket">My Tickets</a>
+        <div style="width: 100%; border-bottom: 1px solid #3D729A; margin-bottom: 5px;"></div>
+    </nav>
+
+    <div class="container max-height">
+        <div class="row" style="width: 100%;">
+            <!-- Sidebar for Statuses -->
+            <div class="col-2">
+                <div class="category-list">
+                    <div class="d-flex flex-row justify-content-between align-items-center py-2">
+                        <h5 class="fw-500">Statuses</h5>
+                        @if (ViewData["SelectedStatus"] != null)
+                        {
+                            <a href="@Url.Action("MyTicket")" class="btn btn-link p-0" style="text-decoration: none; color: #3D729A; cursor:pointer; outline:none;">Clear</a>
+                        }
+                    </div>
+                    <ul class="list-group mb-4" style="list-style-type: none; padding-left: 0;">
+                        @foreach (var status in new[] { "Open", "In Progress", "Resolved", "Closed" })
+                        {
+                            var statusCounts = ViewData["StatusCounts"] as Dictionary<string, int>;
+                            var count = statusCounts != null && statusCounts.ContainsKey(status) ? statusCounts[status] : 0;
+
+                            <li class="d-flex flex-row justify-content-between align-items-center">
+                                <a href="@Url.Action("MyTicket", new { status = status })"
+                                   class="view-filter @(ViewData["SelectedStatus"] != null && (string)ViewData["SelectedStatus"] == status ? "active3" : "")" style="text-decoration: none; color: #3D729A;">
+                                    @status
+                                    <span>@count</span>
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- Ticket Table -->
+            <div class="col-10 borderleft">
+                <div class="d-flex flex-row justify-content-between align-items-center">
+                    <h3 class="category-header">Tickets</h3>
+                    <div class="d-flex flex-row gap-3">
+
+                    </div>
+                </div>
+                <p class="number-of-tickets">@Model.Tickets.Count Tickets</p>
+                @if (!Model.Tickets.Any())
+                {
+                    <p>No Available Data</p>
+                }
+                else
+                {
+                    <div class="ticket-table-container">
+                        <table class="header">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <input type="checkbox" id="select-all">
+                                    </th>
+                                    <th scope="col">Ticket</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Subject</th>
+                                    <th scope="col">Requester</th>
+                                    <th scope="col">Assignee</th>
+                                    <th scope="col">Priority</th>
+                                    <th scope="col">Requested At</th>
+                                    <th scope="col">Updated At</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <div class="hide-scrollbar" style="max-height: 70vh; overflow: auto;">
+                            <table class="body">
+                                <tbody>
+                                    @foreach (var ticket in Model.Tickets)
+                                    {
+                                        <tr>
+                                            <td><input type="checkbox" class="select-checkbox"></td>
+                                            <td class="category-cell">#@ticket.TicketId</td> <!-- Display TicketId -->
+                                            <td>
+                                                <span class="badge bg-@(ticket.Status == "Open" ? "danger" : "success")">
+                                                    @ticket.Status  <!-- Display Status Name -->
+                                                </span>
+                                            </td>
+                                            <td class="text-color">@ticket.Subject</td>
+                                            <td class="text-color">@ticket.RequesterEmail</td>
+                                            <td class="text-color">@ticket.Assignee</td>
+                                            <td class="text-color">@ticket.Priority</td> <!-- Display Priority Name -->
+                                            <td class="text-color">@ticket.CreatedTime.ToString("g")</td> <!-- Format CreatedTime -->
+                                            <td class="text-color">@ticket.UpdatedTime.ToString("g")</td> <!-- Format UpdatedTime -->
+                                            <td>
+                                                <a href="@Url.Action("View", "Ticket", new { ticketId = ticket.TicketId })" class="btn btn-secondary btn-sm">View</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                }
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@section Scripts {
+    <script>
+
+
+    </script>
+}
+
+
+@functions {
+    public bool IsActive(string action, string controller)
+    {
+        var currentAction = HttpContextAccessor.HttpContext?.Request.RouteValues["action"]?.ToString();
+        var currentController = HttpContextAccessor.HttpContext?.Request.RouteValues["controller"]?.ToString();
+
+        return string.Equals(currentAction, action, StringComparison.OrdinalIgnoreCase) &&
+               string.Equals(currentController, controller, StringComparison.OrdinalIgnoreCase);
+    }
+}
+
+<style>
+
+</style>

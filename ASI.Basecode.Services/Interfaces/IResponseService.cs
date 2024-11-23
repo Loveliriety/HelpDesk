@@ -14,6 +14,7 @@ namespace ASI.Basecode.Services.Interfaces
         public void DeleteResponse(int response);
         public void UpdateResponse(Response response);
         List<Response> GetResponsesByTicketId(int ticketId);
+       
 
         //working
     }

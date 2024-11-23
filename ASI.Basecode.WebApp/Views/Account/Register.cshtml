@@ -22,15 +22,15 @@
 
                             <form method="post" action="/Account/Register">
                                 <div class="form-outline mb-4">
-                                    <label class="form-label" for="userId">UserId</label>
+                                    <label class="form-label" for="userId">Username</label>
                                     <input type="text" id="userId" class="form-control"
-                                           asp-for="UserId" placeholder="Enter userid" />
+                                           asp-for="UserId" placeholder="Enter Username" />
                                     <span asp-validation-for="UserId" class="text-danger"></span>
                                 </div>
                                 <div class="form-outline mb-4">
-                                    <label class="form-label" for="name">Name</label>
+                                    <label class="form-label" for="name">Fullname</label>
                                     <input type="text" id="name" class="form-control"
-                                           asp-for="Name" placeholder="Enter name" />
+                                           asp-for="Name" placeholder="Enter Fullname" />
                                     <span asp-validation-for="Name" class="text-danger"></span>
                                 </div>
                                 <div class="form-outline mb-4">
