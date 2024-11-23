@@ -34,6 +34,13 @@ namespace ASI.Basecode.WebApp.Controllers
         /// <returns> Home View </returns>
         public IActionResult Index()
         {
+            var userRole = HttpContext.Session.GetString("UserRole");
+
+            if (userRole == "User")
+            {
+                return RedirectToAction("Index", "Users");
+            }
+
             return View();
         }
     }

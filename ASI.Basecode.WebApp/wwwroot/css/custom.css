@@ -11,8 +11,26 @@
 
 body {
     background-color: var(--background-color1);
-    overflow: hidden;
+    overflow: auto;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b0b0b0;
+    border-radius: 10px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #3D729A;
+    }
 
 .sidebar {
     height: 100vh;

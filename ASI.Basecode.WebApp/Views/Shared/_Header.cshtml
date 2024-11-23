@@ -6,42 +6,60 @@
 @{
     string theme = HttpContextAccessor.HttpContext.Session.GetString("Theme") ?? "light";
     var userRole = HttpContextAccessor.HttpContext.Session.GetString("UserRole");
+    var userName = HttpContextAccessor.HttpContext.Session.GetString("UserName");
 }
 <!--Working-->
 <!-- Sidebar -->
-<div id="sidebar" class="@((ViewBag.LoginView == true) ? "hide-navbar" : "sidebar")">
-    <div id="toggleSidebar" class="logo">
-        <img src="~/img/sidenav-logo.png" alt="Logo">
-    </div>
-    <ul>
-        <li class="@(IsActive("Index", "Home") ? "active" : "")option" data-toggle="tooltip" data-placement="right" title="Dashboard">
-            <a asp-action="Index" asp-controller="Home" ><img class="menu-icon" src="~/img/dashboard-logo.svg"></img></a>
-        </li>
-        @if (userRole == "Superadmin" || userRole == "Admin")
-        {
-            <li class="@(IsActive("Index", "UserManagement") || IsActive("Index", "TeamManagement") ? "active" : "") option" data-toggle="tooltip" data-placement="right" title="User Management">
-                <a asp-action="Index" asp-controller="UserManagement">
-                    <img class="menu-icon" src="~/img/user-management-logo.svg" />
-                </a>
+@if (userRole != "User")
+{
+    <div id="sidebar" class="@((ViewBag.LoginView == true) ? "hide-navbar" : "sidebar")">
+        <div id="toggleSidebar" class="logo">
+            <img src="~/img/sidenav-logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li class="@(IsActive("Index", "Home") ? "active" : "")option" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                <a asp-action="Index" asp-controller="Home"><img class="menu-icon" src="~/img/dashboard-logo.svg"></img></a>
             </li>
-        }
-        <li class="@(IsActive("Index", "Ticket") ? "active" : "")option" data-toggle="tooltip" data-placement="right" title="Ticket Management">
-            <a asp-action="Index" asp-controller="Ticket"><img class="menu-icon" src="~/img/ticket-management-logo.svg"></img></a>
-        </li>
-        <li class="@(IsActive("Index", "Report") ? "active" : "") option" data-toggle="tooltip" data-placement="right" title="Report & Analytics">
-            <a asp-action="Index" asp-controller="Report"><img class="menu-icon" src="~/img/report-&-analytics-logo.svg"></img></a>
-        </li>
-        <li class="@(IsActive("Index", "Feedback") ? "active" : "") option" data-toggle="tooltip" data-placement="right" title="Customer Feedback">
-            <a asp-action="Index" asp-controller="Feedback"><img class="menu-icon" src="~/img/customer-feedback-logo.svg"></img></a>
-        </li>
-        <li class="@(IsActive("Index", "Settings") ? "active" : "") option" data-toggle="tooltip" data-placement="right" title="Settings">
-            <a asp-action="Index" asp-controller="Settings"><img class="menu-icon" src="~/img/settings-logo.svg"></img></a>
-        </li>
-        <li>
-            <a asp-action="SignOutUser" asp-controller="Account"><img class="menu-icon" src="~/img/logout.svg"></img></a>
-        </li>
-    </ul>
-</div>
+            @if (userRole == "Superadmin" || userRole == "Admin")
+            {
+                <li class="@(IsActive("Index", "UserManagement") || IsActive("Index", "TeamManagement") ? "active" : "") option" data-toggle="tooltip" data-placement="right" title="User Management">
+                    <a asp-action="Index" asp-controller="UserManagement">
+                        <img class="menu-icon" src="~/img/user-management-logo.svg" />
+                    </a>
+                </li>
+            }
+            <li class="@(IsActive("Index", "Ticket") ? "active" : "")option" data-toggle="tooltip" data-placement="right" title="Ticket Management">
+                <a asp-action="Index" asp-controller="Ticket"><img class="menu-icon" src="~/img/ticket-management-logo.svg"></img></a>
+            </li>
+            <li class="@(IsActive("Index", "Report") ? "active" : "") option" data-toggle="tooltip" data-placement="right" title="Report & Analytics">
+                <a asp-action="Index" asp-controller="Report"><img class="menu-icon" src="~/img/report-&-analytics-logo.svg"></img></a>
+            </li>
+            <li class="@(IsActive("Index", "Feedback") ? "active" : "") option" data-toggle="tooltip" data-placement="right" title="Customer Feedback">
+                <a asp-action="Index" asp-controller="Feedback"><img class="menu-icon" src="~/img/customer-feedback-logo.svg"></img></a>
+            </li>
+            <li class="@(IsActive("Index", "Settings") ? "active" : "") option" data-toggle="tooltip" data-placement="right" title="Settings">
+                <a asp-action="Index" asp-controller="Settings"><img class="menu-icon" src="~/img/settings-logo.svg"></img></a>
+            </li>
+            <li>
+                <a asp-action="SignOutUser" asp-controller="Account"><img class="menu-icon" src="~/img/logout.svg"></img></a>
+            </li>
+        </ul>
+    </div>
+}
+else
+{
+    <div class="topnav-bg d-flex justify-content-between align-items-center p-3 border-bottom">
+        <a class="fw-bold mb-0" asp-action="Index" asp-controller="Home"><img class="menu-icon" src="~/img/topnav-logo.svg"></img></a>
+        <div>
+            <a asp-action="Index" asp-controller="Users" class="@(IsActive("Index", "Users") ? "topnav-active" : "") nav-menu text-decoration-none me-3">Home</a>
+            <a asp-action="MyTickets" asp-controller="Users" class="@(IsActive("MyTickets", "Users") ? "topnav-active" : "") nav-menu text-decoration-none me-3">My Tickets</a>
+            <a asp-action="SignOutUser" asp-controller="Account" class="nav-menu text-decoration-none">Sign Out</a>
+            <span class="ms-3 me-3 nav-user-info">@CapitalizeFirstLetter(userName)</span>
+            <img src="~/img/User.svg" alt="User Icon" class="user-icon" />
+        </div>
+    </div>
+}
+
 
 @functions {
     public bool IsActive(string action, string controller)
@@ -51,5 +69,11 @@
 
         return string.Equals(currentAction, action, StringComparison.OrdinalIgnoreCase) &&
                string.Equals(currentController, controller, StringComparison.OrdinalIgnoreCase);
+    }
+
+    public static string CapitalizeFirstLetter(string input)
+    {
+        if (string.IsNullOrEmpty(input)) return input;
+        return string.Concat(input.Substring(0, 1).ToUpper(), input.Substring(1));
     }
 }

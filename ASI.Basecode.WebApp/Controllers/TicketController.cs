@@ -153,6 +153,13 @@ namespace ASI.Basecode.WebApp.Controllers
         // Index
         public IActionResult Index(int? categoryId)
         {
+            var userRole = HttpContext.Session.GetString("UserRole");
+
+            if (userRole == "User")
+            {
+                return RedirectToAction("Index", "Users");
+            }
+
             var (success, tickets) = _ticketService.GetAllTickets();
             var categories = _categoryService.GetAllCategories();
             var users = _userService.GetUsers();

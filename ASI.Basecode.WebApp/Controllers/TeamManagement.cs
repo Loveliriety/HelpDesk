@@ -29,6 +29,13 @@ namespace ASI.Basecode.WebApp.Controllers
         {
             var teams = _teamService.GetAllTeams();
 
+            var userRole = HttpContext.Session.GetString("UserRole");
+
+            if (userRole == "User")
+            {
+                return RedirectToAction("Index", "Users");
+            }
+
             return View(teams);
         }
 

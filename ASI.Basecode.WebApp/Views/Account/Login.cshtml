@@ -23,9 +23,9 @@
                 </div>
                 <form method="post" action="/Account/Login" id="loginForm">
                     <div class="form-outline mb-4">
-                        <label class="form-label" for="form2Example11">Email</label>
+                        <label class="form-label" for="form2Example11">Username</label>
                         <input type="text" id="form2Example11" class="form-control"
-                                asp-for="UserId" placeholder="Enter userid" />
+                                asp-for="UserId" placeholder="Enter Username" />
                         <span asp-validation-for="UserId" class="text-danger"></span>
                     </div>
                     <div class="form-outline mb-4">
@@ -38,9 +38,6 @@
                         <button class="btn btn-block login-btn mb-3" type="submit">
                             @Login
                         </button>
-                        <div>
-                            <a asp-controller="Account" asp-action="ForgotPass" class="forgot">Forgot my password</a>
-                        </div>
                     </div>
                 </form>
             </div>
@@ -54,6 +51,11 @@
         var errorMessage = '@TempData["ErrorMessage"]';
         if (errorMessage) {
             toastr.error(errorMessage);
+        }
+
+        var successMessage = '@TempData["SuccessMessage"]';
+        if (successMessage) {
+            toastr.success(successMessage);
         }
     </script>
 }

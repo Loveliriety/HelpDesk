@@ -99,7 +99,17 @@ namespace ASI.Basecode.WebApp.Controllers
                 await this._signInManager.SignInAsync(user);
                 this._session.SetString("UserName", user.Name);
                 HttpContext.Session.SetString("UserRole", user.Role);
+                if (user.Role == "Superadmin" || user.Role == "Admin" || user.Role == "Support Agent")
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                else if (user.Role == "User")
+                {
+                    return RedirectToAction("Index", "Users");
+                }
+
                 return RedirectToAction("Index", "Home");
+
             }
             else
             {
@@ -152,6 +162,8 @@ namespace ASI.Basecode.WebApp.Controllers
 
 
             await this._signInManager.SignOutAsync();
+
+            TempData["SuccessMessage"] = "Successfully Logout!";
             return RedirectToAction("Login", "Account");
         }
     }

@@ -32,6 +32,11 @@ namespace ASI.Basecode.WebApp.Controllers
             // Get the role of the logged-in user
             var userRole = HttpContext.Session.GetString("UserRole");
 
+            if (userRole == "User")
+            {
+                return RedirectToAction("Index", "Users");
+            }
+
             var users = _userService.GetUsers().Where(u => u.IsActive);
 
 
@@ -96,6 +101,7 @@ namespace ASI.Basecode.WebApp.Controllers
                 _userService.DeleteUser(user);
             }
 
+            TempData["SuccessMessage"] = "User successfully deleted!";
             return RedirectToAction("Index");
         }
     }

@@ -216,11 +216,11 @@
             let rows = document.querySelectorAll('#teamTable tbody tr');
 
             rows.forEach(row => {
-                let name = row.cells[2].textContent.toLowerCase();
-                let email = row.cells[3].textContent.toLowerCase();
-                let role = row.cells[4].textContent.toLowerCase();
+                let TeamName = row.cells[1].textContent.toLowerCase();
+                let Company = row.cells[2].textContent.toLowerCase();
+                let Manager = row.cells[4].textContent.toLowerCase();
 
-                if (name.includes(filter) || email.includes(filter) || role.includes(filter)) {
+                if (TeamName.includes(filter) || Company.includes(filter) || Manager.includes(filter)) {
                     row.style.display = '';
                 } else {
                     row.style.display = 'none';
