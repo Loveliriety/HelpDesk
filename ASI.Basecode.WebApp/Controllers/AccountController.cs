@@ -161,6 +161,7 @@ namespace ASI.Basecode.WebApp.Controllers
 
 
             await this._signInManager.SignOutAsync();
+            TempData["SuccessMessage"] = "Successfully Logout";
             return RedirectToAction("Login", "Account");
         }
     }

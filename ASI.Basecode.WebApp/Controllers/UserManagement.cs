@@ -70,6 +70,7 @@ namespace ASI.Basecode.WebApp.Controllers
             if (ModelState.IsValid)
             {
                 _userService.AddUser(user);
+                TempData["SuccessMessage"] = "User has been created";
                 return RedirectToAction("Index");
             }
             return View(user);
@@ -93,6 +94,8 @@ namespace ASI.Basecode.WebApp.Controllers
             if (user != null)
             {
                 _userService.DeleteUser(user);
+
+                TempData["SuccessMessage"] = "User has been deleted";
             }
 
             return RedirectToAction("Index");

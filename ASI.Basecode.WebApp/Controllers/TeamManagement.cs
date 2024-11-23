@@ -77,6 +77,7 @@ namespace ASI.Basecode.WebApp.Controllers
             if (team != null)
             {
                 _teamService.DeleteTeam(TeamId);
+                TempData["SuccessMessage"] = "Team has been deleted";
             }
 
             return RedirectToAction("Index");

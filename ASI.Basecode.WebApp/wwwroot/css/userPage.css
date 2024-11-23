@@ -8,11 +8,11 @@
 }
 
 .banner-image {
-    margin-bottom: -125px;
+    margin-bottom: -100px;
 }
 
 .banner-image2 {
-    margin-bottom: -100px;
+    margin-bottom: -60px;
 }
 
 .history-section {
@@ -82,7 +82,7 @@
 .contact-btn {
     display: flex;
     position: absolute;
-    margin-left: 255px;
+    margin-left: 355px;
     margin-top: 40px;
     background-color: #3D729A;
     height: 60px;

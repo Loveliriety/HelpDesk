@@ -132,12 +132,13 @@ namespace ASI.Basecode.WebApp.Controllers
 
                     _ticketService.AddTicket(newTicket);
 
+                    TempData["SuccessMessage"] = "New ticket added.";
                     return RedirectToAction("Index");
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Error: {ex.Message}");
-                    TempData["Error"] = "An error occurred while creating the ticket.";
+                    TempData["ErrorMessage"] = "An error occurred while creating the ticket.";
                 }
             }
             else
@@ -146,7 +147,7 @@ namespace ASI.Basecode.WebApp.Controllers
                 {
                     Console.WriteLine($"Validation Error: {error.ErrorMessage}");
                 }
-                TempData["Error"] = "Validation failed. Please check your inputs.";
+                TempData["ErrorMessage"] = "Validation failed. Please check your inputs.";
             }
 
             return RedirectToAction("Index");
@@ -324,6 +325,7 @@ namespace ASI.Basecode.WebApp.Controllers
                     _responseService.AddResponse(newResponse);
                 }
 
+                TempData["SuccessMessage"] = "Ticket has been updated.";
                 return RedirectToAction("View", new { ticketId = ticketId });
             }
             catch (Exception ex)
@@ -345,6 +347,8 @@ namespace ASI.Basecode.WebApp.Controllers
             {
                 _ticketService.DeleteTicket(id);
                 _responseService.DeleteResponse(id);
+                TempData["SuccessMessage"] = "Ticket has been deleted";
+
                 return RedirectToAction("Index");
 
             }

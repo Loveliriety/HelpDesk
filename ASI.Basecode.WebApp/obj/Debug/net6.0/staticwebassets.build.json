@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Nv1jr7zJvAlbw+M9i+Y7btBPd2+aH3N4gJfe9cCpKrk=",
+  "Hash": "uEvrF2qy/NUpXsCHM3tcWROO12BuBHk34mGxhVbbhi4=",
   "Source": "ASI.Basecode.WebApp",
   "BasePath": "_content/ASI.Basecode.WebApp",
   "Mode": "Default",
@@ -157,8 +157,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "iwqytc2gwe",
-      "Integrity": "ssl5RM8ticdcos33sIORWEeZZZ+/fiSWhoYzWnI6T04=",
+      "Fingerprint": "jmv2lf5dl0",
+      "Integrity": "ZZJ65hCTxAmY3Rmod2rGby5mFuofK4mVReGimF4V/cA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\userPage.css"
@@ -246,6 +246,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\agent.svg",
+      "SourceId": "ASI.Basecode.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "BasePath": "_content/ASI.Basecode.WebApp",
+      "RelativePath": "img/agent#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8wxmv66x42",
+      "Integrity": "6LO4/yTgaPfUIhUnRIKT5ZG0upK1V3zwdtj3ffWGxLM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\agent.svg"
     },
     {
       "Identity": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\asi-logo-invert.svg",
@@ -414,6 +435,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\dot-option.svg"
+    },
+    {
+      "Identity": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\headset.svg",
+      "SourceId": "ASI.Basecode.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "BasePath": "_content/ASI.Basecode.WebApp",
+      "RelativePath": "img/headset#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "520ymbowg1",
+      "Integrity": "zZYmptPZt107eBIfdQW0iBDKqTudnQztzVftbBTlSTc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\headset.svg"
     },
     {
       "Identity": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\Light-Mode.svg",
@@ -731,6 +773,27 @@
       "OriginalItemSpec": "wwwroot\\img\\ticket-management-logo.svg"
     },
     {
+      "Identity": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\topnav-logo.svg",
+      "SourceId": "ASI.Basecode.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "BasePath": "_content/ASI.Basecode.WebApp",
+      "RelativePath": "img/topnav-logo#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "asf2iz018m",
+      "Integrity": "lkUu+lw7TK3zDR7MXmNMB/TP8ECg3fKu85P5X1D9rZI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\topnav-logo.svg"
+    },
+    {
       "Identity": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\total-tickets.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
@@ -750,6 +813,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\total-tickets.svg"
+    },
+    {
+      "Identity": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\User.svg",
+      "SourceId": "ASI.Basecode.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "BasePath": "_content/ASI.Basecode.WebApp",
+      "RelativePath": "img/User#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "18b1hah5na",
+      "Integrity": "76eqO9FLPAaeZN3e0HHCY6jVIfnFEF8aYjjOlHExz8c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\User.svg"
     },
     {
       "Identity": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\user-management-logo.svg",
@@ -2306,7 +2390,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4265"
+          "Value": "4264"
         },
         {
           "Name": "Content-Type",
@@ -2314,11 +2398,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ssl5RM8ticdcos33sIORWEeZZZ+/fiSWhoYzWnI6T04=\""
+          "Value": "\"ZZJ65hCTxAmY3Rmod2rGby5mFuofK4mVReGimF4V/cA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 23 Nov 2024 05:17:39 GMT"
+          "Value": "Sat, 23 Nov 2024 06:12:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2328,12 +2412,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ssl5RM8ticdcos33sIORWEeZZZ+/fiSWhoYzWnI6T04="
+          "Value": "sha256-ZZJ65hCTxAmY3Rmod2rGby5mFuofK4mVReGimF4V/cA="
         }
       ]
     },
     {
-      "Route": "css/userPage.iwqytc2gwe.css",
+      "Route": "css/userPage.jmv2lf5dl0.css",
       "AssetFile": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\userPage.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2343,7 +2427,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4265"
+          "Value": "4264"
         },
         {
           "Name": "Content-Type",
@@ -2351,11 +2435,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ssl5RM8ticdcos33sIORWEeZZZ+/fiSWhoYzWnI6T04=\""
+          "Value": "\"ZZJ65hCTxAmY3Rmod2rGby5mFuofK4mVReGimF4V/cA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 23 Nov 2024 05:17:39 GMT"
+          "Value": "Sat, 23 Nov 2024 06:12:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2365,7 +2449,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "iwqytc2gwe"
+          "Value": "jmv2lf5dl0"
         },
         {
           "Name": "label",
@@ -2373,7 +2457,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ssl5RM8ticdcos33sIORWEeZZZ+/fiSWhoYzWnI6T04="
+          "Value": "sha256-ZZJ65hCTxAmY3Rmod2rGby5mFuofK4mVReGimF4V/cA="
         }
       ]
     },
@@ -2702,6 +2786,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-oiDv1hGrqekE3I/XNXusnMxJ2iSd7GYeEfq+/NRs9+s="
+        }
+      ]
+    },
+    {
+      "Route": "img/agent.8wxmv66x42.svg",
+      "AssetFile": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\agent.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "174800"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6LO4/yTgaPfUIhUnRIKT5ZG0upK1V3zwdtj3ffWGxLM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 05:27:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8wxmv66x42"
+        },
+        {
+          "Name": "label",
+          "Value": "img/agent.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6LO4/yTgaPfUIhUnRIKT5ZG0upK1V3zwdtj3ffWGxLM="
+        }
+      ]
+    },
+    {
+      "Route": "img/agent.svg",
+      "AssetFile": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\agent.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "174800"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6LO4/yTgaPfUIhUnRIKT5ZG0upK1V3zwdtj3ffWGxLM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 05:27:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6LO4/yTgaPfUIhUnRIKT5ZG0upK1V3zwdtj3ffWGxLM="
         }
       ]
     },
@@ -3358,6 +3524,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-gy8r1d1lPTN3QtjqtDKXMDij86wGhxNJYax0XHSzEGU="
+        }
+      ]
+    },
+    {
+      "Route": "img/headset.520ymbowg1.svg",
+      "AssetFile": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\headset.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "167300"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zZYmptPZt107eBIfdQW0iBDKqTudnQztzVftbBTlSTc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 05:28:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "520ymbowg1"
+        },
+        {
+          "Name": "label",
+          "Value": "img/headset.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zZYmptPZt107eBIfdQW0iBDKqTudnQztzVftbBTlSTc="
+        }
+      ]
+    },
+    {
+      "Route": "img/headset.svg",
+      "AssetFile": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\headset.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "167300"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zZYmptPZt107eBIfdQW0iBDKqTudnQztzVftbBTlSTc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 05:28:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zZYmptPZt107eBIfdQW0iBDKqTudnQztzVftbBTlSTc="
         }
       ]
     },
@@ -4592,6 +4840,88 @@
       ]
     },
     {
+      "Route": "img/topnav-logo.asf2iz018m.svg",
+      "AssetFile": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\topnav-logo.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lkUu+lw7TK3zDR7MXmNMB/TP8ECg3fKu85P5X1D9rZI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 05:27:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "asf2iz018m"
+        },
+        {
+          "Name": "label",
+          "Value": "img/topnav-logo.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lkUu+lw7TK3zDR7MXmNMB/TP8ECg3fKu85P5X1D9rZI="
+        }
+      ]
+    },
+    {
+      "Route": "img/topnav-logo.svg",
+      "AssetFile": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\topnav-logo.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lkUu+lw7TK3zDR7MXmNMB/TP8ECg3fKu85P5X1D9rZI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 05:27:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lkUu+lw7TK3zDR7MXmNMB/TP8ECg3fKu85P5X1D9rZI="
+        }
+      ]
+    },
+    {
       "Route": "img/total-tickets.bwx0ixfqga.svg",
       "AssetFile": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\total-tickets.svg",
       "Selectors": [],
@@ -4670,6 +5000,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-ZW4md+WDJFKMBfzHfXUm3dq6Aij8M6QKGahpfYQGWU4="
+        }
+      ]
+    },
+    {
+      "Route": "img/User.18b1hah5na.svg",
+      "AssetFile": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\User.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"76eqO9FLPAaeZN3e0HHCY6jVIfnFEF8aYjjOlHExz8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 05:29:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "18b1hah5na"
+        },
+        {
+          "Name": "label",
+          "Value": "img/User.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-76eqO9FLPAaeZN3e0HHCY6jVIfnFEF8aYjjOlHExz8c="
+        }
+      ]
+    },
+    {
+      "Route": "img/User.svg",
+      "AssetFile": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\User.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"76eqO9FLPAaeZN3e0HHCY6jVIfnFEF8aYjjOlHExz8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 05:29:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-76eqO9FLPAaeZN3e0HHCY6jVIfnFEF8aYjjOlHExz8c="
         }
       ]
     },

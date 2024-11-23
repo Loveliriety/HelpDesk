@@ -57,6 +57,14 @@
       "PackagePath": "staticwebassets\\img\\LiveIT.png"
     },
     {
+      "Id": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\User.svg",
+      "PackagePath": "staticwebassets\\img\\User.svg"
+    },
+    {
+      "Id": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\agent.svg",
+      "PackagePath": "staticwebassets\\img\\agent.svg"
+    },
+    {
       "Id": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\asi-logo-invert.svg",
       "PackagePath": "staticwebassets\\img\\asi-logo-invert.svg"
     },
@@ -83,6 +91,10 @@
     {
       "Id": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\dot-option.svg",
       "PackagePath": "staticwebassets\\img\\dot-option.svg"
+    },
+    {
+      "Id": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\headset.svg",
+      "PackagePath": "staticwebassets\\img\\headset.svg"
     },
     {
       "Id": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\logo.png",
@@ -135,6 +147,10 @@
     {
       "Id": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\ticket-management-logo.svg",
       "PackagePath": "staticwebassets\\img\\ticket-management-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\topnav-logo.svg",
+      "PackagePath": "staticwebassets\\img\\topnav-logo.svg"
     },
     {
       "Id": "C:\\Users\\kimbe\\OneDrive\\Documents\\School\\College\\4th Year\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\total-tickets.svg",
