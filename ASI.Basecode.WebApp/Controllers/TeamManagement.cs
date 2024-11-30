@@ -27,6 +27,13 @@ namespace ASI.Basecode.WebApp.Controllers
         // GET: TeamManagement
         public IActionResult Index()
         {
+            var userRole = HttpContext.Session.GetString("UserRole");
+
+            if (userRole == "User")
+            {
+                return RedirectToAction("Index", "Users");
+            }
+
             var teams = _teamService.GetAllTeams();
 
             return View(teams);
@@ -70,6 +77,7 @@ namespace ASI.Basecode.WebApp.Controllers
             if (team != null)
             {
                 _teamService.DeleteTeam(TeamId);
+                TempData["SuccessMessage"] = "Team has been deleted";
             }
 
             return RedirectToAction("Index");

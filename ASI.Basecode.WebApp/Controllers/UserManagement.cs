@@ -29,22 +29,23 @@ namespace ASI.Basecode.WebApp.Controllers
         // GET: UserManagement
         public IActionResult Index()
         {
-            // Get the role of the logged-in user
             var userRole = HttpContext.Session.GetString("UserRole");
+
+            if (userRole == "User")
+            {
+                return RedirectToAction("Index", "Users");
+            }
 
             var users = _userService.GetUsers().Where(u => u.IsActive);
 
 
-            // Fetch the team names
             var result = _teamService.GetTeams();
             var teams = result.Item2;
 
-            // Prepare SelectLists for team
             ViewBag.Teams = new SelectList(teams, "TeamId", "TeamName");
 
             if (userRole == "Admin")
             {
-                // If the user is Admin, exclude Superadmin
                 users = users.Where(u => u.Role != "Superadmin");
             }
 
@@ -54,11 +55,9 @@ namespace ASI.Basecode.WebApp.Controllers
         // GET: UserManagement/Create
         public IActionResult Create()
         {
-            // Fetch the team names
             var result = _teamService.GetTeams();
             var teams = result.Item2;
 
-            // Prepare SelectLists for team
             ViewBag.Teams = new SelectList(teams, "TeamId", "TeamName");
 
             return View();
@@ -71,6 +70,7 @@ namespace ASI.Basecode.WebApp.Controllers
             if (ModelState.IsValid)
             {
                 _userService.AddUser(user);
+                TempData["SuccessMessage"] = "User has been created";
                 return RedirectToAction("Index");
             }
             return View(user);
@@ -94,6 +94,8 @@ namespace ASI.Basecode.WebApp.Controllers
             if (user != null)
             {
                 _userService.DeleteUser(user);
+
+                TempData["SuccessMessage"] = "User has been deleted";
             }
 
             return RedirectToAction("Index");

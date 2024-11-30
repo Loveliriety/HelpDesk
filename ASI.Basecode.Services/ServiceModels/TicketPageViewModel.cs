@@ -13,6 +13,7 @@ namespace ASI.Basecode.Services.ServiceModels
         public int TicketId { get; set; }
         public string Status { get; set; }
         public string Subject { get; set; }
+        public string? Description { get; set; }
         public int Category { get; set; }
         public string RequesterEmail { get; set; }
         public string Assignee { get; set; }

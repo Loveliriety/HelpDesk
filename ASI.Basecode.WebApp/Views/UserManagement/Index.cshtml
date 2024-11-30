@@ -30,8 +30,8 @@
         <thead>
             <tr>
                 <th class="text-color" scope="col"><input type="checkbox" id="select-all" /></th>
-                <th class="text-color" scope="col">User ID</th>
-                <th class="text-color" scope="col">Name</th>
+                <th class="text-color" scope="col">Username</th>
+                <th class="text-color" scope="col">Fullname</th>
                 <th class="text-color" scope="col">Email</th>
                 <th class="text-color" scope="col">Team</th>
                 <th class="text-color" scope="col">Role</th>
@@ -74,11 +74,11 @@
     <div class="custom-drawer-body">
         <form asp-action="Create" asp-controller="UserManagement" method="post">
             <div class="mb-3">
-                <label for="userIdInput" class="form-label">User Id</label>
+                <label for="userIdInput" class="form-label">Username</label>
                 <input type="text" class="form-control" id="userIdInput" name="UserId" required />
             </div>
             <div class="mb-3">
-                <label for="nameInput" class="form-label">Name</label>
+                <label for="nameInput" class="form-label">Fullname</label>
                 <input type="text" class="form-control" id="nameInput" name="Name" required />
             </div>
             <div class="mb-3">
@@ -127,7 +127,7 @@
         <form asp-action="Edit" asp-controller="UserManagement" method="post">
             <input type="hidden" id="editUserIdInput" name="UserId" />
             <div class="mb-3">
-                <label for="editNameInput" class="form-label">Name</label>
+                <label for="editNameInput" class="form-label">Fullname</label>
                 <input type="text" class="form-control" id="editNameInput" name="Name" required />
             </div>
             <div class="mb-3">
@@ -177,8 +177,8 @@
                 </div>
                 <div class="modal-body">
                     <p>Are you sure you want to delete this user?</p>
-                    <p><strong>User ID: </strong>@user.UserId</p>
-                    <p><strong>Name: </strong>@user.Name</p>
+                    <p><strong>Username: </strong>@user.UserId</p>
+                    <p><strong>Fullname: </strong>@user.Name</p>
                     <form asp-action="Delete" method="post">
                         @Html.AntiForgeryToken()
                         <input type="hidden" name="UserId" value="@user.UserId" />
@@ -285,6 +285,11 @@
                 }
             });
         });
+
+        var successMessage = '@TempData["SuccessMessage"]';
+        if (successMessage) {
+            toastr.success(successMessage);
+        }
     </script>
 }
 

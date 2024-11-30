@@ -1,0 +1,34 @@
+﻿﻿@{
+    ViewData["Title"] = "My Tickets";
+}
+
+<div class="mytickets-section">
+    <h5 class="mytickets-header">My Tickets</h5>
+    <ul class="nav">
+        <li class="nav-item">
+            <button class="btn status-btn me-2 @(ViewData["SelectedStatus"] == null ? "active3" : "")"
+                    onclick="window.location.href='@Url.Action("MyTickets", new { status = (string)null })'">
+                All tickets
+            </button>
+        </li>
+        @foreach (var status in new[] { "Open", "In Progress", "Resolved", "Closed" })
+        {
+            var statusCounts = ViewData["StatusCounts"] as Dictionary<string, int>;
+            var count = statusCounts != null && statusCounts.ContainsKey(status) ? statusCounts[status] : 0;
+            var isSelected = ViewData["SelectedStatus"] != null && (string)ViewData["SelectedStatus"] == status;
+
+            <li class="nav-item">
+                <button class="btn status-btn me-2 @(isSelected ? "active3" : "")"
+                        onclick="window.location.href='@Url.Action("MyTickets", new { status = status })'">
+                    @status
+                    <span class="ms-1">(@count)</span>
+                </button>
+            </li>
+        }
+    </ul>
+
+    <div class="bg-transparent mytickets-card mt-3">
+        <div class="mytickets-inner">
+        </div>
+    </div>
+</div>

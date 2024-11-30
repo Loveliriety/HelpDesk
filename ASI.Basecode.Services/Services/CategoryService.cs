@@ -25,6 +25,7 @@ namespace ASI.Basecode.Services.Services
             return _categoryRepository.GetAllCategories();
         }
 
+
         public void AddCategory(Category category)
         {
             _categoryRepository.AddCategory(category);

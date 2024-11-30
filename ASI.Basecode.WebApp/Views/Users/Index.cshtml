@@ -1,0 +1,82 @@
+﻿@model ASI.Basecode.Services.ServiceModels.TicketListViewModel
+
+@{
+    ViewData["Title"] = "Dashboard";
+    var userName = HttpContextAccessor.HttpContext.Session.GetString("UserName") ?? "User";
+}
+
+@functions {
+    public static string CapitalizeFirstLetter(string input)
+    {
+        if (string.IsNullOrEmpty(input)) return input;
+        return string.Concat(input.Substring(0, 1).ToUpper(), input.Substring(1));
+    }
+}
+
+<!-- Welcome Section -->
+<div class="hero-banner mb-4 shadow-sm">
+    <div class="row g-0 justify-content-center align-items-center text-center">
+        <div class="col-md-2 banner-image">
+            <img src="~/img/agent.svg" alt="Headset" class="img-fluid">
+        </div>
+        <div class="col-md-6 text-center py-4">
+            <p class="welcome-message">Welcome to HelpDesk</p>
+            <h5 class="greet-message">Hi @CapitalizeFirstLetter(userName), how can we help?</h5>
+            <div class="form mb-3 w-75 mx-auto">
+                <i class="fa fa-search"></i>
+                <input type="text" class="form-control form-input" placeholder="Search">
+            </div>
+            <a asp-action="Create" asp-controller="Users" class="btn contact-btn">Contact Support</a>
+        </div>
+        <div class="col-md-2 banner-image2">
+            <img src="~/img/headset.svg" alt="Headset" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<div class="history-section">
+    <div class="history-line"></div>
+    <!-- Recent Ticket History -->
+    <div class="tickets-list">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+            <h5 class="fw-bold">Recent Ticket History</h5>
+            <a href="#" class="text-decoration-none">View All</a>
+        </div>
+        <table class="tickets-table">
+            <thead>
+                <tr>
+                    <th>Ticket #</th>
+                    <th>Request Type</th>
+                    <th>Date Requested</th>
+                    <th>Resolved Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model?.Tickets?.Any() == true)
+                {
+                    foreach (var ticket in Model.Tickets)
+                    {
+                        <tr>
+                            <td class="category-cell">#@ticket.TicketId</td>
+                            <td class="text-color">@ticket.Subject</td>
+                            <td>@ticket.CreatedTime.ToString("g")</td>
+                            <td>@ticket.UpdatedTime.ToString("g")</td>
+                            <td>
+                                <span class="badge bg-@(ticket.Status == "Open" ? "danger" : "success")">
+                                    @ticket.Status
+                                </span>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5" class="text-center">No tickets found.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
