@@ -50,10 +50,10 @@
                         <div class="mb-3">
                             <label for="assigneeSelect" class="form-label">Assignee</label>
                             <select class="form-select select-input" id="Assignee" name="Assignee">
-                                <option selected>--</option>
+                                <option value="@Model.Tickets.FirstOrDefault()?.Assignee" selected>@Model.Tickets.FirstOrDefault()?.Assignee</option>
                                 @foreach (var user in Model.Users)
                                 {
-                                    <option value="@user.UserId" selected="@(user.UserId == Model.Tickets.FirstOrDefault()?.Assignee ? "selected" : "")">
+                                    <option value="@user.UserId">
                                         @user.Name
                                     </option>
                                 }
@@ -142,8 +142,8 @@
 </form>
 
 <div id="deleteModal" class="modal" style="display:none;">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content w-25 p-4 m-auto mt-5 fade-in-down" data-mdb-animation-start="onLoad">
+        <!--        <span class="close" onclick="closeModal()">&times;</span>  -->
         <h2>Delete Ticket</h2>
         <p>Are you sure you want to delete this ticket?</p>
         <form id="deleteTicketForm" method="post" action="/Ticket/Delete">

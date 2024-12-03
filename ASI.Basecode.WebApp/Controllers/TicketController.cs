@@ -12,7 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 
-namespace ASI.Basecode.WebApp.Controllers
+namespace ASI.Basecode.WebApp.Controllers 
 {
     public class TicketController : ControllerBase<TicketController>
     {
@@ -112,28 +112,16 @@ namespace ASI.Basecode.WebApp.Controllers
 
         // POST: NewTicket
         [HttpPost]
-        public IActionResult AddTicket(TicketViewModel model)
+        public IActionResult AddTicket(Ticket model)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
-                    var newTicket = new Ticket
-                    {
-                        Subject = model.Subject,
-                        RequesterEmail = model.RequesterEmail,
-                        Category = model.Category,
-                        Assignee = model.Assignee,
-                        Priority = model.Priority,
-                        Status = model.Status,
-                        CreatedTime = DateTime.Now,
-                        UpdatedTime = DateTime.Now
-                    };
-
-                    _ticketService.AddTicket(newTicket);
+                    int ticketId = _ticketService.AddTicket(model);
 
                     TempData["SuccessMessage"] = "New ticket added.";
-                    return RedirectToAction("Index");
+                    return RedirectToAction("View", new { ticketId = ticketId });
                 }
                 catch (Exception ex)
                 {
@@ -213,9 +201,6 @@ namespace ASI.Basecode.WebApp.Controllers
 
             return View(model);
         }
-
-
-
 
         // Ticket View
         [HttpGet]
@@ -346,7 +331,7 @@ namespace ASI.Basecode.WebApp.Controllers
             try
             {
                 _ticketService.DeleteTicket(id);
-                _responseService.DeleteResponse(id);
+                _responseService.DeleteResponsesByTicketId(id);
                 TempData["SuccessMessage"] = "Ticket has been deleted";
 
                 return RedirectToAction("Index");

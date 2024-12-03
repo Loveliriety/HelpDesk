@@ -64,16 +64,32 @@ namespace ASI.Basecode.Services.Services
             return response.ResponseId; 
         }
 
-        public void DeleteResponse(int ticketId)
+        public void DeleteResponsesByTicketId(int ticketId)
         {
+            if (ticketId <= 0)
+            {
+                throw new ArgumentException("Invalid ticket ID.", nameof(ticketId));
+            }
+
+            var responses = _responseRepository.GetResponsesByTicketId(ticketId);
+
+            if (responses == null || !responses.Any())
+            {
+                Console.WriteLine($"No responses found for Ticket ID: {ticketId}");
+                return;
+            }
+
             try
             {
-                _responseRepository.DeleteResponsesByTicketId(ticketId);
+                foreach (var response in responses)
+                {
+                    _responseRepository.DeleteResponse(response.ResponseId);
+                }
             }
-            catch (InvalidOperationException ex)
+            catch (Exception ex)
             {
-
-                Console.WriteLine(ex.Message); 
+                Console.WriteLine($"An error occurred while deleting responses: {ex.Message}");
+                throw;
             }
         }
 

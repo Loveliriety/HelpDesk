@@ -42,17 +42,14 @@ namespace ASI.Basecode.Data.Repositories
             _dbContext.SaveChanges();
         }
 
-        public void DeleteResponsesByTicketId(int ticketId)
+        public void DeleteResponse(int responseId)
         {
-            var responses = _dbContext.Set<Response>().Where(r => r.TicketId == ticketId).ToList();
-            
-            foreach (var response in responses)
+            var response = _dbContext.Set<Response>().Find(responseId);
+            if (response != null)
             {
                 _dbContext.Set<Response>().Remove(response);
-                
+                _dbContext.SaveChanges();
             }
-            _dbContext.SaveChanges();
-           
         }
         public IEnumerable<Response> GetResponsesByTicketId(int ticketId)
         {
@@ -61,6 +58,5 @@ namespace ASI.Basecode.Data.Repositories
                              .ToList();
         }
 
-        //working
     }
 }

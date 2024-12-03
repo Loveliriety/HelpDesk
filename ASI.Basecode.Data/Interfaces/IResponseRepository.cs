@@ -13,8 +13,7 @@ namespace ASI.Basecode.Data.Interfaces
         IEnumerable<Response> GetAllResponses();
         void AddResponse(Response response);
         void UpdateResponse(Response response);
-        void DeleteResponsesByTicketId(int ticketId);
+        void DeleteResponse(int responseId);
         IEnumerable<Response> GetResponsesByTicketId(int ticketId);
-        //working
     }
 }

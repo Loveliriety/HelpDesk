@@ -17,13 +17,16 @@ namespace ASI.Basecode.Data
         {
         }
 
+        // User and Team Management
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Team> Teams { get; set; }
 
-        //working
+        // Ticket Management
         public virtual DbSet<Ticket> Tickets { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Response> Responses { get; set; }
+        public virtual DbSet<Attachment> Attachments { get; set; } 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>(entity =>

@@ -11,12 +11,12 @@ namespace ASI.Basecode.Services.Services
     public class TicketService : ITicketService
     {
         private readonly ITicketRepository _ticketRepository;
-        private readonly ResponseRepository _responseRepository;
-        private readonly ResponseService _responseService;
+        private readonly IResponseService _responseService;
 
-        public TicketService(ITicketRepository ticketRepository)
+        public TicketService(ITicketRepository ticketRepository, IResponseService responseService)
         {
             _ticketRepository = ticketRepository;
+            _responseService = responseService ?? throw new ArgumentNullException(nameof(responseService));
         }
 
         public (bool, IEnumerable<Ticket>) GetAllTickets()
@@ -51,11 +51,13 @@ namespace ASI.Basecode.Services.Services
                 UpdatedTime = DateTime.Now
             };
 
-            return _ticketRepository.AddTicket(newTicket);
+            int ticketId = _ticketRepository.AddTicket(newTicket);
+            return ticketId;
         }
 
         public void DeleteTicket(int ticketId)
         {
+            _responseService.DeleteResponsesByTicketId(ticketId);
             _ticketRepository.DeleteTicket(ticketId);
         }
 
@@ -67,31 +69,6 @@ namespace ASI.Basecode.Services.Services
             }
             _ticketRepository.UpdateTicket(ticket);
         }
-
-        //public bool DeleteTicketWithResponses(int ticketId)
-        //{
-        //    try
-        //    {
-        //        var responses = _responseService != null ? _responseService.GetResponsesByTicketId(ticketId) : new List<Response>();
-
-        //        if (responses.Any())
-        //        {
-        //            foreach (var response in responses)
-        //            {
-        //                _responseRepository.DeleteResponse(response.ResponseId);
-        //            }
-        //        }
-
-        //        _ticketRepository.DeleteTicket(ticketId);
-
-        //        return true;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine($"Error deleting ticket and responses: {ex.Message}");
-        //        return false;
-        //    }
-        //}
 
         public Ticket GetTicketById(int ticketId)
         {
@@ -116,6 +93,23 @@ namespace ASI.Basecode.Services.Services
         public IEnumerable<Ticket> GetTicketsByAssignee(string assignee)
         {
             return _ticketRepository.GetTicketsByAssignee(assignee);
+        }
+
+        public (bool, IEnumerable<TicketWithResponses>) GetTicketsWithResponses()
+        {
+            var tickets = _ticketRepository.GetAllTickets();
+            if (tickets != null)
+            {
+                var ticketsWithResponses = tickets.Select(ticket => new TicketWithResponses
+                {
+                    Ticket = ticket,
+                    Responses = _responseService.GetResponsesByTicketId(ticket.TicketId)
+                }).ToList();
+
+                return (true, ticketsWithResponses);
+            }
+
+            return (false, null);
         }
 
         //working
