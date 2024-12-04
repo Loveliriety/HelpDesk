@@ -11,7 +11,7 @@
 
 body {
     background-color: var(--background-color1);
-    overflow: hidden;
+    overflow: auto;
 }
 
 .sidebar {

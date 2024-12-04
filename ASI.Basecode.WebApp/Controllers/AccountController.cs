@@ -92,12 +92,12 @@ namespace ASI.Basecode.WebApp.Controllers
 
             return RedirectToAction("Index", "Home");*/
 
-            var loginResult = _userService.AuthenticateUser(model.UserId, model.Password, ref user);
+            var loginResult = _userService.AuthenticateUser(model.Email, model.Password, ref user);
             if (loginResult == LoginResult.Success)
             {
                 // 認証OK
                 await this._signInManager.SignInAsync(user);
-                this._session.SetString("UserName", user.Name);
+                HttpContext.Session.SetString("FullName", user.Name);
                 HttpContext.Session.SetString("UserRole", user.Role);
                 HttpContext.Session.SetString("Email", user.Email);
                 if (user.Role == "Superadmin" || user.Role == "Admin" || user.Role == "Support Agent")

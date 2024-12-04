@@ -57,8 +57,16 @@
       "PackagePath": "staticwebassets\\img\\LiveIT.png"
     },
     {
+      "Id": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\Trash.svg",
+      "PackagePath": "staticwebassets\\img\\Trash.svg"
+    },
+    {
       "Id": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\User.svg",
       "PackagePath": "staticwebassets\\img\\User.svg"
+    },
+    {
+      "Id": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\agent-icon.svg",
+      "PackagePath": "staticwebassets\\img\\agent-icon.svg"
     },
     {
       "Id": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\agent.svg",

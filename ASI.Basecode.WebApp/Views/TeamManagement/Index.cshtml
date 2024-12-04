@@ -27,7 +27,6 @@
     <table class="table table-striped table-bordered" id="teamTable">
         <thead>
             <tr>
-                <th class="text-color" scope="col">Team ID</th>
                 <th class="text-color" scope="col">Name</th>
                 <th class="text-color" scope="col">Company</th>
                 <th class="text-color" scope="col">Tier</th>
@@ -39,7 +38,6 @@
             @foreach (var team in Model)
             {
                 <tr>
-                    <td class="text-color">@team.TeamId</td>
                     <td class="text-color">@team.TeamName</td>
                     <td class="text-color">@team.Company</td>
                     <td class="text-color">@team.Tier</td>
@@ -216,11 +214,12 @@
             let rows = document.querySelectorAll('#teamTable tbody tr');
 
             rows.forEach(row => {
-                let name = row.cells[2].textContent.toLowerCase();
-                let email = row.cells[3].textContent.toLowerCase();
-                let role = row.cells[4].textContent.toLowerCase();
+                let name = row.cells[0].textContent.toLowerCase();
+                let company = row.cells[1].textContent.toLowerCase();
+                let tier = row.cells[3].textContent.toLowerCase();
+                let manager = row.cells[4].textContent.toLowerCase();
 
-                if (name.includes(filter) || email.includes(filter) || role.includes(filter)) {
+                if (name.includes(filter) || company.includes(filter) || tier.includes(filter) || manager.includes(filter)) {
                     row.style.display = '';
                 } else {
                     row.style.display = 'none';

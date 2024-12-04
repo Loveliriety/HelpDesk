@@ -16,7 +16,7 @@ namespace ASI.Basecode.Services.ServiceModels
         public string? Description { get; set; }
         public int Category { get; set; }
         public string RequesterEmail { get; set; }
-        public string Assignee { get; set; }
+        public int? Assignee { get; set; }
         public string Priority { get; set; }
         public DateTime CreatedTime { get; set; }
         public DateTime UpdatedTime { get; set; }

@@ -174,7 +174,7 @@ namespace ASI.Basecode.WebApp.Controllers
             }
 
             tickets = tickets
-                .Where(ticket => ticket.Assignee == userId && allowedStatuses.Contains(ticket.Status))
+                .Where(ticket => ticket.Assignee?.ToString() == userId && allowedStatuses.Contains(ticket.Status))
                 .ToList();
 
             var statusCounts = allowedStatuses.ToDictionary(
@@ -280,7 +280,7 @@ namespace ASI.Basecode.WebApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult UpdateTicket(int ticketId, string description, string status, int category, string priority, string assignee)
+        public IActionResult UpdateTicket(int ticketId, string description, string status, int category, string priority, int assignee)
         {
             if (!ModelState.IsValid)
             {
@@ -302,7 +302,7 @@ namespace ASI.Basecode.WebApp.Controllers
 
             try
             {
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                var fullName = HttpContext.Session.GetString("FullName");
 
                 ticket.Category = category;
                 ticket.Priority = priority;
@@ -317,7 +317,7 @@ namespace ASI.Basecode.WebApp.Controllers
                     var newResponse = new Response
                     {
                         TicketId = ticketId,
-                        Sender = userId ?? "Unknown",
+                        Sender = fullName ?? "Unknown",
                         Description = description,
                         CreatedTime = DateTime.Now
                     };
