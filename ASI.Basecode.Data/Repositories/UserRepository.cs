@@ -22,7 +22,7 @@ namespace ASI.Basecode.Data.Repositories
             return this.GetDbSet<User>().Where(u => u.IsActive);
         }
 
-        public bool UserExists(string userId)
+        public bool UserExists(int userId)
         {
             return this.GetDbSet<User>().Any(x => x.UserId == userId);
         }

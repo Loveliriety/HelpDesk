@@ -91,7 +91,6 @@ namespace ASI.Basecode.Services.Services
 
             var newUser = new User
             {
-                UserId = user.UserId,
                 Name = user.Name,
                 Email = user.Email,
                 Password = PasswordManager.EncryptPassword(user.Password),

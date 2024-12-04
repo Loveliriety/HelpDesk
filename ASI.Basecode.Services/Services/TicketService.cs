@@ -114,7 +114,7 @@ namespace ASI.Basecode.Services.Services
             return _ticketRepository.GetTicketsByPriority(priority);
         }
 
-        public IEnumerable<Ticket> GetTicketsByAssignee(string assignee)
+        public IEnumerable<Ticket> GetTicketsByAssignee(int assignee)
         {
             return _ticketRepository.GetTicketsByAssignee(assignee);
         }

@@ -97,7 +97,7 @@ namespace ASI.Basecode.WebApp.Controllers
             {
                 // 認証OK
                 await this._signInManager.SignInAsync(user);
-                this._session.SetString("UserName", user.Name);
+                HttpContext.Session.SetString("FullName", user.Name);
                 HttpContext.Session.SetString("UserRole", user.Role);
                 HttpContext.Session.SetString("Email", user.Email);
                 if (user.Role == "Superadmin" || user.Role == "Admin" || user.Role == "Support Agent")

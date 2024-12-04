@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IGWiFRCyqjI=",
+  "dgSpecHash": "8ud1nK1DiAU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
+  "projectFilePath": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\ASI.Basecode.WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acer\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",

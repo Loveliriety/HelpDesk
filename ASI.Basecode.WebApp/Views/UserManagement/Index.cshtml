@@ -29,8 +29,6 @@
     <table class="table table-striped table-bordered" id="userTable">
         <thead>
             <tr>
-                <th class="text-color" scope="col"><input type="checkbox" id="select-all" /></th>
-                <th class="text-color" scope="col">Username</th>
                 <th class="text-color" scope="col">Fullname</th>
                 <th class="text-color" scope="col">Email</th>
                 <th class="text-color" scope="col">Team</th>
@@ -42,8 +40,6 @@
             @foreach (var user in Model)
             {
                 <tr>
-                    <td><input type="checkbox" class="select-checkbox" /></td>
-                    <td class="text-color">@user.UserId</td>
                     <td class ="text-color">@user.Name</td>
                     <td class="text-color">@user.Email</td>
                     <td class="text-color">@(user.TeamId.HasValue ? TeamService.GetTeamNameById(user.TeamId.Value) : "None")</td>
@@ -73,10 +69,6 @@
     </div>
     <div class="custom-drawer-body">
         <form asp-action="Create" asp-controller="UserManagement" method="post">
-            <div class="mb-3">
-                <label for="userIdInput" class="form-label">Username</label>
-                <input type="text" class="form-control" id="userIdInput" name="UserId" required />
-            </div>
             <div class="mb-3">
                 <label for="nameInput" class="form-label">Fullname</label>
                 <input type="text" class="form-control" id="nameInput" name="Name" required />
@@ -217,7 +209,6 @@
 
         document.querySelectorAll('.edit-user-btn').forEach(button => {
             button.addEventListener('click', function () {
-                document.getElementById("editUserIdInput").value = this.getAttribute("data-id");
                 document.getElementById("editNameInput").value = this.getAttribute("data-name");
                 document.getElementById("editEmailInput").value = this.getAttribute("data-email");
                 document.getElementById("editTeamSelect").value = this.getAttribute("data-team");
@@ -232,11 +223,6 @@
             const editDrawer = document.getElementById("editUserDrawer");
             if (addDrawer.classList.contains("show")) toggleAddDrawer();
             if (editDrawer.classList.contains("show")) toggleEditDrawer();
-        });
-
-        document.getElementById('select-all').addEventListener('click', function () {
-            let checkboxes = document.querySelectorAll('.select-checkbox');
-            checkboxes.forEach(checkbox => checkbox.checked = this.checked);
         });
 
         document.getElementById('togglePassword').addEventListener('click', function () {
@@ -274,11 +260,12 @@
             let rows = document.querySelectorAll('#userTable tbody tr');
 
             rows.forEach(row => {
-                let name = row.cells[2].textContent.toLowerCase();
-                let email = row.cells[3].textContent.toLowerCase();
-                let role = row.cells[4].textContent.toLowerCase();
+                let name = row.cells[0].textContent.toLowerCase();
+                let email = row.cells[1].textContent.toLowerCase();
+                let team = row.cells[2].textContent.toLowerCase();
+                let role = row.cells[3].textContent.toLowerCase();
 
-                if (name.includes(filter) || email.includes(filter) || role.includes(filter)) {
+                if (name.includes(filter) || team.includes(filter) || email.includes(filter) || role.includes(filter)) {
                     row.style.display = '';
                 } else {
                     row.style.display = 'none';

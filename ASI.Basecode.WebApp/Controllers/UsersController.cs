@@ -268,12 +268,12 @@ namespace ASI.Basecode.WebApp.Controllers
 
             try
             {
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                var fullName = HttpContext.Session.GetString("FullName");
 
                 var newResponse = new Response
                 {
                     TicketId = ticketId,
-                    Sender = userId ?? "Unknown",
+                    Sender = fullName ?? "Unknown",
                     Description = description,
                     CreatedTime = DateTime.Now
                 };
