@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using static ASI.Basecode.Resources.Constants.Enums;
@@ -21,8 +22,12 @@ namespace ASI.Basecode.WebApp.Controllers
     {
         private readonly ICategoryService _categoryService;
         private readonly ITicketService _ticketService;
+        private readonly IResponseService _responseService;
+        private readonly IUserService _userService;
         public UsersController(ICategoryService categoryService,
                                 ITicketService ticketService,
+                                IResponseService responseService,
+                                IUserService userService,
                                 IHttpContextAccessor httpContextAccessor,
                                 ILoggerFactory loggerFactory,
                                 IConfiguration configuration,
@@ -30,6 +35,8 @@ namespace ASI.Basecode.WebApp.Controllers
         {
             _categoryService = categoryService;
             _ticketService = ticketService;
+            _userService = userService;
+            _responseService = responseService;
         }
 
         public IActionResult Index(string status = null)
@@ -146,7 +153,7 @@ namespace ASI.Basecode.WebApp.Controllers
             }
         }
 
-        public IActionResult MyTickets(string status = null)
+        public IActionResult MyTickets(string status = null, int? selectedTicketId = null)
         {
             var userRole = HttpContext.Session.GetString("UserRole");
 
@@ -154,43 +161,47 @@ namespace ASI.Basecode.WebApp.Controllers
             {
                 return RedirectToAction("Index", "Home");
             }
+
             var userEmail = HttpContext.Session.GetString("Email");
 
-            // Redirect non-User roles to the Home page
-            if (userRole != "User")
-            {
-                return RedirectToAction("Index", "Home");
-            }
-
-            // Fetch tickets from the service
             var (success, tickets) = _ticketService.GetAllTickets();
             if (!success)
             {
                 return BadRequest("Failed to fetch tickets.");
             }
 
-            // Define allowed statuses for filtering
             var allowedStatuses = new[] { "Open", "In Progress", "Resolved", "Closed" };
 
-            // Filter tickets for the current user and allowed statuses
             tickets = tickets
                 .Where(ticket => ticket.RequesterEmail == userEmail && allowedStatuses.Contains(ticket.Status))
                 .ToList();
 
-            // Apply status filter if specified
             if (!string.IsNullOrEmpty(status) && allowedStatuses.Contains(status))
             {
                 tickets = tickets.Where(ticket => ticket.Status == status).ToList();
                 ViewData["SelectedStatus"] = status;
             }
 
-            // Prepare status counts for the view
+            Ticket selectedTicket = null;
+            List<Response> responses = new List<Response>();
+            if (selectedTicketId.HasValue)
+            {
+                selectedTicket = tickets.FirstOrDefault(ticket => ticket.TicketId == selectedTicketId.Value);
+
+                responses = _responseService.GetResponsesByTicketId(selectedTicketId.Value);
+                if (responses == null || !responses.Any())
+                {
+                    Console.WriteLine("No responses found for ticket ID: " + selectedTicketId.Value);
+                }
+
+                Console.WriteLine("Selected Ticket ID: " + selectedTicketId);
+            }
+
             ViewData["StatusCounts"] = allowedStatuses.ToDictionary(
                 stat => stat,
                 stat => tickets.Count(ticket => ticket.Status == stat)
             );
 
-            // Map tickets to the view model
             var model = new TicketListViewModel
             {
                 Tickets = tickets.Select(ticket => new TicketPageViewModel
@@ -204,10 +215,103 @@ namespace ASI.Basecode.WebApp.Controllers
                     Priority = ticket.Priority,
                     CreatedTime = ticket.CreatedTime,
                     UpdatedTime = ticket.UpdatedTime
+                }).ToList(),
+                SelectedTicket = selectedTicket != null ? new TicketPageViewModel
+                {
+                    TicketId = selectedTicket.TicketId,
+                    Status = selectedTicket.Status,
+                    Subject = selectedTicket.Subject,
+                    Category = selectedTicket.Category,
+                    RequesterEmail = selectedTicket.RequesterEmail,
+                    Assignee = selectedTicket.Assignee,
+                    Priority = selectedTicket.Priority,
+                    CreatedTime = selectedTicket.CreatedTime,
+                    UpdatedTime = selectedTicket.UpdatedTime,
+                    Description = selectedTicket.Description
+                } : null,
+                Responses = responses.Select(r => new ResponseViewModel
+                {
+                    ResponseId = r.ResponseId,
+                    TicketId = r.TicketId,
+                    Sender = r.Sender,
+                    Description = r.Description,
+                    CreatedTime = r.CreatedTime
                 }).ToList()
             };
 
             return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult AddResponse(int ticketId, string description)
+        {
+            if (string.IsNullOrWhiteSpace(description))
+            {
+                TempData["ErrorMessage"] = "Response cannot be empty.";
+                return RedirectToAction("MyTickets", new { selectedTicketId = ticketId });
+            }
+
+            var ticket = _ticketService.GetTicketById(ticketId);
+
+            if (ticket == null)
+            {
+                TempData["ErrorMessage"] = "Ticket not found.";
+                return RedirectToAction("MyTickets");
+            }
+
+            // Prevent responses if the ticket is closed
+            if (ticket.Status == "Closed")
+            {
+                TempData["ErrorMessage"] = "Responses are not allowed for closed tickets.";
+                return RedirectToAction("MyTickets", new { selectedTicketId = ticketId });
+            }
+
+            try
+            {
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+                var newResponse = new Response
+                {
+                    TicketId = ticketId,
+                    Sender = userId ?? "Unknown",
+                    Description = description,
+                    CreatedTime = DateTime.Now
+                };
+
+                _responseService.AddResponse(newResponse);
+
+                TempData["SuccessMessage"] = "Response sent.";
+                return RedirectToAction("MyTickets", new { selectedTicketId = ticketId });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error adding response: {ex.Message}");
+                TempData["ErrorMessage"] = "Failed to add the response. Please try again.";
+                return RedirectToAction("MyTickets", new { selectedTicketId = ticketId });
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Delete(int ticketId)
+        {
+            if (ticketId <= 0)
+            {
+                return BadRequest("Invalid ticket ID.");
+            }
+
+            try
+            {
+                _ticketService.DeleteTicket(ticketId);
+                _responseService.DeleteResponse(ticketId);
+                TempData["SuccessMessage"] = "Ticket has been deleted";
+
+                return RedirectToAction("MyTickets");
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error deleting ticket: {ex.Message}");
+            }
         }
 
     }

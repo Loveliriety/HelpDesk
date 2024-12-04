@@ -38,27 +38,20 @@
                     <button type="submit" class="btn submit-btn mx-2">Submit Ticket</button>
                 </div>
             </form>
-
-            @if (TempData["ErrorMessage"] != null)
-            {
-                <div class="alert alert-danger mt-3">@TempData["ErrorMessage"]</div>
-            }
-            @if (TempData["SuccessMessage"] != null)
-            {
-                <div class="alert alert-success mt-3">@TempData["SuccessMessage"]</div>
-            }
         </div>
     </div>
 </div>
 
 @section Scripts {
+    <script>
         var errorMessage = '@TempData["ErrorMessage"]';
-            if (errorMessage) {
-                toastr.error(errorMessage);
-            }
+        if (errorMessage) {
+            toastr.error(errorMessage);
+        }
 
-            var successMessage = '@TempData["SuccessMessage"]';
+        var successMessage = '@TempData["SuccessMessage"]';
         if (successMessage) {
             toastr.success(successMessage);
         }
+    </script>
 }

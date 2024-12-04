@@ -92,7 +92,7 @@ namespace ASI.Basecode.WebApp.Controllers
 
             return RedirectToAction("Index", "Home");*/
 
-            var loginResult = _userService.AuthenticateUser(model.UserId, model.Password, ref user);
+            var loginResult = _userService.AuthenticateUser(model.Email, model.Password, ref user);
             if (loginResult == LoginResult.Success)
             {
                 // 認証OK

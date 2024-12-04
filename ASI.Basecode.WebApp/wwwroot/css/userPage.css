@@ -225,19 +225,18 @@ table.tickets-table {
 
 .mytickets-section {
     margin: 0 auto;
-    width: 930px;
+    width: 80%;
     color: #3D729A;
     padding: 60px;
+    overflow-y: auto;
 }
 
 .mytickets-card {
     border-radius: 10px;
     border: 1px solid #3D729A;
-}
-
-.mytickets-inner {
-    margin-top: -20px;
-    padding: 80px;
+    height: auto;
+    overflow-y: auto;
+    padding: 10px;
 }
 
 .mytickets-header {
@@ -266,4 +265,221 @@ table.tickets-table {
     background-color: #3D729A;
     color: #fff;
     border: 1px solid #3D729A;
+}
+
+.ticket-list-col {
+    border-right: 1px solid #3D729A;
+    height: auto;
+}
+
+.ticket-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ticket-item {
+    border-bottom: 1px solid #3D729A;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details {
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.tickets-sub {
+    font-family: 'Poppins';
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #000000;
+}
+
+.tickets-id {
+    font-weight: bold;
+    margin-right: 20px;
+    color: #3D729A;
+}
+
+.ticket-status {
+    text-transform: capitalize;
+    text-align: right;
+    color: #9C9C9C;
+    margin-left: auto;
+}
+
+.ticket-info {
+    border-radius: 10px;
+    border: 1px solid #3D729A;
+    padding: 20px;
+}
+
+.ticket-details {
+    padding-left: 25px;
+}
+
+.ticket-delete-btn {
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.ticket-info p {
+    font-family: 'Poppins';
+    margin: 0;
+    color: #353535;
+    margin-bottom: 10px;
+}
+
+.ticket-info a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+    .ticket-info a:hover {
+        text-decoration: underline;
+    }
+
+.ticket-head {
+    margin-right: 20px;
+}
+
+.ticket-details p {
+    font-family: 'Poppins';
+    margin: 0;
+    color: #353535;
+    display: flex;
+    align-items: baseline; 
+}
+
+.ticket-details p {
+    margin-bottom: 10px;
+}
+
+.ticket-head {
+    margin-right: 20px; 
+    font-weight: bold; 
+    min-width: 150px; 
+    display: inline-block; 
+}
+
+.ticket-data {
+    display: inline-block; 
+}
+
+.data-bg {
+    background-color: #E4E8EB;
+    border-radius: 9px;
+    width: 90%;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.user-name {
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin-left: 10px;
+    color: #353535;
+}
+
+.r-date {
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: #353535;
+}
+
+.data-bg-2 {
+    background-color: #E4E8EB;
+    border-radius: 9px;
+    width: 100%;;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    white-space: pre-line;
+    margin-bottom: 10px;
+}
+
+.r-description {
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #353535;
+}
+
+.attachment-head {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+    color: #353535;
+}
+
+.r-attachment {
+    background-color: #E4E8EB;
+    border-radius: 9px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #353535;
+}
+
+.reply-agent {
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+}
+
+    .reply-agent textarea {
+        outline: none;
+        width: 100%;
+        height: 90px;
+        background-color: #F1F1F1;
+        resize: none;
+        border: 1px solid #9C9C9C;
+        padding: 10px 20px;
+        border-radius: 9px;
+    }
+
+.btn-send {
+    background-color: #3D729A;
+    height: auto;
+    width: 100px;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 50px;
+    padding: 5px 20px;
+    border: 1px solid #3D729A;
+    justify-content: center;
+    align-items: center;
+}
+
+    .btn-send:hover {
+        background-color: #214b6a;
+        color: #ffff;
+        border: 1px solid #3D729A;
+    }
+
+.file-item-2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    border: 1px solid #3D729A;
+    padding: 2px 7px;
+    border-radius: 5px;
+}
+
+    .file-item-2 span {
+        margin-right: 10px;
+    }
+
+.ticket-modal {
+    border: 1px solid #999999;
+    border-radius: 9px;
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Dp7tDnITeLEKglXmYBfEA2+ezQ8zu1AuxQXnWv5tJ4o=",
+  "Hash": "Qw7ywgCALtRXg1aPh8N736xY0pCrlb8D7qdzn4gN+UY=",
   "Source": "ASI.Basecode.WebApp",
   "BasePath": "_content/ASI.Basecode.WebApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ASI.Basecode.WebApp\\wwwroot",
       "Source": "ASI.Basecode.WebApp",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\custom.css",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\custom.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "css/custom.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\custom.css"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\header.css",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\header.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "css/header.css",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\css\\header.css"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\login.css",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\login.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "css/login.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\main.css",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\main.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "css/main.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\main.css"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\site.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\style.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\userPage.css",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\css\\userPage.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "css/userPage.css",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\userPage.css"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\favicon.ico",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\fonts\\roboto.css",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\fonts\\roboto.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "fonts/roboto.css",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\roboto.css"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "html/assets/js/plugins/jquery-slimscroll/jquery.slimscroll.js",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.min.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "html/assets/js/plugins/jquery-slimscroll/jquery.slimscroll.min.js",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\html\\assets\\js\\plugins\\jquery-slimscroll\\jquery.slimscroll.min.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\agent.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\agent.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/agent.svg",
       "AssetKind": "All",
@@ -245,10 +245,29 @@
       "OriginalItemSpec": "wwwroot\\img\\agent.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\asi-logo-invert.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\agent-icon.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "BasePath": "_content/ASI.Basecode.WebApp",
+      "RelativePath": "img/agent-icon.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\agent-icon.svg"
+    },
+    {
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\asi-logo-invert.svg",
+      "SourceId": "ASI.Basecode.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/asi-logo-invert.svg",
       "AssetKind": "All",
@@ -264,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\img\\asi-logo-invert.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\attachment.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\attachment.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/attachment.svg",
       "AssetKind": "All",
@@ -283,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\img\\attachment.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\background.png",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\background.png",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/background.png",
       "AssetKind": "All",
@@ -302,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\img\\background.png"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\closed.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\closed.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/closed.svg",
       "AssetKind": "All",
@@ -321,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\img\\closed.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\customer-feedback-logo.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\customer-feedback-logo.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/customer-feedback-logo.svg",
       "AssetKind": "All",
@@ -340,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\img\\customer-feedback-logo.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\Dark-Mode.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\Dark-Mode.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/Dark-Mode.svg",
       "AssetKind": "All",
@@ -359,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Dark-Mode.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\dashboard-logo.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\dashboard-logo.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/dashboard-logo.svg",
       "AssetKind": "All",
@@ -378,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\img\\dashboard-logo.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\dot-option.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\dot-option.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/dot-option.svg",
       "AssetKind": "All",
@@ -397,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\img\\dot-option.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\headset.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\headset.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/headset.svg",
       "AssetKind": "All",
@@ -416,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\img\\headset.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\Light-Mode.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\Light-Mode.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/Light-Mode.svg",
       "AssetKind": "All",
@@ -435,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Light-Mode.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\LiveIT.png",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\LiveIT.png",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/LiveIT.png",
       "AssetKind": "All",
@@ -454,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\img\\LiveIT.png"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\logo.png",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\logo.png",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/logo.png",
       "AssetKind": "All",
@@ -473,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\img\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\logout.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\logout.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/logout.svg",
       "AssetKind": "All",
@@ -492,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\img\\logout.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\open.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\open.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/open.svg",
       "AssetKind": "All",
@@ -511,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\img\\open.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\profile-logo.png",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\profile-logo.png",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/profile-logo.png",
       "AssetKind": "All",
@@ -530,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\img\\profile-logo.png"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\progress.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\progress.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/progress.svg",
       "AssetKind": "All",
@@ -549,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\img\\progress.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\remove-icon.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\remove-icon.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/remove-icon.svg",
       "AssetKind": "All",
@@ -568,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\img\\remove-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\report-&-analytics-logo.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\report-&-analytics-logo.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/report-&-analytics-logo.svg",
       "AssetKind": "All",
@@ -587,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\img\\report-&-analytics-logo.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\settings-logo.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\settings-logo.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/settings-logo.svg",
       "AssetKind": "All",
@@ -606,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\img\\settings-logo.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\side-caret.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\side-caret.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/side-caret.svg",
       "AssetKind": "All",
@@ -625,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\img\\side-caret.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\sidenav-logo.png",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\sidenav-logo.png",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/sidenav-logo.png",
       "AssetKind": "All",
@@ -644,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\img\\sidenav-logo.png"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\solved.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\solved.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/solved.svg",
       "AssetKind": "All",
@@ -663,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\img\\solved.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\support-profile.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\support-profile.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/support-profile.svg",
       "AssetKind": "All",
@@ -682,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\img\\support-profile.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\ticket-management-logo.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\ticket-management-logo.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/ticket-management-logo.svg",
       "AssetKind": "All",
@@ -701,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\img\\ticket-management-logo.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\topnav-logo.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\topnav-logo.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/topnav-logo.svg",
       "AssetKind": "All",
@@ -720,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\img\\topnav-logo.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\total-tickets.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\total-tickets.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/total-tickets.svg",
       "AssetKind": "All",
@@ -739,10 +758,29 @@
       "OriginalItemSpec": "wwwroot\\img\\total-tickets.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\User.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\Trash.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "BasePath": "_content/ASI.Basecode.WebApp",
+      "RelativePath": "img/Trash.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Trash.svg"
+    },
+    {
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\User.svg",
+      "SourceId": "ASI.Basecode.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/User.svg",
       "AssetKind": "All",
@@ -758,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\img\\User.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\user-management-logo.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\user-management-logo.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/user-management-logo.svg",
       "AssetKind": "All",
@@ -777,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\img\\user-management-logo.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\user-profile.svg",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\img\\user-profile.svg",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "img/user-profile.svg",
       "AssetKind": "All",
@@ -796,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\img\\user-profile.svg"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\js\\site.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -815,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -834,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -853,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -872,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -891,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -910,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -929,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -948,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -967,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -986,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1005,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1024,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1043,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1062,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1081,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1100,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1119,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1138,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1157,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1176,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1195,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1214,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1233,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1252,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1271,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1290,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1309,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1328,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1347,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1366,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1385,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1404,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1423,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1442,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react\\dist\\react.development.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react\\dist\\react.development.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react/dist/react.development.js",
       "AssetKind": "All",
@@ -1461,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react\\dist\\react.development.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react\\dist\\react.production.min.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react\\dist\\react.production.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react/dist/react.production.min.js",
       "AssetKind": "All",
@@ -1480,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react\\dist\\react.production.min.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react\\dist\\react.profiling.min.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react\\dist\\react.profiling.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react/dist/react.profiling.min.js",
       "AssetKind": "All",
@@ -1499,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react\\dist\\react.profiling.min.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom.development.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom.development.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom.development.js",
       "AssetKind": "All",
@@ -1518,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom.development.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom.production.min.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom.production.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom.production.min.js",
       "AssetKind": "All",
@@ -1537,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom.production.min.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom.profiling.min.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom.profiling.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom.profiling.min.js",
       "AssetKind": "All",
@@ -1556,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom.profiling.min.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-server.browser.development.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-server.browser.development.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom-server.browser.development.js",
       "AssetKind": "All",
@@ -1575,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom-server.browser.development.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-server.browser.production.min.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-server.browser.production.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom-server.browser.production.min.js",
       "AssetKind": "All",
@@ -1594,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom-server.browser.production.min.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-test-utils.development.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-test-utils.development.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom-test-utils.development.js",
       "AssetKind": "All",
@@ -1613,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom-test-utils.development.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-test-utils.production.min.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-test-utils.production.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom-test-utils.production.min.js",
       "AssetKind": "All",
@@ -1632,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom-test-utils.production.min.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-fizz.browser.development.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-fizz.browser.development.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom-unstable-fizz.browser.development.js",
       "AssetKind": "All",
@@ -1651,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-fizz.browser.development.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-fizz.browser.production.min.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-fizz.browser.production.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom-unstable-fizz.browser.production.min.js",
       "AssetKind": "All",
@@ -1670,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-fizz.browser.production.min.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-native-dependencies.development.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-native-dependencies.development.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom-unstable-native-dependencies.development.js",
       "AssetKind": "All",
@@ -1689,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-native-dependencies.development.js"
     },
     {
-      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-native-dependencies.production.min.js",
+      "Identity": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\lib\\react-dom\\dist\\react-dom-unstable-native-dependencies.production.min.js",
       "SourceId": "ASI.Basecode.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI GROUP5\\HelpDesk\\ASI.Basecode.WebApp\\wwwroot\\",
       "BasePath": "_content/ASI.Basecode.WebApp",
       "RelativePath": "lib/react-dom/dist/react-dom-unstable-native-dependencies.production.min.js",
       "AssetKind": "All",

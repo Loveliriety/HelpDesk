@@ -1,4 +1,6 @@
-﻿﻿@{
+﻿@model ASI.Basecode.Services.ServiceModels.TicketListViewModel
+
+@{
     ViewData["Title"] = "My Tickets";
 }
 
@@ -28,7 +30,195 @@
     </ul>
 
     <div class="bg-transparent mytickets-card mt-3">
-        <div class="mytickets-inner">
+        <div class="row">
+            <div class="col-sm-3 ticket-list-col">
+                 <div class="ticket-list">
+                    @if (Model.Tickets != null && Model.Tickets.Any())
+                    {
+                        @foreach (var ticket in Model.Tickets)
+                        {
+                            <div class="ticket-item">
+                                <a href="@Url.Action("MyTickets", new { selectedTicketId = ticket.TicketId })" class="details">
+                                    <p class="tickets-sub">
+                                        <span class="tickets-id">#@ticket.TicketId</span> @ticket.Subject 
+                                        <span class="ticket-status">@ticket.Status</span>
+                                    </p>
+                                </a>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                            <p class="text-muted">No tickets found.</p>
+                    }
+                </div>
+            </div>
+            <div class="col">
+                @if (Model.SelectedTicket != null)
+                {
+                    <div class="ticket-info d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5>#@Model.SelectedTicket.TicketId</h5>
+                            <button data-bs-toggle="modal" data-bs-target="#deleteTicketModal-@Model.SelectedTicket.TicketId" class="btn btn-outline-danger ticket-delete-btn">Delete Ticket</button>
+                        </div>
+                        <div class="ticket-details">
+                            <p><span class="ticket-head">Date Created</span> <span class="ticket-data">@Model.SelectedTicket.CreatedTime.ToString("MMMM d, yyyy h:mm tt")</span></p>
+                            <p><span class="ticket-head">Subject</span> <span class="ticket-data data-bg">@Model.SelectedTicket.Subject</span></p>
+                            <p><span class="ticket-head">Description</span> <span class="ticket-data data-bg">@Model.SelectedTicket.Description</span></p>
+                            <p><span class="ticket-head">Attachments</span>
+                                <span class="ticket-data data-bg">
+                                    No attachements found.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    @if (Model.Responses != null && Model.Responses.Any())
+                    {
+                        <div class="responses">
+                            @foreach (var response in Model.Responses)
+                            {
+                                <div class="w-100 px-4 py-2 mt-4" style="border-bottom: 1px solid #498dbf;">
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+                                            <img class="user-pfp" src="~/img/agent-icon.svg" alt="User">
+                                            <span class="user-name">@response.Sender</span>
+                                        </div>
+                                        <span class="r-date">@response.CreatedTime.ToString("MMMM d, yyyy h:mm tt")</span>
+                                    </div>
+                                    <div class="px-5 py-2">
+                                        <div class="d-flex flex-row gap-3 mb-2">
+                                            <span class="r-description data-bg-2">
+                                                @response.Description
+                                            </span>
+                                        </div>
+                                        <div class="d-flex flex-row gap-3">
+                                            <span class="attachment-head">Attachment:</span>
+                                            <div class="r-attachment">No attachment found.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No responses available for this ticket.</p>
+                    }
+
+                    @if (Model.SelectedTicket.Status != "Closed")
+                    {
+                        <form method="post" action="@Url.Action("AddResponse", "Users")">
+                            <div class="reply-agent">
+                                <textarea placeholder="Reply to agent..." name="description"></textarea>
+                                <div id="fileList" class="d-flex flex-row"></div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between submit-ticket">
+                                <div class="attachment-container">
+                                    <label for="fileInput">
+                                        <img src="~/img/attachment.svg" alt="Add Attachment" class="attachment-icon">
+                                    </label>
+                                    <input type="file" id="fileInput" multiple hidden>
+                                </div>
+                                <input type="hidden" name="ticketId" value="@Model.SelectedTicket.TicketId" />
+                                <button type="submit" class="btn btn-send">Send</button>
+                            </div>
+                        </form>
+                    }
+                }
+                else
+                {
+                    <p class="text-muted">Select a ticket to view its details.</p>
+                }
+            </div>
         </div>
     </div>
 </div>
+
+@foreach (var ticket in Model.Tickets)
+{
+    <div class="modal fadel" id="deleteTicketModal-@ticket.TicketId" tabindex="-1" aria-labelledby="deleteTicketModalLabel-@ticket.TicketId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-4 ticket-modal">
+                <div class="modal-body">
+                    <img src="~/img/Trash.svg" alt="Trash Icon" class="mb-3" style="width: 50px;" />
+                    <h5 class="text-danger mb-4">Are you sure you want to remove this ticket?</h5>
+                    <form action="/Users/Delete" method="post" class="d-flex justify-content-center gap-3">
+                        <input type="hidden" name="ticketId" value="@ticket.TicketId" />
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-danger">Confirm</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+@section Scripts {
+    <script>
+        var errorMessage = '@TempData["ErrorMessage"]';
+        if (errorMessage) {
+            toastr.error(errorMessage);
+        }
+
+        var successMessage = '@TempData["SuccessMessage"]';
+        if (successMessage) {
+            toastr.success(successMessage);
+        }
+
+        document.getElementById('fileInput').addEventListener('change', function (event) {
+            const fileList = document.getElementById('fileList');
+            fileList.innerHTML = "";
+
+            const filesArray = Array.from(event.target.files);
+
+            filesArray.forEach((file, index) => {
+                const listItem = document.createElement('div');
+                listItem.classList.add('file-item-2');
+                listItem.setAttribute('data-index', index);
+
+                const fileName = document.createElement('span');
+                fileName.textContent = file.name;
+
+                const removeButton = document.createElement('button');
+                removeButton.classList.add('remove-btn');
+                removeButton.textContent = 'x';
+
+                removeButton.addEventListener('click', function () {
+                    filesArray.splice(index, 1);
+                    updateFileList(filesArray);
+                });
+
+                listItem.appendChild(fileName);
+                listItem.appendChild(removeButton);
+                fileList.appendChild(listItem);
+            });
+
+            function updateFileList(updatedFiles) {
+                fileList.innerHTML = "";
+                updatedFiles.forEach((file, newIndex) => {
+                    const newItem = document.createElement('div');
+                    newItem.classList.add('file-item-2');
+                    newItem.setAttribute('data-index', newIndex);
+
+                    const newFileName = document.createElement('span');
+                    newFileName.textContent = file.name;
+
+                    const newRemoveButton = document.createElement('button');
+                    newRemoveButton.classList.add('remove-btn');
+                    newRemoveButton.textContent = 'x';
+
+                    newRemoveButton.addEventListener('click', function () {
+                        updatedFiles.splice(newIndex, 1);
+                        updateFileList(updatedFiles);
+                    });
+
+                    newItem.appendChild(newFileName);
+                    newItem.appendChild(newRemoveButton);
+                    fileList.appendChild(newItem);
+                });
+            }
+        });
+    </script>
+}
