@@ -15,6 +15,8 @@ namespace ASI.Basecode.Services.ServiceModels
         public string Description { get; set; }
         public byte[] Attachment { get; set; }
         public DateTime CreatedTime { get; set; }
+        public List<AttachmentViewModel> Attachments { get; set; }
+
 
         //working
     }

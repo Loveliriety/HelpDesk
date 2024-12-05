@@ -33,13 +33,29 @@ namespace ASI.Basecode.Data.Repositories
         }
         public void DeleteAttachment(int attachmentId)
         {
-            var attachment = _dbContext.Set<Attachment>().Find(attachmentId);
-            if (attachment != null)
+            if (attachmentId <= 0)
             {
+                throw new ArgumentException("Invalid attachment ID.", nameof(attachmentId));
+            }
+
+            try
+            {
+                var attachment = _dbContext.Set<Attachment>().Find(attachmentId);
+
+                if (attachment == null)
+                {
+                    Console.WriteLine($"Attachment with ID {attachmentId} not found.");
+                    return; 
+                }
+
                 _dbContext.Set<Attachment>().Remove(attachment);
                 _dbContext.SaveChanges();
             }
-
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error deleting attachment: {ex.Message}");
+                throw;
+            }
         }
     }
 }

@@ -18,8 +18,8 @@ namespace ASI.Basecode.Services.Services
             _attachmentRepository = attachmentRepository;
         }
 
-        public Attachment GetAttachmentsByResponseId(int responseId)
-        { 
+        public IEnumerable<Attachment> GetAttachmentsByResponseId(int responseId)
+        {
             return _attachmentRepository.GetAttachmentsByResponseId(responseId);
         }
 
@@ -31,13 +31,13 @@ namespace ASI.Basecode.Services.Services
         public void DeleteAttachmentsByResponseId(int responseId)
         {
             if (responseId <= 0)
-            { 
-                throw new ArgumentException("Invalid repsonse Id.", nameof(responseId));
+            {
+                throw new ArgumentException("Invalid response Id.", nameof(responseId));
             }
 
             var attachments = _attachmentRepository.GetAttachmentsByResponseId(responseId);
 
-            if (attachments == null)
+            if (attachments == null || !attachments.Any())
             {
                 Console.WriteLine($"No attachments found for Response ID: {responseId}");
                 return;
@@ -52,10 +52,10 @@ namespace ASI.Basecode.Services.Services
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"An error occured while deleting responses: {ex.Message}");
+                Console.WriteLine($"An error occurred while deleting attachments: {ex.Message}");
                 throw;
             }
-            
         }
+
     }
 }

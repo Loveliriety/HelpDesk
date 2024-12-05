@@ -5,7 +5,7 @@
 }
 <!--Working-->
 
-<form method="post" asp-action="UpdateTicket">
+<form method="post" asp-action="UpdateTicket" enctype="multipart/form-data">
     <div class="content p-4" style="width: calc(100vw - 80px); margin-left: 80px;">
         <h5 class="mt-1 page-header">Ticket Management</h5>
 
@@ -41,6 +41,10 @@
                             <label for="subject" class="form-label">Subject</label>
                             <input type="text" class="form-control text-input" id="Subject" name="Subject" value="@Model.Tickets.FirstOrDefault()?.Subject" disabled />
                         </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea type="text" class="form-control text-input text-wrap overflow-hidden" style="resize: none; height: 120px;" id="Description" name="Description" disabled> @Model.Tickets.FirstOrDefault()?.Description</textarea>
+                        </div>
 
                         <div class="mb-3">
                             <label for="requesterEmail" class="form-label">Requester Email</label>
@@ -53,9 +57,11 @@
                                 <option value="@Model.Tickets.FirstOrDefault()?.Assignee" selected>@Model.Tickets.FirstOrDefault()?.Assignee</option>
                                 @foreach (var user in Model.Users)
                                 {
-                                    <option value="@user.UserId">
-                                        @user.Name
-                                    </option>
+                                    <option value="@user.UserId">@user.Name</option>
+                                }
+                                @foreach (var team in Model.Teams)
+                                {
+                                    <option value="@team.TeamId">@team.TeamName</option>
                                 }
                             </select>
                         </div>
@@ -89,7 +95,7 @@
                         <div class="bb responses">
                             @foreach (var response in Model.Responses)
                             {
-                                <div class="w-100 px-4 py-2 @(response.Sender == "Customer" ? "c-reply" : "s-reply")" style="border-bottom: 1px solid #498dbf;">
+                                <div class="w-100 px-4 py-3 @(response.Sender == "Customer" ? "c-reply" : "s-reply")" style="border-bottom: 1px solid #498dbf;">
                                     <div class="d-flex flex-row justify-content-between align-items-center">
                                         <div class="d-flex flex-row justify-content-center align-items-center gap-2">
                                             <img class="pp" src="~/img/user-profile.svg" alt="User">
@@ -99,13 +105,27 @@
                                     </div>
                                     <div class="px-5 py-2">
                                         <div class="d-flex flex-row gap-3 mb-2">
-                                            <span>Description:</span>
+                                            <span class="mr-20">Message:</span>
                                             <div class="r-desc">@response.Description</div>
                                         </div>
-                                        <div class="d-flex flex-row gap-3">
-                                            <span>Attachment:</span>
-                                            <div class="r-desc" style="background-color: #FAFAFA;">No attachment found.</div>
-                                        </div>
+                                        @if (response.Attachments != null && response.Attachments.Any())
+                                        {
+                                            <div class="d-flex flex-row gap-3">
+                                                <span>Attachment:</span>
+                                                <div class="r-desc d-flex flex-row gap-2" style="background-color: #FAFAFA;">
+                                                    @foreach (var attachment in response.Attachments)
+                                                    {
+                                                        <div>
+                                                            @* Small image preview *@
+                                                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#attachmentModal" onclick="showLargeImage('@attachment.FileData')">
+                                                                <img src="data:image/jpeg;base64,@attachment.FileData" alt="Attachment Preview" style="width: 100px; height: 100px; object-fit: cover; cursor: pointer;"/>
+                                                            </a>
+                                                            <br />
+                                                        </div>
+                                                    }
+                                                </div>
+                                            </div>
+                                        }
                                     </div>
                                 </div>
                             }
@@ -114,7 +134,7 @@
 
                     <!-- New Response -->
                     <div class="description">
-                        <textarea placeholder="Write your response..." name="description"></textarea>
+                        <textarea placeholder="Write your response..." name="Description"></textarea>
                         <div id="fileList" class="d-flex flex-row"></div>
                     </div>
                     <div class="d-flex flex-row justify-content-between submit-ticket">
@@ -122,13 +142,13 @@
                             <label for="fileInput">
                                 <img src="~/img/attachment.svg" alt="Add Attachment" class="attachment-icon">
                             </label>
-                            <input type="file" id="fileInput" multiple hidden>
+                            <input type="file" id="fileInput" name="Attachments" multiple hidden accept=".jpg,.png,.pdf,.docx">
                         </div>
                         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Submit ticket as
                         </button>
                         <div class="dropdown-menu">
-                            <input type="hidden" name="ticketId" value="@Model.Tickets.FirstOrDefault()?.TicketId">
+                            <input type="hidden" name="TicketId" value="@Model.Tickets.FirstOrDefault()?.TicketId">
                             <button type="submit" name="Status" value="Open" class="dropdown-item">Open</button>
                             <button type="submit" name="Status" value="In Progress" class="dropdown-item">In Progress</button>
                             <button type="submit" name="Status" value="Resolved" class="dropdown-item">Resolved</button>
@@ -141,6 +161,7 @@
     </div>
 </form>
 
+<!-- delete modal -->
 <div id="deleteModal" class="modal" style="display:none;">
     <div class="modal-content w-25 p-4 m-auto mt-5 fade-in-down" data-mdb-animation-start="onLoad">
         <!--        <span class="close" onclick="closeModal()">&times;</span>  -->
@@ -154,7 +175,20 @@
     </div>
 </div>
 
-
+<!-- file modal -->
+<div class="modal fade" id="attachmentModal" tabindex="-1" aria-labelledby="attachmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="attachmentModalLabel">Attachment Preview</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Large Preview" style="width: 100%; height: auto;" />
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -162,8 +196,9 @@
     <script>
         document.getElementById('fileInput').addEventListener('change', function(event) {
             const fileList = document.getElementById('fileList');
-            fileList.innerHTML = ""; 
+            fileList.innerHTML = "";
 
+            const fileInput = document.getElementById('fileInput');
             const filesArray = Array.from(event.target.files);
 
             filesArray.forEach((file, index) => {
@@ -186,6 +221,23 @@
                 listItem.appendChild(fileName);
                 listItem.appendChild(removeButton);
                 fileList.appendChild(listItem);
+            });
+
+            fileInput.addEventListener('change', () => {
+                const files = Array.from(fileInput.files);
+                fileList.innerHTML = '';
+
+                if (files.length > 5) {
+                    alert('You can upload a maximum of 5 attachments.');
+                    fileInput.value = ''; 
+                    return;
+                }
+
+                files.forEach(file => {
+                    const fileItem = document.createElement('div');
+                    fileItem.textContent = file.name;
+                    fileList.appendChild(fileItem);
+                });
             });
 
             function updateFileList(updatedFiles) {
@@ -253,6 +305,11 @@
         var successMessage = '@TempData["SuccessMessage"]';
         if (successMessage) {
             toastr.success(successMessage);
+        }
+
+        function showLargeImage(base64String) {
+            var modalImage = document.getElementById('modalImage');
+            modalImage.src = 'data:image/jpeg;base64,' + base64String;
         }
     </script>
 }

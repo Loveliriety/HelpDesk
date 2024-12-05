@@ -44,6 +44,7 @@ namespace ASI.Basecode.Services.Services
                 Category = ticket.Category,
                 Subject = ticket.Subject,
                 Status = ticket.Status,
+                Description = ticket.Description,
                 Priority = ticket.Priority,
                 RequesterEmail = ticket.RequesterEmail,
                 Assignee = ticket.Assignee,
@@ -90,7 +91,7 @@ namespace ASI.Basecode.Services.Services
             return _ticketRepository.GetTicketsByPriority(priority);
         }
 
-        public IEnumerable<Ticket> GetTicketsByAssignee(string assignee)
+        public IEnumerable<Ticket> GetTicketsByAssignee(int assignee)
         {
             return _ticketRepository.GetTicketsByAssignee(assignee);
         }

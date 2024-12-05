@@ -60,8 +60,8 @@ namespace ASI.Basecode.Services.Services
                 CreatedTime = response.CreatedTime
             };
 
-            _responseRepository.AddResponse(newResponse);
-            return response.ResponseId; 
+            int responseId = _responseRepository.AddResponse(newResponse);
+            return responseId; 
         }
 
         public void DeleteResponsesByTicketId(int ticketId)

@@ -410,7 +410,7 @@ hr {
 .header th:nth-child(1), .body td:nth-child(1) {width: 2%;}
 .header th:nth-child(2), .body td:nth-child(2) {width: 5%;}
 .header th:nth-child(3), .body td:nth-child(3) {width: 7%;}
-.header th:nth-child(4), .body td:nth-child(4) {width: 15%;}
+.header th:nth-child(4), .body td:nth-child(4) {max-width:15%;}
 .header th:nth-child(5), .body td:nth-child(5) {width: 15%;}
 .header th:nth-child(6), .body td:nth-child(6) {width: 10%;}
 .header th:nth-child(7), .body td:nth-child(7) {width: 6%;}

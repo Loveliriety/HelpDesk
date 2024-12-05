@@ -9,7 +9,7 @@ namespace ASI.Basecode.Services.Interfaces
 {
     public interface IAttachmentService
     {
-        Attachment GetAttachmentsByResponseId(int responseId);
+        IEnumerable<Attachment> GetAttachmentsByResponseId(int responseId);
         void AddAttachment(Attachment attachment);
         void DeleteAttachmentsByResponseId(int responseId);
     }

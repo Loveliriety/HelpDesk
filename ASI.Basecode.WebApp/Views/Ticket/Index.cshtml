@@ -105,7 +105,7 @@
                                                     @ticket.Status 
                                                 </span>
                                             </td>
-                                            <td class="text-color">@ticket.Subject</td>
+                                            <td class="text-color text-nowrap">@ticket.Subject</td>
                                             <td class="text-color">@ticket.RequesterEmail</td>
                                             <td class="text-color">@ticket.Assignee</td>
                                             <td class="text-color">@ticket.Priority</td>
@@ -127,9 +127,6 @@
         </div>
     </div>
 </div>
-
-
-
 
 
 <!-- Assign Ticket -->
@@ -200,6 +197,11 @@
             </div>
 
             <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea type="text" class="form-control text-input" id="Description" name="Description" required maxlength="200" style="resize: none;"></textarea> 
+            </div>
+
+            <div class="mb-3">
                 <label for="requesterEmail" class="form-label">Requester Email</label>
                 <input type="email" class="form-control text-input" id="RequesterEmail" name="RequesterEmail" required />
             </div>
@@ -208,10 +210,15 @@
                 <label for="assigneeSelect" class="form-label">Assignee</label>
                 <select class="form-select select-input" id="Assignee" name="Assignee">
                     <option selected>--</option>
+                    @foreach (var team in Model.Teams)
+                    {
+                        <option value="@team.TeamId">Team: @team.TeamName</option>
+                    }
                     @foreach (var user in Model.Users)
                     {
-                        <option value="@user.UserId">@user.Name</option>
+                        <option value="@user.UserId">User: @user.Name</option>
                     }
+
                 </select>
             </div>
 
@@ -328,6 +335,5 @@
 }
 
 <style>
-
 
 </style>

@@ -12,6 +12,8 @@ namespace ASI.Basecode.WebApp.Models
         public List<TicketPageViewModel> Tickets { get; set; }
         public List<CategoryViewModel> Categories { get; set; }
         public List<UserViewModel> Users { get; set; }
+        public List<ResponseViewModel> Responses { get; set; }
+        public List<TeamViewModel> Teams { get; set; }
 
         //working
 

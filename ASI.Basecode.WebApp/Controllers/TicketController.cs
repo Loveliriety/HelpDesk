@@ -1,6 +1,7 @@
 ﻿using ASI.Basecode.Data.Models;
 using ASI.Basecode.Services.Interfaces;
 using ASI.Basecode.Services.ServiceModels;
+using ASI.Basecode.Services.Services;
 using ASI.Basecode.WebApp.Mvc;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
@@ -9,8 +10,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Claims;
+using System.Threading.Tasks;
+using static ASI.Basecode.Data.PathManager;
 
 namespace ASI.Basecode.WebApp.Controllers 
 {
@@ -20,11 +24,15 @@ namespace ASI.Basecode.WebApp.Controllers
         private readonly IResponseService _responseService;
         private readonly ICategoryService _categoryService;
         private readonly IUserService _userService;
+        private readonly ITeamService _teamService;
+        private readonly IAttachmentService _attachmentService;
 
         public TicketController(ITicketService ticketService,
                                 IResponseService responseService,
                                 ICategoryService categoryService,
                                 IUserService userService,
+                                ITeamService teamService,
+                                IAttachmentService attachmentService,
                                 IHttpContextAccessor httpContextAccessor,
                                 ILoggerFactory loggerFactory,
                                 IConfiguration configuration,
@@ -34,6 +42,8 @@ namespace ASI.Basecode.WebApp.Controllers
             _ticketService = ticketService;
             _categoryService = categoryService;
             _userService = userService;
+            _teamService = teamService;
+            _attachmentService = attachmentService;
         }
 
         // Index
@@ -49,6 +59,7 @@ namespace ASI.Basecode.WebApp.Controllers
             var (success, tickets) = _ticketService.GetAllTickets();
             var categories = _categoryService.GetAllCategories();
             var users = _userService.GetUsers();
+            var teams = _teamService.GetAllTeams();
 
             if (!success)
             {
@@ -77,7 +88,7 @@ namespace ASI.Basecode.WebApp.Controllers
                     Subject = ticket.Subject,
                     Category = ticket.Category,
                     RequesterEmail = ticket.RequesterEmail,
-                    Assignee = ticket.Assignee,
+                    Assignee = _teamService.GetTeamNameById(ticket.Assignee),
                     Priority = ticket.Priority,
                     CreatedTime = ticket.CreatedTime,
                     UpdatedTime = ticket.UpdatedTime
@@ -95,6 +106,13 @@ namespace ASI.Basecode.WebApp.Controllers
                     Name = user.Name,
                     Email = user.Email,
                     TeamId = user.TeamId,
+                }).ToList(),
+
+                Teams = teams.Select(team => new TeamViewModel
+                {
+                    TeamId = team.TeamId,
+                    TeamName = team.TeamName
+
                 }).ToList()
             };
 
@@ -147,7 +165,8 @@ namespace ASI.Basecode.WebApp.Controllers
         public IActionResult MyTicket(string status = null)
         {
             var (success, tickets) = _ticketService.GetAllTickets();
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var userIdString = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            int userId = int.Parse(userIdString);
 
             if (!success)
             {
@@ -192,7 +211,7 @@ namespace ASI.Basecode.WebApp.Controllers
                     Subject = ticket.Subject,
                     Category = ticket.Category,
                     RequesterEmail = ticket.RequesterEmail,
-                    Assignee = ticket.Assignee,
+                    Assignee = _teamService.GetTeamNameById(ticket.Assignee),
                     Priority = ticket.Priority,
                     CreatedTime = ticket.CreatedTime,
                     UpdatedTime = ticket.UpdatedTime
@@ -210,6 +229,7 @@ namespace ASI.Basecode.WebApp.Controllers
             var categories = _categoryService.GetAllCategories();
             var users = _userService.GetUsers();
             var responses = _responseService.GetResponsesByTicketId(ticketId);
+            var teams = _teamService.GetAllTeams();
 
             if (ticket == null)
             {
@@ -228,9 +248,10 @@ namespace ASI.Basecode.WebApp.Controllers
                         Status = ticket.Status,
                         Subject = ticket.Subject,
                         CategoryId = ticket.Category,
+                        Description = ticket.Description,
                         CategoryName = selectedCategory?.CategoryName,
                         RequesterEmail = ticket.RequesterEmail,
-                        Assignee = ticket.Assignee,
+                        Assignee = _teamService.GetTeamNameById(ticket.Assignee),
                         Priority = ticket.Priority,
                         CreatedTime = ticket.CreatedTime,
                         UpdatedTime = ticket.UpdatedTime,
@@ -243,7 +264,14 @@ namespace ASI.Basecode.WebApp.Controllers
                     TicketId = r.TicketId,
                     Sender = r.Sender,
                     Description = r.Description,
-                    CreatedTime = r.CreatedTime
+                    CreatedTime = r.CreatedTime,
+                    Attachments = _attachmentService.GetAttachmentsByResponseId(r.ResponseId)
+                        .Select(a => new AttachmentViewModel
+                        {
+                            AttachmentId = a.AttachmentId,
+                            ResponseId = a.ResponseId,
+                            FileData = a.File != null ? Convert.ToBase64String(a.File) : null 
+                        }).ToList()
                 }).ToList(),
 
                 Categories = categories.Select(category => new CategoryViewModel
@@ -258,67 +286,93 @@ namespace ASI.Basecode.WebApp.Controllers
                     Name = user.Name,
                     Email = user.Email,
                     TeamId = user.TeamId,
+                }).ToList(),
+
+                Teams = teams.Select(team => new TeamViewModel
+                {
+                    TeamId = team.TeamId,
+                    TeamName = team.TeamName
+
                 }).ToList()
+
             };
 
             return View(model);
         }
 
         [HttpPost]
-        public IActionResult UpdateTicket(int ticketId, string description, string status, int category, string priority, string assignee)
+        public Task<IActionResult> UpdateTicket(Ticket ticket, Response response, List<IFormFile> attachments)
         {
             if (!ModelState.IsValid)
             {
-                foreach (var modelError in ModelState.Values.SelectMany(v => v.Errors))
-                {
-                    Console.WriteLine($"Model error: {modelError.ErrorMessage}");
-                }
-
-                return View();
+                Console.WriteLine("Model state is invalid.");
+                return Task.FromResult<IActionResult>(View());
             }
 
-            var ticket = _ticketService.GetTicketById(ticketId);
-
-            if (ticket == null)
+            var existingTicket = _ticketService.GetTicketById(ticket.TicketId);
+            if (existingTicket == null)
             {
-                Console.WriteLine($"Ticket with ID {ticketId} was not found.");
-                return NotFound();
+                Console.WriteLine($"Ticket with ID {ticket.TicketId} was not found.");
+                return Task.FromResult<IActionResult>(NotFound());
             }
 
             try
             {
                 var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-                ticket.Category = category;
-                ticket.Priority = priority;
-                ticket.Assignee = assignee;
-                ticket.Status = status;
-                ticket.UpdatedTime = DateTime.Now;
+                existingTicket.Category = ticket.Category;
+                existingTicket.Priority = ticket.Priority;
+                existingTicket.Assignee = ticket.Assignee;
+                existingTicket.Status = ticket.Status;
+                existingTicket.UpdatedTime = DateTime.Now;
 
-                _ticketService.UpdateTicket(ticket);
+                _ticketService.UpdateTicket(existingTicket);
 
-                if (!string.IsNullOrEmpty(description))
+                if (!string.IsNullOrEmpty(response.Description))
                 {
-                    var newResponse = new Response
-                    {
-                        TicketId = ticketId,
-                        Sender = userId ?? "Unknown",
-                        Description = description,
-                        CreatedTime = DateTime.Now
-                    };
+                    response.TicketId = ticket.TicketId;
+                    response.Sender = userId ?? "Unknown";
+                    response.CreatedTime = DateTime.Now;
 
-                    _responseService.AddResponse(newResponse);
+                    var responseId = _responseService.AddResponse(response);
+
+                    if (attachments != null && attachments.Count > 0)
+                    {
+                        foreach (var attachment in attachments.Take(5)) 
+                        {
+                            if (attachment.Length > 0)
+                            {
+                                var attachmentEntity = new Attachment
+                                {
+                                    ResponseId = responseId,
+                                    File = GetFileData(attachment) 
+                                };
+
+                                _attachmentService.AddAttachment(attachmentEntity);
+                            }
+                        }
+                    }
                 }
 
                 TempData["SuccessMessage"] = "Ticket has been updated.";
-                return RedirectToAction("View", new { ticketId = ticketId });
+                return Task.FromResult<IActionResult>(RedirectToAction("View", new { ticketId = ticket.TicketId }));
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error updating ticket: {ex.Message}");
-                return StatusCode(500, "Internal server error");
+                return Task.FromResult<IActionResult>(StatusCode(500, "Internal server error"));
             }
         }
+
+        private byte[] GetFileData(IFormFile file)
+        {
+            using (var memoryStream = new MemoryStream())
+            {
+                file.CopyTo(memoryStream); 
+                return memoryStream.ToArray();
+            }
+        }
+
 
         [HttpPost]
         public IActionResult Delete(int id)
@@ -331,6 +385,11 @@ namespace ASI.Basecode.WebApp.Controllers
             try
             {
                 _ticketService.DeleteTicket(id);
+                var responses = _responseService.GetResponsesByTicketId(id).ToList();
+                foreach (var response in responses)
+                {
+                    _attachmentService.DeleteAttachmentsByResponseId(response.ResponseId);
+                }
                 _responseService.DeleteResponsesByTicketId(id);
                 TempData["SuccessMessage"] = "Ticket has been deleted";
 
@@ -342,6 +401,8 @@ namespace ASI.Basecode.WebApp.Controllers
                 return StatusCode(500, $"Error deleting ticket: {ex.Message}");
             }
         }
+
+
 
     }
 }

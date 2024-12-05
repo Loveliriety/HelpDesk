@@ -14,6 +14,7 @@ namespace ASI.Basecode.Services.ServiceModels
         public string Status { get; set; }
         public string Subject { get; set; }
         public int Category { get; set; }
+        public string Description { get; set; }
         public string RequesterEmail { get; set; }
         public string Assignee { get; set; }
         public string Priority { get; set; }
@@ -23,6 +24,9 @@ namespace ASI.Basecode.Services.ServiceModels
         // Category
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
+
+        public int TeamId { get; set; }
+        public string TeamName { get; set; }
 
         public int SelectedCategoryId { get; set; }
         public string SelectedCategoryName { get; set; }
