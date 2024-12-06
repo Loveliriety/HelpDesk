@@ -62,7 +62,9 @@ namespace ASI.Basecode.WebApp.Controllers
                 ViewBag.ClosedCount = 0;
                 ViewBag.TotalTicketsCount = 0;
                 ViewBag.CategoryCounts = new Dictionary<string, int>();
-                ViewBag.CategoryNames = new List<string>();  
+                ViewBag.CategoryNames = new List<string>();
+                ViewBag.GoodFeedbackCount = 0;
+                ViewBag.BadFeedbackCount = 0;
 
                 return View(new List<TicketPageViewModel>());
             }
@@ -72,6 +74,9 @@ namespace ASI.Basecode.WebApp.Controllers
             var solvedCount = tickets.Count(t => t.Status == "Solved");
             var closedCount = tickets.Count(t => t.Status == "Closed");
             var totalTicketsCount = tickets.Count();
+
+            var goodFeedbackCount = tickets.Count(t => t.Feedback == true);
+            var badFeedbackCount = tickets.Count(t => t.Feedback == false);
 
             var categoryCounts = tickets
                 .GroupBy(t => t.Category) 
@@ -92,14 +97,10 @@ namespace ASI.Basecode.WebApp.Controllers
             ViewBag.TotalTicketsCount = totalTicketsCount;
             ViewBag.CategoryCounts = categoryCountDictionary;
             ViewBag.CategoryNames = categories.Select(c => c.CategoryName).ToList();
+            ViewBag.GoodFeedbackCount = goodFeedbackCount;
+            ViewBag.BadFeedbackCount = badFeedbackCount;
 
             return View(tickets);
         }
-
-
-
-
-
-
     }
 }

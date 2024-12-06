@@ -14,5 +14,6 @@ namespace ASI.Basecode.Services.Interfaces
         void UpdateUser(User user);
         void DeleteUser(User user);
         string GetUserEmailById(int id);
+        string GetUserNameById(int id);
     }
 }

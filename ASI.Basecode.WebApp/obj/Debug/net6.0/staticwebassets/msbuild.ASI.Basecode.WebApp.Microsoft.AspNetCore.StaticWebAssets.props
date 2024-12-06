@@ -1,6 +1,6 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\customs.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\customs.css))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -12,13 +12,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>gbp8xz735r</Fingerprint>
-      <Integrity>LI9dmeKs7DxfVNQ1CMsuUmQmrzOUJ+yT8tvjIwsVUO0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\customs.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\customs.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\header.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\header.css))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -30,13 +28,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2yd2tzl372</Fingerprint>
-      <Integrity>GmxDB/V1E+kg9qAmaqQCNi5qKNONYW5Lf6KqJ6pEWsM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\header.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\header.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\login.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\login.css))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -48,13 +44,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>lyjh72pd0g</Fingerprint>
-      <Integrity>Tf6G3MYb/p0j1YVv3fwL9SOUojRZ/Z0mNq2LNV6PCs4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\login.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\login.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\main.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\main.css))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -66,13 +60,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ac3j48n0ru</Fingerprint>
-      <Integrity>qquGO+ThV8Q5X0tITX1m9S+7+YFru3Zexqzf0E18/PY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\main.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\main.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\site.css))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -84,13 +76,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0fsqsn7s2c</Fingerprint>
-      <Integrity>XNp/3K0DvbUte3ZDjciRRYLV+q0e/F6ddSJpMLjEYQM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\site.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\style.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\style.css))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -102,13 +92,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ae8xslbzio</Fingerprint>
-      <Integrity>wihfgSM0WZc4dwFswEsB2CzjtkjdYt/3AjxfUm7Nud4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\style.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\style.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\userPage.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\userPage.css))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -120,13 +108,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>eb5dqvnayc</Fingerprint>
-      <Integrity>1n2nQG+1x0+DEFgZgPm340u2z8otL5Gk9Irb0HlBerQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\userPage.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\userPage.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -138,13 +124,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>90yqlj465b</Fingerprint>
-      <Integrity>qU+KhVPK6oQw3UyjzAHU4xjRmCj3TLZUU/+39dni9E0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fonts\roboto.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\fonts\roboto.css))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -156,13 +140,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>pmn8h3v7tq</Fingerprint>
-      <Integrity>X4l6CHIEf97IJQm9JSf//dztlilCmrcVuG3QyBebNNk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fonts\roboto.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\fonts\roboto.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\html\assets\js\plugins\jquery-slimscroll\jquery.slimscroll.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\html\assets\js\plugins\jquery-slimscroll\jquery.slimscroll.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -174,13 +156,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>q6ffipp5pp</Fingerprint>
-      <Integrity>oiDv1hGrqekE3I/XNXusnMxJ2iSd7GYeEfq+/NRs9+s=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\html\assets\js\plugins\jquery-slimscroll\jquery.slimscroll.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\html\assets\js\plugins\jquery-slimscroll\jquery.slimscroll.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\html\assets\js\plugins\jquery-slimscroll\jquery.slimscroll.min.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\html\assets\js\plugins\jquery-slimscroll\jquery.slimscroll.min.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -192,31 +172,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ja8sdp57fo</Fingerprint>
-      <Integrity>+1lJBfUlgWw5qXDfdNcMYgEvZZYsKk/ZT5zymI32Vnw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\html\assets\js\plugins\jquery-slimscroll\jquery.slimscroll.min.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\html\assets\js\plugins\jquery-slimscroll\jquery.slimscroll.min.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\agent.svg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>ASI.Basecode.WebApp</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/ASI.Basecode.WebApp</BasePath>
-      <RelativePath>img/agent.svg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>bd0wqmswke</Fingerprint>
-      <Integrity>3/tkQT2kqB0zyMig5iJGSN6k9BTlexd2a1wVjsQwOI0=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\agent.svg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\agent-icon.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\agent-icon.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -228,13 +188,27 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>bh8u3rly87</Fingerprint>
-      <Integrity>b4U27f1DdPAnINta4MDo7HtSAbTJW4PtCgUzSDA9wT0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\agent-icon.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\agent-icon.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\asi-logo-invert.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\agent.svg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ASI.Basecode.WebApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ASI.Basecode.WebApp</BasePath>
+      <RelativePath>img/agent.svg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\agent.svg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\asi-logo-invert.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -246,13 +220,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qm2sgeoei6</Fingerprint>
-      <Integrity>UgT+ir2IOxcdnwTmLNT2QXRjJKADHL7vMN+OgNp3o0E=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\asi-logo-invert.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\asi-logo-invert.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\attachment.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\attachment.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -264,13 +236,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vee546jwki</Fingerprint>
-      <Integrity>yZujJakkmNbfEoi7E03sR1UJE8V96Trr4Yh98LmUrko=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\attachment.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\attachment.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\background.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\background.png))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -282,13 +252,27 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>s9wgdy94xn</Fingerprint>
-      <Integrity>oHPvcElbdKuxxnqGbwNmtIYo+S2h6+XnwpBhYiJ6PZE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\background.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\background.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\closed.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Camera.svg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ASI.Basecode.WebApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ASI.Basecode.WebApp</BasePath>
+      <RelativePath>img/Camera.svg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Camera.svg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\closed.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -300,13 +284,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>zo7a1sn2ug</Fingerprint>
-      <Integrity>c8Zvl1t0rSZiCx5A4HApTrl8aYGzwARHQNeq1/ufN0s=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\closed.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\closed.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\customer-feedback-logo.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\customer-feedback-logo.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -318,13 +300,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>k77osm9you</Fingerprint>
-      <Integrity>gAELC3Pv+WbWqrZNxyO1CQWWWz9QNY82uByjtAjsIdo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\customer-feedback-logo.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\customer-feedback-logo.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\Dark-Mode.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Dark-Mode.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -336,13 +316,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>c8ucl4oty3</Fingerprint>
-      <Integrity>DKkiPv0AdnBHG2wPC2H30Nu+5Ag0zhWDBmV9qLaFxPk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\Dark-Mode.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Dark-Mode.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\dashboard-logo.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\dashboard-logo.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -354,13 +332,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qzq9l57wrk</Fingerprint>
-      <Integrity>5smS+pgrw0gt76odPgeOfOTGDVIS9VUwQWQdba8hVLY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\dashboard-logo.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\dashboard-logo.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\dot-option.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\dot-option.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -372,13 +348,27 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>p0bvjxq2pw</Fingerprint>
-      <Integrity>iYAZ2A2c/lhSXDlVPUu3OpZisvapH1WEMSZVAnfIN8w=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\dot-option.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\dot-option.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\headset.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Happy.svg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ASI.Basecode.WebApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ASI.Basecode.WebApp</BasePath>
+      <RelativePath>img/Happy.svg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Happy.svg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\headset.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -390,13 +380,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wxoq2lsfeh</Fingerprint>
-      <Integrity>xDbD4qt3oBZ6X8fILxxu2jIU5wSJCr0r1gMLmtkINkE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\headset.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\headset.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\Light-Mode.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Light-Mode.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -408,13 +396,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>iuuxwlbi97</Fingerprint>
-      <Integrity>liGp5O/3V/nt4iW9Sc2lmwzustOlUVrMfwy+JF4Kc5Y=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\Light-Mode.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Light-Mode.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\LiveIT.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\LiveIT.png))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -426,13 +412,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>tfkvohu3s6</Fingerprint>
-      <Integrity>x+pKHFWveau+Oefq53v2y98lEDplexCKMxjTRgM+/a8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\LiveIT.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\LiveIT.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\logo.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\logo.png))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -444,13 +428,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>tfudxwuosj</Fingerprint>
-      <Integrity>pwNS5Q+3MiG2scu+Q8hPO9yBlWOscqhTlQjDOxE7GUQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\logo.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\logo.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\logout.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\logout.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -462,13 +444,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vt9n2o7ixv</Fingerprint>
-      <Integrity>fdwF86DL8ZaxPmLyDAf1MUKJ+iMRfU6kTonm8fPaXbo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\logout.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\logout.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\open.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\open.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -480,13 +460,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wms16o2k94</Fingerprint>
-      <Integrity>OI1uJf98kJsDrV/fYXAwRjqfQ82ecsdyXhyWyGSbZ0s=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\open.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\open.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\profile-logo.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\profile-logo.png))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -498,13 +476,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>gbmln85xj1</Fingerprint>
-      <Integrity>PIsKKFrDuVs04xqRDa/sKiIbSTavLjKF19btUx3y2nU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\profile-logo.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\profile-logo.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\progress.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\progress.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -516,13 +492,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wbhtokz399</Fingerprint>
-      <Integrity>BCvoDBn3x0i5uEAH7AhScskkB+ZwcxUPkTm2YsWOA4s=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\progress.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\progress.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\remove-icon.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\remove-icon.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -534,13 +508,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2zfboi08jm</Fingerprint>
-      <Integrity>YjqkuzrTxdDwwYMJVIdzsunH96h3XXtT8sPJL8imXFI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\remove-icon.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\remove-icon.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\report-&amp;-analytics-logo.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\report-&amp;-analytics-logo.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -552,13 +524,27 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6smcfdj3ys</Fingerprint>
-      <Integrity>VrEuQzf3MslbAF0KPekQd0s2gbqCy4vbFlx5IKABids=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\report-&amp;-analytics-logo.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\report-&amp;-analytics-logo.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\settings-logo.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Sad.svg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ASI.Basecode.WebApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ASI.Basecode.WebApp</BasePath>
+      <RelativePath>img/Sad.svg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Sad.svg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\settings-logo.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -570,13 +556,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5qabf7xj73</Fingerprint>
-      <Integrity>DcYlAqIt8FQfeSsNbkYVQ2ss6CAC8NRWTLYnXUZisnQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\settings-logo.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\settings-logo.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\side-caret.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\side-caret.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -588,13 +572,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6ywzxymget</Fingerprint>
-      <Integrity>coXNx+C+rh/wI2Ntw4qQm0qTfk1j2y4P558ANlFTx2I=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\side-caret.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\side-caret.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\sidenav-logo.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\sidenav-logo.png))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -606,13 +588,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ciysioo8fz</Fingerprint>
-      <Integrity>tM8XojvtvzAniS11/dD5t0r0E4JDQiBlRyuhr4BxQCA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\sidenav-logo.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\sidenav-logo.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\solved.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\solved.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -624,13 +604,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qhu624nyaf</Fingerprint>
-      <Integrity>3qE3Mm9NTfdb9rp/DZ2NLQVRGKFQblCbSXWer8wMy4Q=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\solved.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\solved.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\support-profile.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\support-profile.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -642,13 +620,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>l8133vqhbl</Fingerprint>
-      <Integrity>+zdu0VCMo+SsuFNNVHIxJcKJ3C4WSwz+eLYhBoB1YAA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\support-profile.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\support-profile.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\ticket-management-logo.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ticket-management-logo.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -660,13 +636,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>77gneaakfb</Fingerprint>
-      <Integrity>w4fQiNXO7rgEgFWgm46vMKBVg68CzbiIXHMZq2BXfe8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\ticket-management-logo.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ticket-management-logo.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\topnav-logo.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\topnav-logo.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -678,13 +652,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>pyurjylawd</Fingerprint>
-      <Integrity>f5+MhLTlvtPY0bC9qwlCulxygupoZVaKWWAsRAILT9E=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\topnav-logo.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\topnav-logo.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\total-tickets.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\total-tickets.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -696,13 +668,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>bwx0ixfqga</Fingerprint>
-      <Integrity>ZW4md+WDJFKMBfzHfXUm3dq6Aij8M6QKGahpfYQGWU4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\total-tickets.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\total-tickets.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\Trash.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Trash.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -714,31 +684,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>v3vo6f4m05</Fingerprint>
-      <Integrity>hSrbzUo/nriVmQdx64oOxF/6LUCdmDkmbGcOS5+2AWk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\Trash.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Trash.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\User.svg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>ASI.Basecode.WebApp</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/ASI.Basecode.WebApp</BasePath>
-      <RelativePath>img/User.svg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>q8vr1a3qkj</Fingerprint>
-      <Integrity>FnB4QiE4NxDmBNgNIcSYvSalbYL/Uy7SCTY/YeAbBeM=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\User.svg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\user-management-logo.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\user-management-logo.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -750,13 +700,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>gr1oj12vha</Fingerprint>
-      <Integrity>FGrsWkU9Db+Q5UgQ5O9HncZvBCmgm7y8djE0RvAx6iI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\user-management-logo.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\user-management-logo.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\user-profile.svg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\user-profile.svg))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -768,13 +716,27 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>z9insykgso</Fingerprint>
-      <Integrity>R2CVnO5+I2FLfOnQcnVZqhJ/6CXKntyIdqmNJ2F4ROc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\user-profile.svg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\user-profile.svg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\User.svg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ASI.Basecode.WebApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ASI.Basecode.WebApp</BasePath>
+      <RelativePath>img/User.svg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\User.svg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\site.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -786,31 +748,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>xmd0wg75hc</Fingerprint>
-      <Integrity>CVVQIsaOEBllLfGc0YXxVyFh604ONyD3J93W9yhuBOs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\site.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.css'))">
-      <SourceType>Package</SourceType>
-      <SourceId>ASI.Basecode.WebApp</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/ASI.Basecode.WebApp</BasePath>
-      <RelativePath>lib/bootstrap/dist/css/bootstrap.css</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>gawgt6fljy</Fingerprint>
-      <Integrity>eEx7gvq+uEM0o4kUBiy/+Mxl6rHH9NQ9UzRBWHe9mXg=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.css'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -822,13 +764,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9n0ta5ieki</Fingerprint>
-      <Integrity>ezlzqfTqJZTjEDR18neKc2tUTZtWoz3oQ/ouWY9WmO8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css.map'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css.map))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -840,13 +780,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0i1dcxd824</Fingerprint>
-      <Integrity>2MgjO0zpqYZscatQSGWJ9Io9U8EjvXk0iYygYz1Q+Ms=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css.map'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css.map))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.min.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.min.css))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -858,13 +796,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vxs71z90fw</Fingerprint>
-      <Integrity>vdSFRAWr6LTognRmxyi6QlSO5O+MC+VGyMbziTrBmBQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.min.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.min.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.min.css.map'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.min.css.map))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -876,13 +812,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>jzb7jyrjvs</Fingerprint>
-      <Integrity>kZzlXLpTC0WvL0AL7nXf07BJ28WnY/1H/HrKgS68Q4I=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.min.css.map'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.min.css.map))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-reboot.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-reboot.css))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -894,13 +828,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>nynt4yc5xr</Fingerprint>
-      <Integrity>cZWhU8ntBevnbhNEh3hunnIoi6dE1eUwX41sB6+bHmo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-reboot.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-reboot.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-reboot.css.map'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-reboot.css.map))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -912,13 +844,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>tgg2bl5mrw</Fingerprint>
-      <Integrity>3e6awqXPijx918dzyzbbHKwaDBTsIQ8Us38QY30GRms=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-reboot.css.map'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-reboot.css.map))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-reboot.min.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-reboot.min.css))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -930,13 +860,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>brwg1hntyu</Fingerprint>
-      <Integrity>1z7sRzwNyqpcTrqPd/iXuzoApqDdjpRbHwjAZ8QMhOk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-reboot.min.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-reboot.min.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -948,13 +876,27 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>gf2dxac9qe</Fingerprint>
-      <Integrity>dIm3VZXztwbIlhOzVt+ggg5Dvhp28MJQGJoweOH9cAE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.css.map'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>ASI.Basecode.WebApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ASI.Basecode.WebApp</BasePath>
+      <RelativePath>lib/bootstrap/dist/css/bootstrap.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.css.map))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -966,13 +908,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>k9n1kkbua6</Fingerprint>
-      <Integrity>CMAZj3JKoZUVYSxVPS/FeGatmYSvHkujo5oaZLNXx0o=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.css.map'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.css.map))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -984,13 +924,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>etnb7xlipe</Fingerprint>
-      <Integrity>rldnE7wZYJj3Q43t5v8fg1ojKRwyt0Wtfm+224CacZs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css.map'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css.map))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1002,31 +940,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>kao5znno1s</Fingerprint>
-      <Integrity>xMZ0SaSBYZSHVjFdZTAT/IjRExRIxSriWcJLcA9nkj0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css.map'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css.map))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.js'))">
-      <SourceType>Package</SourceType>
-      <SourceId>ASI.Basecode.WebApp</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/ASI.Basecode.WebApp</BasePath>
-      <RelativePath>lib/bootstrap/dist/js/bootstrap.js</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>48vr37mrsy</Fingerprint>
-      <Integrity>LKpkBN2w3iudGRseLItcNcaMpI8qlSEUC7+DsnwGNwA=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.js'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.bundle.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.bundle.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1038,13 +956,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>u0biprgly9</Fingerprint>
-      <Integrity>srIwGYgANrjaabGVuC3G7O0jv1Xh3Kt7dIc3/P0Ebf0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.bundle.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.bundle.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.bundle.js.map'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.bundle.js.map))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1056,13 +972,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>pxamm17y9e</Fingerprint>
-      <Integrity>3UpdqvoTc6M2sug8WtFhr/m3tg+4zLMgoMgjqpn5n1I=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.bundle.js.map'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.bundle.js.map))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.bundle.min.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.bundle.min.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1074,13 +988,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>hjuzisly30</Fingerprint>
-      <Integrity>XZfkOGd6FuhF88h5GgEmRIpXbm+hBkFo74yYDPY5rbw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.bundle.min.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.bundle.min.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1092,13 +1004,27 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>u9xms436mi</Fingerprint>
-      <Integrity>8i3JQdKYQQcJzmbkwhwY+1XPe7Utf1LdBnYZCvNmKWc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.js.map'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.js))">
+      <SourceType>Package</SourceType>
+      <SourceId>ASI.Basecode.WebApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ASI.Basecode.WebApp</BasePath>
+      <RelativePath>lib/bootstrap/dist/js/bootstrap.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.js))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.js.map))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1110,13 +1036,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vaswmcjbo4</Fingerprint>
-      <Integrity>R81NA2DWe8EPjZ2OUhieXYgvvXBnm78oMdeqOtSEr7c=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.js.map'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.js.map))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.min.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.min.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1128,13 +1052,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>zu238p5lxg</Fingerprint>
-      <Integrity>O82ALp93hJ58HpPIcnn7uwTUWUnSvnmwNWbOrN4psVg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.min.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.min.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.min.js.map'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.min.js.map))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1146,13 +1068,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>sgi57dik4g</Fingerprint>
-      <Integrity>vMfBbEXmojM9AaHrIyKSo+20n5JM7KMyJkBCfL4pgL4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.min.js.map'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\js\bootstrap.min.js.map))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\LICENSE'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\LICENSE))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1164,13 +1084,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>weyt030wr8</Fingerprint>
-      <Integrity>iMA3h2QDzhvwmVtohviPpq8VwRv3UMY/PEE+ao7bBq0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\LICENSE'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\LICENSE))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1182,13 +1100,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>dvc2bfcndg</Fingerprint>
-      <Integrity>qbS02vMHZxdLNYKUtLPSYaSHXj1/ZwH1fv9f3XAY0LU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1200,13 +1116,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>gb7ocvbhts</Fingerprint>
-      <Integrity>9GycpJnliUjJDVDqP0UEu/bsm9U+3dnQUH8+3W10vkY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation-unobtrusive\LICENSE.txt'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation-unobtrusive\LICENSE.txt))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1218,13 +1132,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wqejeusuyq</Fingerprint>
-      <Integrity>aBc/n/nO9esvq0e80G57lEYLonvE5dKKUgoozaiVfLM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation-unobtrusive\LICENSE.txt'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation-unobtrusive\LICENSE.txt))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\dist\additional-methods.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\dist\additional-methods.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1236,13 +1148,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wus95c49fh</Fingerprint>
-      <Integrity>qLDpf9Urms7R6rnASrjHz38WdQfOvSOmTgLDfzQSzIQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\dist\additional-methods.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\dist\additional-methods.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\dist\additional-methods.min.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\dist\additional-methods.min.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1254,13 +1164,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>sjab29p8z5</Fingerprint>
-      <Integrity>2F/T6dcoSumcuA/fcU4W36VpSKPtq4nQf/0/vNFsC+w=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\dist\additional-methods.min.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\dist\additional-methods.min.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\dist\jquery.validate.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\dist\jquery.validate.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1272,13 +1180,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>d2pxujwhw3</Fingerprint>
-      <Integrity>27gs04nyeNuL9zc/GLQLjdbZqhNGvH+xIYgnYVPIawE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\dist\jquery.validate.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\dist\jquery.validate.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\dist\jquery.validate.min.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\dist\jquery.validate.min.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1290,13 +1196,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>4dm14o4hmc</Fingerprint>
-      <Integrity>eItLFOyfQ4d/OGzEnGchi2ZMVF8EhGgzS0k7fSOPifQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\dist\jquery.validate.min.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\dist\jquery.validate.min.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\LICENSE.md'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\LICENSE.md))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1308,13 +1212,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>x0q3zqp4vz</Fingerprint>
-      <Integrity>geHEkw/WGPdaHQMRq5HuNY9snliNzU/y2OW8ycnhGXw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\LICENSE.md'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-validation\LICENSE.md))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\dist\jquery.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\dist\jquery.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1326,13 +1228,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>a8eee2794i</Fingerprint>
-      <Integrity>igUc00PXGT1YBL1/Kf7QYy9fPlLqZKcEGrCqDz3EFDI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\dist\jquery.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\dist\jquery.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\dist\jquery.min.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\dist\jquery.min.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1344,13 +1244,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>fc9074g7ds</Fingerprint>
-      <Integrity>T+aPohYXbm0fRYDpJLr+zJ9RmYTswGsahAoIsNiMld4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\dist\jquery.min.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\dist\jquery.min.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\dist\jquery.min.map'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\dist\jquery.min.map))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1362,13 +1260,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>b804xvqo1w</Fingerprint>
-      <Integrity>1eiGMA0y1kD5P/bXnTaiTKk8vtvQ8IC2nXAoI1HJXyE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\dist\jquery.min.map'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\dist\jquery.min.map))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1380,13 +1276,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>afgyafcsqt</Fingerprint>
-      <Integrity>WtKlDye/qV68IA2W1tHFTyXyc/HjQvQKBpIK1CEulFM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-server.browser.development.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-server.browser.development.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1398,13 +1292,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>q7x8wewsri</Fingerprint>
-      <Integrity>2o2sT7WkiO2cp+xhEp847/9nZKU2NT2a99fIqLXzjA4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-server.browser.development.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-server.browser.development.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-server.browser.production.min.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-server.browser.production.min.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1416,13 +1308,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3buh6icp4r</Fingerprint>
-      <Integrity>Uf4Ae0ic/SaMFXGo7CvWNgxVAF/qa4epjrti4Ibmj7g=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-server.browser.production.min.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-server.browser.production.min.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-test-utils.development.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-test-utils.development.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1434,13 +1324,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>jojt66f50x</Fingerprint>
-      <Integrity>HSn0/IFN6ebxkNItNeD5oDoxX2/Up+00i876EfC+fGc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-test-utils.development.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-test-utils.development.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-test-utils.production.min.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-test-utils.production.min.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1452,13 +1340,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>u1q3uecjds</Fingerprint>
-      <Integrity>XgNHmchFQFSR2eJrU0PH6CDXnjIlk79PjEGJXNGfukI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-test-utils.production.min.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-test-utils.production.min.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-unstable-fizz.browser.development.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-unstable-fizz.browser.development.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1470,13 +1356,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0oy6rciy3p</Fingerprint>
-      <Integrity>AMC8ns5CarGoUNWvWWe7aGp3gf/ysHLRop/Q5wwmYlI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-unstable-fizz.browser.development.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-unstable-fizz.browser.development.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-unstable-fizz.browser.production.min.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-unstable-fizz.browser.production.min.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1488,13 +1372,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9siepa0l52</Fingerprint>
-      <Integrity>mbddFais7NI2bQSMCcjX6SLGuNOmT4fUnVEyxY1PBJ8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-unstable-fizz.browser.production.min.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-unstable-fizz.browser.production.min.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-unstable-native-dependencies.development.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-unstable-native-dependencies.development.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1506,13 +1388,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>695busa40d</Fingerprint>
-      <Integrity>Wl02K4giAZlutIJF5oCw/w6gt51Dkz7nh7gHS1ENaOE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-unstable-native-dependencies.development.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-unstable-native-dependencies.development.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-unstable-native-dependencies.production.min.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-unstable-native-dependencies.production.min.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1524,13 +1404,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ty5ac4gd76</Fingerprint>
-      <Integrity>tZhuItetvipU4a3B9/Ej2ysJoIN3prXClRWXOX8MQ60=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-unstable-native-dependencies.production.min.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom-unstable-native-dependencies.production.min.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom.development.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom.development.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1542,13 +1420,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>kwimilera8</Fingerprint>
-      <Integrity>NG+aAhlNXIcgUEkaUHgwB2yrIDtjI3RUrPWZ95oU7Bg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom.development.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom.development.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom.production.min.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom.production.min.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1560,13 +1436,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>lhv2ju9gz7</Fingerprint>
-      <Integrity>FzldSy9Gv3zad0WVe0vqaxgjwg21Aj/9oKbra5GQyb0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom.production.min.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom.production.min.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom.profiling.min.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom.profiling.min.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1578,13 +1452,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>gmvqbw23jy</Fingerprint>
-      <Integrity>mG31gN9ln5drlbd5gaMsoPGs10XX23rVn3jAopyaVqI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom.profiling.min.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react-dom\dist\react-dom.profiling.min.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react\dist\react.development.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react\dist\react.development.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1596,13 +1468,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>gjknbet3j5</Fingerprint>
-      <Integrity>vDoW3nYPJol54M3IrEvwlBuzZSm9bveBj/KNM3NiWuw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react\dist\react.development.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react\dist\react.development.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react\dist\react.production.min.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react\dist\react.production.min.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1614,13 +1484,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ue4sqssm54</Fingerprint>
-      <Integrity>qnAzxQGUUYGfgYE/RAi9jhzRnpSKN+j/2lP5w7CODss=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react\dist\react.production.min.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react\dist\react.production.min.js))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react\dist\react.profiling.min.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react\dist\react.profiling.min.js))">
       <SourceType>Package</SourceType>
       <SourceId>ASI.Basecode.WebApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
@@ -1632,11 +1500,9 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>dvk1v7u92r</Fingerprint>
-      <Integrity>6To40db4bcMIlNxtLq2WsezhYbryB4nFfhHuttQqgJI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\react\dist\react.profiling.min.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\react\dist\react.profiling.min.js))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

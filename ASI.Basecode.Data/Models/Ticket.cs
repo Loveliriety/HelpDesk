@@ -21,7 +21,7 @@ namespace ASI.Basecode.Data.Models
         public string RequesterEmail { get; set; }
         public int Assignee { get; set; }
         public bool IsFeedbackOffered { get; set; }
-        public bool Feedback { get; set; }
+        public bool? Feedback { get; set; }
         public DateTime CreatedTime { get; set; }
         public DateTime UpdatedTime { get; set; }
 

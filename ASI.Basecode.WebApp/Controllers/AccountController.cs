@@ -115,7 +115,7 @@ namespace ASI.Basecode.WebApp.Controllers
             else
             {
                 // 認証NG
-                TempData["ErrorMessage"] = "Incorrect Username or Password";
+                TempData["ErrorMessage"] = "Incorrect Email or Password";
                 return View();
             }
         }
@@ -134,6 +134,7 @@ namespace ASI.Basecode.WebApp.Controllers
             try
             {
                 _userService.AddUser(model);
+                TempData["SuccessMessage"] = "Registration successful! You can now log in to access your account.";
                 return RedirectToAction("Login", "Account");
             }
             catch(InvalidDataException ex)

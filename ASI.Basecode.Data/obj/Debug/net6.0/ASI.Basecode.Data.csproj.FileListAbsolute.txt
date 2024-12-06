@@ -114,3 +114,18 @@ C:\Users\kimbe\OneDrive\Documents\School\College\4th Year\ELASI\HelpDesk\ASI.Bas
 C:\Users\kimbe\OneDrive\Documents\School\College\4th Year\ELASI\HelpDesk\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.pdb
 C:\Users\kimbe\OneDrive\Documents\School\College\4th Year\ELASI\HelpDesk\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.genruntimeconfig.cache
 C:\Users\kimbe\OneDrive\Documents\School\College\4th Year\ELASI\HelpDesk\ASI.Basecode.Data\obj\Debug\net6.0\ref\ASI.Basecode.Data.dll
+C:\Users\acer\OneDrive\Desktop\ELASI.V2\HelpDesk\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.csproj.AssemblyReference.cache
+C:\Users\acer\OneDrive\Desktop\ELASI.V2\HelpDesk\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\OneDrive\Desktop\ELASI.V2\HelpDesk\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.AssemblyInfoInputs.cache
+C:\Users\acer\OneDrive\Desktop\ELASI.V2\HelpDesk\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.AssemblyInfo.cs
+C:\Users\acer\OneDrive\Desktop\ELASI.V2\HelpDesk\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.csproj.CoreCompileInputs.cache
+C:\Users\acer\OneDrive\Desktop\ELASI.V2\HelpDesk\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.sourcelink.json
+C:\Users\acer\OneDrive\Desktop\ELASI.V2\HelpDesk\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.dll
+C:\Users\acer\OneDrive\Desktop\ELASI.V2\HelpDesk\ASI.Basecode.Data\obj\Debug\net6.0\refint\ASI.Basecode.Data.dll
+C:\Users\acer\OneDrive\Desktop\ELASI.V2\HelpDesk\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.pdb
+C:\Users\acer\OneDrive\Desktop\ELASI.V2\HelpDesk\ASI.Basecode.Data\bin\Debug\net6.0\ASI.Basecode.Data.deps.json
+C:\Users\acer\OneDrive\Desktop\ELASI.V2\HelpDesk\ASI.Basecode.Data\bin\Debug\net6.0\ASI.Basecode.Data.runtimeconfig.json
+C:\Users\acer\OneDrive\Desktop\ELASI.V2\HelpDesk\ASI.Basecode.Data\bin\Debug\net6.0\ASI.Basecode.Data.dll
+C:\Users\acer\OneDrive\Desktop\ELASI.V2\HelpDesk\ASI.Basecode.Data\bin\Debug\net6.0\ASI.Basecode.Data.pdb
+C:\Users\acer\OneDrive\Desktop\ELASI.V2\HelpDesk\ASI.Basecode.Data\obj\Debug\net6.0\ASI.Basecode.Data.genruntimeconfig.cache
+C:\Users\acer\OneDrive\Desktop\ELASI.V2\HelpDesk\ASI.Basecode.Data\obj\Debug\net6.0\ref\ASI.Basecode.Data.dll

@@ -9,7 +9,10 @@
     <h5 class="mt-1 page-header">Ticket Management</h5>
 
     <nav class="nav mt-3 nav-header">
-        <a class="@(IsActive("Index", "Ticket") ? "active2" : "") nav-link" asp-action="Index" asp-controller="Ticket">Ticket Views</a>
+        @if (HttpContextAccessor.HttpContext.Session.GetString("UserRole") != "Support Agent")
+        {
+            <a class="@(IsActive("Index", "Ticket") ? "active2" : "") nav-link" asp-action="Index" asp-controller="Ticket">Ticket Views</a>
+        }
         <a class="@(IsActive("MyTicket", "Ticket") ? "active2" : "") nav-link" asp-action="MyTicket" asp-controller="Ticket">My Tickets</a>
         <div style="width: 100%; border-bottom: 1px solid #3D729A; margin-bottom: 5px;"></div>
     </nav>

@@ -6,7 +6,7 @@
 @{
     string theme = HttpContextAccessor.HttpContext.Session.GetString("Theme") ?? "light";
     var userRole = HttpContextAccessor.HttpContext.Session.GetString("UserRole");
-    var userName = HttpContextAccessor.HttpContext.Session.GetString("UserName");
+    var fullName = HttpContextAccessor.HttpContext.Session.GetString("FullName");
 }
 <!--Working-->
 <!-- Sidebar -->
@@ -59,7 +59,7 @@ else
             <a asp-action="Index" asp-controller="Users" class="@(IsActive("Index", "Users") ? "topnav-active" : "") nav-menu text-decoration-none me-3">Home</a>
             <a asp-action="MyTickets" asp-controller="Users" class="@(IsActive("MyTickets", "Users") ? "topnav-active" : "") nav-menu text-decoration-none me-3">My Tickets</a>
             <a asp-action="SignOutUser" asp-controller="Account" class="nav-menu text-decoration-none">Sign Out</a>
-            <span class="ms-3 me-3 nav-user-info">@CapitalizeFirstLetter(userName)</span>
+            <span class="ms-3 me-3 nav-user-info">@CapitalizeFirstLetter(fullName)</span>
             <img src="~/img/User.svg" alt="User Icon" class="user-icon" />
         </div>
     </div>

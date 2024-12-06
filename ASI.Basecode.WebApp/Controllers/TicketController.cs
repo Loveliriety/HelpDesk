@@ -60,6 +60,11 @@ namespace ASI.Basecode.WebApp.Controllers
                 return RedirectToAction("Index", "Users");
             }
 
+            if (userRole == "Support Agent")
+            {
+                return RedirectToAction("MyTicket");
+            }
+
             var (success, tickets) = _ticketService.GetAllTickets();
             var categories = _categoryService.GetAllCategories();
             var users = _userService.GetUsers();
@@ -98,9 +103,7 @@ namespace ASI.Basecode.WebApp.Controllers
                     Subject = ticket.Subject,
                     Category = ticket.Category,
                     RequesterEmail = ticket.RequesterEmail,
-                    Assignee = _teamService.GetTeamNameById(ticket.Assignee) != "Unknown"
-                                    ? _teamService.GetTeamNameById(ticket.Assignee)
-                                    : _userService.GetUserEmailById(ticket.Assignee),
+                    Assignee = _userService.GetUserNameById(ticket.Assignee),
                     Priority = ticket.Priority,
                     CreatedTime = ticket.CreatedTime,
                     UpdatedTime = ticket.UpdatedTime
@@ -132,6 +135,51 @@ namespace ASI.Basecode.WebApp.Controllers
 
             return View(model);
         }
+
+        [HttpPost]
+        public IActionResult AssignTickets(int assignee, string priority, string ticketIds)
+        {
+            try
+            {
+                var ticketIdList = ticketIds?.Split(',')
+                                            .Select(id => int.TryParse(id.Trim(), out var parsedId) ? parsedId : (int?)null)
+                                            .Where(id => id.HasValue)
+                                            .Select(id => id.Value)
+                                            .ToList();
+
+                if (ticketIdList == null || !ticketIdList.Any())
+                {
+                    TempData["ErrorMessage"] = "No tickets selected for assignment.";
+                    return RedirectToAction("Index");
+                }
+
+                foreach (var ticketId in ticketIdList)
+                {
+                    var existingTicket = _ticketService.GetTicketById(ticketId);
+                    if (existingTicket == null)
+                    {
+                        TempData["ErrorMessage"] += $"Ticket with ID {ticketId} was not found. ";
+                        continue;
+                    }
+
+                    existingTicket.Assignee = assignee;
+                    existingTicket.Priority = priority;
+                    existingTicket.UpdatedTime = DateTime.Now;
+
+                    _ticketService.UpdateTicket(existingTicket);
+                }
+
+                TempData["SuccessMessage"] = "Tickets have been successfully assigned.";
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error assigning tickets: {ex.Message}");
+                TempData["ErrorMessage"] = "An error occurred while assigning tickets.";
+                return RedirectToAction("Index");
+            }
+        }
+
 
 
         // GET: NewTicket
@@ -226,9 +274,7 @@ namespace ASI.Basecode.WebApp.Controllers
                     Subject = ticket.Subject,
                     Category = ticket.Category,
                     RequesterEmail = ticket.RequesterEmail,
-                    Assignee = _teamService.GetTeamNameById(ticket.Assignee) != "Unknown"
-                                    ? _teamService.GetTeamNameById(ticket.Assignee)
-                                    : _userService.GetUserEmailById(ticket.Assignee),
+                    Assignee = _userService.GetUserNameById(ticket.Assignee),
                     Priority = ticket.Priority,
                     CreatedTime = ticket.CreatedTime,
                     UpdatedTime = ticket.UpdatedTime

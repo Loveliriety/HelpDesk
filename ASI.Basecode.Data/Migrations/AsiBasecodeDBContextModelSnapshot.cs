@@ -143,7 +143,7 @@ namespace ASI.Basecode.Data.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Feedback")
+                    b.Property<bool?>("Feedback")
                         .HasColumnType("bit");
 
                     b.Property<bool>("IsFeedbackOffered")

@@ -11,7 +11,10 @@
     <h5 class="mt-1 page-header">Ticket Management</h5>
 
     <nav class="nav mt-3 nav-header">
-        <a class="@(IsActive("Index", "Ticket") ? "active2" : "") nav-link" asp-action="Index" asp-controller="Ticket">Ticket Views</a>
+        @if (HttpContextAccessor.HttpContext.Session.GetString("UserRole") != "Support Agent")
+        {
+            <a class="@(IsActive("Index", "Ticket") ? "active2" : "") nav-link" asp-action="Index" asp-controller="Ticket">Ticket Views</a>
+        }
         <a class="@(IsActive("MyTicket", "Ticket") ? "active2" : "") nav-link" asp-action="MyTicket" asp-controller="Ticket">My Tickets</a>
         <div style="width: 100%; border-bottom: 1px solid #3D729A; margin-bottom: 5px;"></div>
     </nav>
@@ -61,9 +64,12 @@
                         <div class="d-flex justify-content-end">
                             <button class="btn btn-sm add-btn">+ New Ticket</button>
                         </div>
-                        <div class="d-flex justify-content-end">
-                            <button class="btn btn-sm assign-btn">Assign</button>
-                        </div>
+                        @if (HttpContextAccessor.HttpContext.Session.GetString("UserRole") == "Superadmin")
+                        {
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-sm assign-btn">Assign</button>
+                            </div>
+                        }
                     </div>
                 </div>
                 <p class="number-of-tickets">@Model.Tickets.Count Tickets</p>
@@ -77,9 +83,18 @@
                         <table class="header">
                             <thead>
                                 <tr>
-                                    <th scope="col">
-                                        <input type="checkbox" id="select-all">
-                                    </th>
+                                    @if (HttpContextAccessor.HttpContext.Session.GetString("UserRole") == "Superadmin")
+                                    {
+                                        <th scope="col">
+                                            <input type="checkbox" id="select-all">
+                                        </th>
+                                    }
+                                    else
+                                    {
+                                        <th scope="col">
+                                            <input type="checkbox" id="select-all" hidden>
+                                        </th>
+                                    }
                                     <th scope="col">Ticket</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">Subject</th>
@@ -98,7 +113,14 @@
                                     @foreach (var ticket in Model.Tickets)
                                     {
                                         <tr>
-                                            <td><input type="checkbox" class="select-checkbox"></td>
+                                            @if (HttpContextAccessor.HttpContext.Session.GetString("UserRole") == "Superadmin")
+                                            {
+                                                <td><input type="checkbox" class="select-checkbox"></td>
+                                            }
+                                            else
+                                            {
+                                                <td><input type="checkbox" class="select-checkbox" hidden></td>
+                                            }
                                             <td class="category-cell">#@ticket.TicketId</td>
                                             <td>
                                                 <span class="badge bg-@(ticket.Status == "Open" ? "danger" :
@@ -158,39 +180,37 @@
         <h5>Assign ticket/s</h5>
     </div>
     <div class="custom-drawer-body">
-        <div class="mb-3 p-1">
-            <label for="categorySelect" class="form-label">Category</label>
-            <select class="form-select select-input" id="categorySelect" name="CategoryId">
-                <option selected>--</option>
-                @foreach (var category in Model.Categories)
-                {
-                    <option value="@category.CategoryId">@category.CategoryName</option>
-                }
-            </select>
-        </div>
-        <div class="mb-3 p-1">
-            <label for="ticketInput" class="form-label">Ticket/s</label>
-            <textarea type="text" class="form-control text-input" id="ticketInput" rows="3">#16548, #16549</textarea>
-        </div>
-        <div class="mb-3 p-1">
-            <label for="assigneeSelect" class="form-label">Assignee</label>
-            <select class="form-select select-input" id="assigneeSelect">
-                <option selected>Alice Johnson</option>
-                <option>John Doe</option>
-                <option>Jane Smith</option>
-            </select>
-        </div>
-        <div class="mb-3 p-1">
-            <label for="prioritySelect" class="form-label">Priority</label>
-            <select class="form-select select-input" id="prioritySelect">
-                <option selected>P1</option>
-                <option>P2</option>
-                <option>P3</option>
-            </select>
-        </div>
-        <div class="mt-2 d-flex justify-content-end">
-            <button class="btn save-btn">Save Ticket</button>
-        </div>
+        <form asp-action="AssignTickets" method="post">
+            <div class="mb-3 p-1">
+                <label for="ticketInput" class="form-label">Ticket/s</label>
+                <textarea type="text" class="form-control text-input" id="ticketInput" name="TicketIds" rows="3"></textarea>
+            </div>
+            <div class="mb-3 p-1">
+                <label for="assigneeSelect" class="form-label">Assignee</label>
+                <select class="form-select select-input" id="Assignee" name="Assignee">
+                    <option selected>--</option>
+                    @foreach (var user in Model.Users)
+                    {
+                        <option value="@user.UserId">User: @user.Name</option>
+                    }
+
+                </select>
+            </div>
+            <div class="mb-3 p-1">
+                <label for="prioritySelect" class="form-label">Priority</label>
+                <select class="form-select select-input" id="prioritySelect" name="Priority">
+                    <option selected>--</option>
+                    <option value="P5">P5 (Lowest)</option>
+                    <option value="P4">P4 (Low)</option>
+                    <option value="P3">P3 (Medium)</option>
+                    <option value="P2">P2 (High)</option>
+                    <option value="P1">P1 (Critical)</option>
+                </select>
+            </div>
+            <div class="mt-2 d-flex justify-content-end">
+                <button type="submit" class="btn save-btn">Save Ticket</button>
+            </div>
+        </form>
     </div>
 </div>
 
@@ -291,6 +311,18 @@
 
         document.querySelectorAll('.assign-btn').forEach(btn => {
             btn.addEventListener('click', function() {
+                const selectedTicketIds = [];
+                document.querySelectorAll('.select-checkbox:checked').forEach(checkbox => {
+                    const ticketId = checkbox.closest('tr').querySelector('.category-cell').textContent.trim().replace('#', '');
+                    selectedTicketIds.push(ticketId);
+                });
+
+                if (selectedTicketIds.length === 0) {
+                    toastr.warning("Please select at least one ticket to assign.", "Warning");
+                    return;
+                }
+
+                document.getElementById('ticketInput').value = selectedTicketIds.join(', ');
                 toggleAssignDrawer();
             });
         });

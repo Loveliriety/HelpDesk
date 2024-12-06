@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASI.Basecode.Data.Migrations
 {
     [DbContext(typeof(AsiBasecodeDBContext))]
-    [Migration("20241206065046_New")]
-    partial class New
+    [Migration("20241206091909_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -145,7 +145,7 @@ namespace ASI.Basecode.Data.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Feedback")
+                    b.Property<bool?>("Feedback")
                         .HasColumnType("bit");
 
                     b.Property<bool>("IsFeedbackOffered")

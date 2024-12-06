@@ -1,5 +1,4 @@
 ﻿using ASI.Basecode.Data.Interfaces;
-using ASI.Basecode.Data.Migrations;
 using ASI.Basecode.Data.Models;
 using Basecode.Data.Repositories;
 using System;

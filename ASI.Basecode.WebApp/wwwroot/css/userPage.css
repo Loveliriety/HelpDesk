@@ -261,7 +261,7 @@ table.tickets-table {
         border: 1px solid #3D729A;
     }
 
-.active3 {
+.active4 {
     background-color: #3D729A;
     color: #fff;
     border: 1px solid #3D729A;
@@ -482,4 +482,50 @@ table.tickets-table {
 .ticket-modal {
     border: 1px solid #999999;
     border-radius: 9px;
+}
+
+.feedback-section {
+    font-family: 'Poppins';
+    color: #000000;
+    padding: 50px;
+    border: 1px solid #3D729A;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #F1F1F1;
+}
+
+.ticket-status {
+    font-family: 'Poppins';
+    color: #3D729A;
+}
+
+.feedback-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s, opacity 0.2s; 
+}
+
+    .feedback-button img {
+        width: 50px;
+        height: 50px;
+        transition: transform 0.3s; 
+    }
+
+    .feedback-button:hover img {
+        transform: scale(1.2); 
+    }
+
+    .feedback-button:hover .feedback-label {
+        color: #3D729A; 
+    }
+
+.feedback-label {
+    font-family: 'Poppins';
+    margin-top: 5px;
+    transition: color 0.3s;
 }

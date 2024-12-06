@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Claims;
 using static ASI.Basecode.Resources.Constants.Enums;
@@ -24,10 +25,12 @@ namespace ASI.Basecode.WebApp.Controllers
         private readonly ITicketService _ticketService;
         private readonly IResponseService _responseService;
         private readonly IUserService _userService;
+        private readonly IAttachmentService _attachmentService;
         public UsersController(ICategoryService categoryService,
                                 ITicketService ticketService,
                                 IResponseService responseService,
                                 IUserService userService,
+                                IAttachmentService attachmentService,
                                 IHttpContextAccessor httpContextAccessor,
                                 ILoggerFactory loggerFactory,
                                 IConfiguration configuration,
@@ -37,6 +40,7 @@ namespace ASI.Basecode.WebApp.Controllers
             _ticketService = ticketService;
             _userService = userService;
             _responseService = responseService;
+            _attachmentService = attachmentService;
         }
 
         public IActionResult Index(string status = null)
@@ -155,6 +159,7 @@ namespace ASI.Basecode.WebApp.Controllers
         public IActionResult MyTickets(string status = null, int? selectedTicketId = null)
         {
             var userRole = HttpContext.Session.GetString("UserRole");
+            var userId = int.Parse(HttpContext.Session.GetString("UserId"));
 
             if (userRole != "User")
             {
@@ -210,7 +215,6 @@ namespace ASI.Basecode.WebApp.Controllers
                     Subject = ticket.Subject,
                     Category = ticket.Category,
                     RequesterEmail = ticket.RequesterEmail,
-                    //Assignee = ticket.Assignee,
                     Priority = ticket.Priority,
                     CreatedTime = ticket.CreatedTime,
                     UpdatedTime = ticket.UpdatedTime
@@ -222,7 +226,6 @@ namespace ASI.Basecode.WebApp.Controllers
                     Subject = selectedTicket.Subject,
                     Category = selectedTicket.Category,
                     RequesterEmail = selectedTicket.RequesterEmail,
-                    //Assignee = selectedTicket.Assignee,
                     Priority = selectedTicket.Priority,
                     CreatedTime = selectedTicket.CreatedTime,
                     UpdatedTime = selectedTicket.UpdatedTime,
@@ -232,9 +235,16 @@ namespace ASI.Basecode.WebApp.Controllers
                 {
                     ResponseId = r.ResponseId,
                     TicketId = r.TicketId,
-                    //Sender = r.Sender,
+                    Sender = r.Sender == userId ? "You" : "Customer Support",
                     Description = r.Description,
-                    CreatedTime = r.CreatedTime
+                    CreatedTime = r.CreatedTime,
+                    Attachments = _attachmentService.GetAttachmentsByResponseId(r.ResponseId)
+                        .Select(a => new AttachmentViewModel
+                        {
+                            AttachmentId = a.AttachmentId,
+                            ResponseId = a.ResponseId,
+                            FileData = a.File != null ? Convert.ToBase64String(a.File) : null
+                        }).ToList()
                 }).ToList()
             };
 
@@ -242,7 +252,38 @@ namespace ASI.Basecode.WebApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddResponse(int ticketId, string description)
+        public IActionResult SubmitFeedback(int ticketId, bool feedback)
+        {
+            var userRole = HttpContext.Session.GetString("UserRole");
+            var userId = int.Parse(HttpContext.Session.GetString("UserId"));
+
+            if (userRole != "User")
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            var ticket = _ticketService.GetTicketById(ticketId);
+
+            if (ticket == null)
+            {
+                return NotFound("Ticket not found.");
+            }
+
+            if (!ticket.IsFeedbackOffered)  
+            {
+                ticket.Feedback = feedback;
+                ticket.IsFeedbackOffered = true;
+                ticket.Status = "Closed"; 
+
+                _ticketService.UpdateTicket(ticket);
+            }
+
+            TempData["SuccessMessage"] = "Feedback submitted.";
+            return RedirectToAction("MyTickets", new { selectedTicketId = ticketId });
+        }
+
+        [HttpPost]
+        public IActionResult AddResponse(int ticketId, string description, List<IFormFile> attachments)
         {
             if (string.IsNullOrWhiteSpace(description))
             {
@@ -268,7 +309,6 @@ namespace ASI.Basecode.WebApp.Controllers
             try
             {
                 var userIdString = HttpContext.Session.GetString("UserId");
-
                 int userId = int.Parse(userIdString);
 
                 var newResponse = new Response
@@ -279,7 +319,25 @@ namespace ASI.Basecode.WebApp.Controllers
                     CreatedTime = DateTime.Now
                 };
 
-                _responseService.AddResponse(newResponse);
+                // Save response and get its ID
+                var responseId = _responseService.AddResponse(newResponse);
+
+                // Handle attachments
+                if (attachments != null && attachments.Any())
+                {
+                    foreach (var attachment in attachments.Take(5)) // Limit to 5 files
+                    {
+                        if (attachment.Length > 0)
+                        {
+                            var attachmentEntity = new Attachment
+                            {
+                                ResponseId = responseId,
+                                File = GetFileData(attachment)
+                            };
+                            _attachmentService.AddAttachment(attachmentEntity);
+                        }
+                    }
+                }
 
                 TempData["SuccessMessage"] = "Response sent.";
                 return RedirectToAction("MyTickets", new { selectedTicketId = ticketId });
@@ -289,6 +347,15 @@ namespace ASI.Basecode.WebApp.Controllers
                 Console.WriteLine($"Error adding response: {ex.Message}");
                 TempData["ErrorMessage"] = "Failed to add the response. Please try again.";
                 return RedirectToAction("MyTickets", new { selectedTicketId = ticketId });
+            }
+        }
+
+        private byte[] GetFileData(IFormFile file)
+        {
+            using (var memoryStream = new MemoryStream())
+            {
+                file.CopyTo(memoryStream);
+                return memoryStream.ToArray();
             }
         }
 

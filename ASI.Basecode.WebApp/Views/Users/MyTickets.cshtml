@@ -8,7 +8,7 @@
     <h5 class="mytickets-header">My Tickets</h5>
     <ul class="nav">
         <li class="nav-item">
-            <button class="btn status-btn me-2 @(ViewData["SelectedStatus"] == null ? "active3" : "")"
+            <button class="btn status-btn me-2 @(ViewData["SelectedStatus"] == null ? "active4" : "")"
                     onclick="window.location.href='@Url.Action("MyTickets", new { status = (string)null })'">
                 All tickets
             </button>
@@ -20,7 +20,7 @@
             var isSelected = ViewData["SelectedStatus"] != null && (string)ViewData["SelectedStatus"] == status;
 
             <li class="nav-item">
-                <button class="btn status-btn me-2 @(isSelected ? "active3" : "")"
+                <button class="btn status-btn me-2 @(isSelected ? "active4" : "")"
                         onclick="window.location.href='@Url.Action("MyTickets", new { status = status })'">
                     @status
                     <span class="ms-1">(@count)</span>
@@ -65,11 +65,6 @@
                             <p><span class="ticket-head">Date Created</span> <span class="ticket-data">@Model.SelectedTicket.CreatedTime.ToString("MMMM d, yyyy h:mm tt")</span></p>
                             <p><span class="ticket-head">Subject</span> <span class="ticket-data data-bg">@Model.SelectedTicket.Subject</span></p>
                             <p><span class="ticket-head">Description</span> <span class="ticket-data data-bg">@Model.SelectedTicket.Description</span></p>
-                            <p><span class="ticket-head">Attachments</span>
-                                <span class="ticket-data data-bg">
-                                    No attachements found.
-                                </span>
-                            </p>
                         </div>
                     </div>
 
@@ -92,10 +87,22 @@
                                                 @response.Description
                                             </span>
                                         </div>
-                                        <div class="d-flex flex-row gap-3">
-                                            <span class="attachment-head">Attachment:</span>
-                                            <div class="r-attachment">No attachment found.</div>
-                                        </div>
+                                        @if (response.Attachments != null && response.Attachments.Any())
+                                        {
+                                            <div class="d-flex flex-row gap-3">
+                                                <span class="attachment-head">Attachment:</span>
+                                                @foreach (var attachment in response.Attachments)
+                                                {
+                                                    <div>
+                                                        @* Small image preview *@
+                                                        <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#attachmentModal" onclick="showLargeImage('@attachment.FileData')">
+                                                            <img src="data:image/jpeg;base64,@attachment.FileData" alt="Attachment Preview" style="width: 100px; height: 100px; object-fit: cover; cursor: pointer;" />
+                                                        </a>
+                                                        <br />
+                                                    </div>
+                                                }
+                                            </div>
+                                        }
                                     </div>
                                 </div>
                             }
@@ -106,9 +113,30 @@
                         <p class="text-muted">No responses available for this ticket.</p>
                     }
 
-                    @if (Model.SelectedTicket.Status != "Closed")
+                    @if (Model.SelectedTicket.Status == "Resolved" && !Model.SelectedTicket.IsFeedbackOffered)
                     {
-                        <form method="post" action="@Url.Action("AddResponse", "Users")">
+                        <p class="text-center mt-4 ticket-status">Ticket Marked as Resolved</p>
+                        <div class="feedback-section mt-4 mb-4 text-center">
+                            <h5>We value your feedback</h5>
+                            <p>How was your experience with our service?</p>
+                            <form method="post" action="@Url.Action("SubmitFeedback", "Users")">
+                                <div class="d-flex justify-content-center gap-4 mt-3">
+                                    <button type="submit" name="feedback" value="false" class="feedback-button" style="background: none; border: none; cursor: pointer;">
+                                        <img src="~/img/Sad.svg" alt="Bad Feedback" style="width: 50px; height: 50px;">
+                                        <div class="feedback-label">Bad</div>
+                                    </button>
+                                    <button type="submit" name="feedback" value="true" class="feedback-button" style="background: none; border: none; cursor: pointer;">
+                                        <img src="~/img/Happy.svg" alt="Good Feedback" style="width: 50px; height: 50px;">
+                                        <div class="feedback-label">Good</div>
+                                    </button>
+                                </div>
+                                <input type="hidden" name="ticketId" value="@Model.SelectedTicket.TicketId" />
+                            </form>
+                        </div>
+                    }
+                    else if (Model.SelectedTicket.Status != "Closed")
+                    {
+                        <form method="post" action="@Url.Action("AddResponse", "Users")" enctype="multipart/form-data">
                             <div class="reply-agent">
                                 <textarea placeholder="Reply to agent..." name="description"></textarea>
                                 <div id="fileList" class="d-flex flex-row"></div>
@@ -118,12 +146,16 @@
                                     <label for="fileInput">
                                         <img src="~/img/attachment.svg" alt="Add Attachment" class="attachment-icon">
                                     </label>
-                                    <input type="file" id="fileInput" multiple hidden>
+                                    <input type="file" id="fileInput" name="Attachments" multiple hidden accept=".jpg,.png,.pdf,.docx">
                                 </div>
                                 <input type="hidden" name="ticketId" value="@Model.SelectedTicket.TicketId" />
                                 <button type="submit" class="btn btn-send">Send</button>
                             </div>
                         </form>
+                    }
+                    else if (Model.SelectedTicket.Status == "Closed")
+                    {
+                        <p class="text-center mt-4 ticket-status">Ticket has been closed</p>
                     }
                 }
                 else
@@ -135,6 +167,7 @@
     </div>
 </div>
 
+<!--Delete Modal-->
 @foreach (var ticket in Model.Tickets)
 {
     <div class="modal fadel" id="deleteTicketModal-@ticket.TicketId" tabindex="-1" aria-labelledby="deleteTicketModalLabel-@ticket.TicketId" aria-hidden="true">
@@ -154,6 +187,20 @@
     </div>
 }
 
+<!--Attachment Modal-->
+<div class="modal fade" id="attachmentModal" tabindex="-1" aria-labelledby="attachmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="attachmentModalLabel">Attachment Preview</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Large Preview" style="width: 100%; height: auto;" />
+            </div>
+        </div>
+    </div>
+</div>
 
 @section Scripts {
     <script>
@@ -171,6 +218,7 @@
             const fileList = document.getElementById('fileList');
             fileList.innerHTML = "";
 
+            const fileInput = document.getElementById('fileInput');
             const filesArray = Array.from(event.target.files);
 
             filesArray.forEach((file, index) => {
@@ -193,6 +241,23 @@
                 listItem.appendChild(fileName);
                 listItem.appendChild(removeButton);
                 fileList.appendChild(listItem);
+            });
+
+            fileInput.addEventListener('change', () => {
+                const files = Array.from(fileInput.files);
+                fileList.innerHTML = '';
+
+                if (files.length > 5) {
+                    alert('You can upload a maximum of 5 attachments.');
+                    fileInput.value = '';
+                    return;
+                }
+
+                files.forEach(file => {
+                    const fileItem = document.createElement('div');
+                    fileItem.textContent = file.name;
+                    fileList.appendChild(fileItem);
+                });
             });
 
             function updateFileList(updatedFiles) {
@@ -220,5 +285,10 @@
                 });
             }
         });
+
+        function showLargeImage(base64String) {
+            var modalImage = document.getElementById('modalImage');
+            modalImage.src = 'data:image/jpeg;base64,' + base64String;
+        }
     </script>
 }
