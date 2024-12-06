@@ -16,6 +16,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.IO;
+using System.Security.Claims;
 using System.Text;
 
 namespace ASI.Basecode.WebApp
@@ -65,7 +66,8 @@ namespace ASI.Basecode.WebApp
                 ValidateAudience = true,
                 ValidAudience = token.Audience,
                 ValidateLifetime = true,
-                ClockSkew = TimeSpan.Zero
+                ClockSkew = TimeSpan.Zero,
+                NameClaimType = ClaimTypes.NameIdentifier
             };
 
             PasswordManager.SetUp(this.Configuration.GetSection("TokenAuthentication"));

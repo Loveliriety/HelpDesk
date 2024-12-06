@@ -1,5 +1,6 @@
 ﻿using ASI.Basecode.Data.Interfaces;
 using ASI.Basecode.Data.Models;
+using ASI.Basecode.Data.Repositories;
 using ASI.Basecode.Services.Interfaces;
 using ASI.Basecode.Services.Manager;
 using ASI.Basecode.Services.ServiceModels;
@@ -17,15 +18,18 @@ namespace ASI.Basecode.Services.Services
     {
         private readonly IUserRepository _repository;
         private readonly ITeamRepository _teamRepository;
+        private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
 
         public UserService(IUserRepository repository,
                             IMapper mapper,
-                            ITeamRepository teamRepository)
+                            ITeamRepository teamRepository,
+                            IUserRepository userRepository)
         {
             _mapper = mapper;
             _repository = repository;
             _teamRepository = teamRepository;
+            _userRepository = userRepository;
         }
 
         public LoginResult AuthenticateUser(string email, string password, ref User user)
@@ -36,6 +40,20 @@ namespace ASI.Basecode.Services.Services
                                                      x.Password == passwordKey).FirstOrDefault();
 
             return user != null ? LoginResult.Success : LoginResult.Failed;
+        }
+
+        public string GetUserEmailById(int id)
+        {
+            var user = _userRepository.GetUserById(id);
+
+            return user?.Email ?? "Unknown";
+        }
+
+        public string GetUserNameById(int id)
+        {
+            var user = _userRepository.GetUserById(id);
+
+            return user?.Name ?? "Unknown";
         }
 
         public void AddUser(UserViewModel model)
@@ -107,11 +125,10 @@ namespace ASI.Basecode.Services.Services
 
         public void UpdateUser(User user)
         {
-            // Validate if TeamId Exists before adding user
             var team = _teamRepository.GetTeamById(user.TeamId);
             if (team == null)
             {
-                throw new InvalidDataException("invalid TeamId provided!");
+                throw new InvalidDataException("Invalid TeamId provided!");
             }
 
             var existingUser = _repository.GetUsers().FirstOrDefault(u => u.UserId == user.UserId);
@@ -119,10 +136,12 @@ namespace ASI.Basecode.Services.Services
             {
                 existingUser.Name = user.Name;
                 existingUser.Email = user.Email;
+
                 if (!string.IsNullOrEmpty(user.Password))
                 {
-                    existingUser.Password = PasswordManager.EncryptPassword(user.Password); // Optional: Encrypt password if necessary
+                    existingUser.Password = PasswordManager.EncryptPassword(user.Password);
                 }
+
                 existingUser.Role = user.Role;
                 existingUser.TeamId = user.TeamId;
                 existingUser.IsActive = user.IsActive;
@@ -131,7 +150,12 @@ namespace ASI.Basecode.Services.Services
 
                 _repository.UpdateUser(existingUser);
             }
+            else
+            {
+                throw new KeyNotFoundException("User not found!");
+            }
         }
+
 
         public void DeleteUser(User user)
         {

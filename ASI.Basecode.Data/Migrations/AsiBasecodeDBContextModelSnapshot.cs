@@ -22,6 +22,25 @@ namespace ASI.Basecode.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("ASI.Basecode.Data.Models.Attachment", b =>
+                {
+                    b.Property<int>("AttachmentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AttachmentId"), 1L, 1);
+
+                    b.Property<byte[]>("File")
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<int>("ResponseId")
+                        .HasColumnType("int");
+
+                    b.HasKey("AttachmentId");
+
+                    b.ToTable("Attachments");
+                });
+
             modelBuilder.Entity("ASI.Basecode.Data.Models.Category", b =>
                 {
                     b.Property<int>("CategoryId")
@@ -58,8 +77,8 @@ namespace ASI.Basecode.Data.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Sender")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Sender")
+                        .HasColumnType("int");
 
                     b.Property<int>("TicketId")
                         .HasColumnType("int");
@@ -112,7 +131,7 @@ namespace ASI.Basecode.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TicketId"), 1L, 1);
 
-                    b.Property<int?>("Assignee")
+                    b.Property<int>("Assignee")
                         .HasColumnType("int");
 
                     b.Property<int>("Category")
@@ -123,6 +142,12 @@ namespace ASI.Basecode.Data.Migrations
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool?>("Feedback")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsFeedbackOffered")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Priority")
                         .HasColumnType("nvarchar(max)");

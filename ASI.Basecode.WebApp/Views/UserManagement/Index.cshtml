@@ -1,4 +1,4 @@
-﻿@using ASI.Basecode.Services.Interfaces
+﻿﻿@using ASI.Basecode.Services.Interfaces
 @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 @model IEnumerable<ASI.Basecode.Data.Models.User>
 @inject ITeamService TeamService
@@ -40,7 +40,7 @@
             @foreach (var user in Model)
             {
                 <tr>
-                    <td class ="text-color">@user.Name</td>
+                    <td class="text-color">@user.Name</td>
                     <td class="text-color">@user.Email</td>
                     <td class="text-color">@(user.TeamId.HasValue ? TeamService.GetTeamNameById(user.TeamId.Value) : "None")</td>
                     <td class="text-color">@user.Role</td>
@@ -165,16 +165,14 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="deleteUserModalLabel-@user.UserId">Delete User</h5>
-                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                 </div>
                 <div class="modal-body">
-                    <p>Are you sure you want to delete this user?</p>
-                    <p><strong>Username: </strong>@user.UserId</p>
-                    <p><strong>Fullname: </strong>@user.Name</p>
+                    <p>Are you sure you want to delete this user <i style="font-weight: 600;">@user.Name</i>?</p>
                     <form asp-action="Delete" method="post">
                         @Html.AntiForgeryToken()
                         <input type="hidden" name="UserId" value="@user.UserId" />
                         <button type="submit" class="btn btn-danger">Delete</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
                     </form>
                 </div>
             </div>
@@ -209,14 +207,18 @@
 
         document.querySelectorAll('.edit-user-btn').forEach(button => {
             button.addEventListener('click', function () {
+                document.getElementById("editUserIdInput").value = this.getAttribute("data-id");
                 document.getElementById("editNameInput").value = this.getAttribute("data-name");
                 document.getElementById("editEmailInput").value = this.getAttribute("data-email");
                 document.getElementById("editTeamSelect").value = this.getAttribute("data-team");
                 document.getElementById("editRoleSelect").value = this.getAttribute("data-role");
-                document.getElementById("editPasswordInput").value = this.getAttribute("data-password");
+
+                document.getElementById("editPasswordInput").value = "";
+
                 toggleEditDrawer();
             });
         });
+
 
         document.getElementById("drawerBackdrop").addEventListener('click', function () {
             const addDrawer = document.getElementById("addUserDrawer");

@@ -5,10 +5,24 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ASI.Basecode.Data.Migrations
 {
-    public partial class initial : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Attachments",
+                columns: table => new
+                {
+                    AttachmentId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ResponseId = table.Column<int>(type: "int", nullable: false),
+                    File = table.Column<byte[]>(type: "varbinary(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Attachments", x => x.AttachmentId);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Categories",
                 columns: table => new
@@ -30,7 +44,7 @@ namespace ASI.Basecode.Data.Migrations
                     ResponseId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     TicketId = table.Column<int>(type: "int", nullable: false),
-                    Sender = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Sender = table.Column<int>(type: "int", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Attachment = table.Column<byte[]>(type: "varbinary(max)", nullable: true),
                     CreatedTime = table.Column<DateTime>(type: "datetime2", nullable: false)
@@ -70,7 +84,9 @@ namespace ASI.Basecode.Data.Migrations
                     Status = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Priority = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     RequesterEmail = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Assignee = table.Column<int>(type: "int", nullable: true),
+                    Assignee = table.Column<int>(type: "int", nullable: false),
+                    IsFeedbackOffered = table.Column<bool>(type: "bit", nullable: false),
+                    Feedback = table.Column<bool>(type: "bit", nullable: true),
                     CreatedTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedTime = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
@@ -120,6 +136,9 @@ namespace ASI.Basecode.Data.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Attachments");
+
             migrationBuilder.DropTable(
                 name: "Categories");
 

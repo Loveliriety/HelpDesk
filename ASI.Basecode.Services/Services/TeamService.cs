@@ -19,7 +19,7 @@ namespace ASI.Basecode.Services.Services
             _teamRepository = teamRepository;
         }
 
-        public string GetTeamNameById(int? id)
+        public string GetTeamNameById(int id)
         {
             var team = _teamRepository.GetTeamById(id);
 
@@ -94,5 +94,6 @@ namespace ASI.Basecode.Services.Services
 
             _teamRepository.DeleteTeam(team);
         }
+
     }
 }

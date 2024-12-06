@@ -9,12 +9,12 @@ namespace ASI.Basecode.Services.Interfaces
 {
     public interface IResponseService
     {
-        public (bool, IEnumerable<Response>) GetResponse();
-        public int AddResponse(Response response);
-        public void DeleteResponse(int response);
-        public void UpdateResponse(Response response);
+        (bool, IEnumerable<Response>) GetResponse();
+        int AddResponse(Response response);
+        void DeleteResponsesByTicketId(int ticketId);
+        void UpdateResponse(Response response);
         List<Response> GetResponsesByTicketId(int ticketId);
-       
+
 
         //working
     }

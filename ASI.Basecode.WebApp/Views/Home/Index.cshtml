@@ -98,48 +98,7 @@
                 </div>
                 <h6 class="mt-4" style="text-align: center;">Weekly CSAT Score</h6>
             </div>
-
-
         </div>
-
-        <!-- Running SLA
-        <div class="col-md-6">
-            <div class="p-3 card-report" style="height: 500px;">
-                <h5 class="chart-header">Running SLA</h5>
-                <table class="sla-table">
-                    <thead>
-                        <tr>
-                            <th class="text-color">SLA</th>
-                            <th class="text-color">Category</th>
-                            <th class="text-color">Age</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="text-color">24hrs</td>
-                            <td class="category-cell">Category 1</td>
-                            <td><span style="color: green;">22hrs</span></td>
-                        </tr>
-                        <tr>
-                            <td class="text-color">36hrs</td>
-                            <td class="category-cell">Category 2</td>
-                            <td><span style="color: red;">28hrs</span></td>
-                        </tr>
-                        <tr>
-                            <td class="text-color">16hrs</td>
-                            <td class="category-cell">Category 3</td>
-                            <td><span style="color: green;">12hrs</span></td>
-                        </tr>
-                        <tr>
-                            <td class="text-color">48hrs</td>
-                            <td class="category-cell">Category 4</td>
-                            <td><span style="color: green;">42hrs</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-         -->
     </div>
 </div>
 
@@ -172,14 +131,18 @@
         }
     });
 
-    // Customer Satisfaction Chart (static)
+    // Customer Satisfaction Chart
     var ctx1 = document.getElementById('csatChart').getContext('2d');
+    var goodCount = @ViewBag.GoodFeedbackCount;
+    var badCount = @ViewBag.BadFeedbackCount;
+    var totalFeedback = goodCount + badCount;
+
     var csatChart = new Chart(ctx1, {
         type: 'doughnut',
         data: {
             labels: ['Good', 'Bad'],
             datasets: [{
-                data: [88, 12],
+                data: [goodCount, badCount],
                 backgroundColor: ['#74BDE0', '#3D729A'],
                 hoverBackgroundColor: ['#3D729A', '#74BDE0'],
                 borderColor: ['#ffffff'],

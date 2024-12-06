@@ -29,10 +29,11 @@ namespace ASI.Basecode.Data.Repositories
             return _dbContext.Responses.ToList();
         }
 
-        public void AddResponse(Response response)
+        public int AddResponse(Response response)
         {
             _dbContext.Responses.Add(response);
             _dbContext.SaveChanges();
+            return response.ResponseId;
         }
 
         public void UpdateResponse(Response response)
@@ -58,6 +59,11 @@ namespace ASI.Basecode.Data.Repositories
             return _dbContext.Responses
                              .Where(response => response.TicketId == ticketId)
                              .ToList();
+        }
+
+        public void DeleteResponse(int responseId)
+        {
+            throw new NotImplementedException();
         }
 
         //working

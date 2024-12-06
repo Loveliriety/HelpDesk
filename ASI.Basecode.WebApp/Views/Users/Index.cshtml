@@ -63,7 +63,10 @@
                             <td>@ticket.CreatedTime.ToString("g")</td>
                             <td>@ticket.UpdatedTime.ToString("g")</td>
                             <td>
-                                <span class="badge bg-@(ticket.Status == "Open" ? "danger" : "success")">
+                                <span class="badge bg-@(ticket.Status == "Open" ? "danger" :
+                                                     ticket.Status == "In Progress" ? "warning" :
+                                                     ticket.Status == "Resolved" ? "success" :
+                                                     ticket.Status == "Closed" ? "secondary" : "")">
                                     @ticket.Status
                                 </span>
                             </td>

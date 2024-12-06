@@ -40,6 +40,7 @@ namespace ASI.Basecode.WebApp
             this._services.AddScoped<ITicketService, TicketService>();
             this._services.AddScoped<IResponseService, ResponseService>();
             this._services.AddScoped<ICategoryService, CategoryService>();
+            this._services.AddScoped<IAttachmentService, AttachmentService>();
 
             //working
 
@@ -50,6 +51,7 @@ namespace ASI.Basecode.WebApp
             this._services.AddScoped<ITicketRepository, TicketRepository>();
             this._services.AddScoped<IResponseRepository, ResponseRepository>();
             this._services.AddScoped<ICategoryRepository, CategoryRepository>();
+            this._services.AddScoped<IAttachmentRepository, AttachmentRepository>();
 
             // Manager Class
             this._services.AddScoped<SignInManager>();

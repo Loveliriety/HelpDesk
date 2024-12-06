@@ -3039,11 +3039,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+      "projectUniqueName": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI.V2\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
       "projectName": "ASI.Basecode.Data",
-      "projectPath": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
+      "projectPath": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI.V2\\HelpDesk\\ASI.Basecode.Data\\ASI.Basecode.Data.csproj",
       "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI\\HelpDesk\\ASI.Basecode.Data\\obj\\",
+      "outputPath": "C:\\Users\\acer\\OneDrive\\Desktop\\ELASI.V2\\HelpDesk\\ASI.Basecode.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",

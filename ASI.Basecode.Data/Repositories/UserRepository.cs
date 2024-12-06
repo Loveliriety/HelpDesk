@@ -22,6 +22,18 @@ namespace ASI.Basecode.Data.Repositories
             return this.GetDbSet<User>().Where(u => u.IsActive);
         }
 
+        public User GetUserById(int? id)
+        {
+            var user = this.GetDbSet<User>().FirstOrDefault(user => user.UserId == id);
+
+            //if (user == null)
+            //{
+            //    throw new Exception("Team not found!");
+            //}
+
+            return user;
+        }
+
         public bool UserExists(int userId)
         {
             return this.GetDbSet<User>().Any(x => x.UserId == userId);

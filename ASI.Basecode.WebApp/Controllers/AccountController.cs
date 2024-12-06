@@ -99,6 +99,7 @@ namespace ASI.Basecode.WebApp.Controllers
                 await this._signInManager.SignInAsync(user);
                 HttpContext.Session.SetString("FullName", user.Name);
                 HttpContext.Session.SetString("UserRole", user.Role);
+                HttpContext.Session.SetString("UserId", user.UserId.ToString());
                 HttpContext.Session.SetString("Email", user.Email);
                 if (user.Role == "Superadmin" || user.Role == "Admin" || user.Role == "Support Agent")
                 {
@@ -114,7 +115,7 @@ namespace ASI.Basecode.WebApp.Controllers
             else
             {
                 // 認証NG
-                TempData["ErrorMessage"] = "Incorrect Username or Password";
+                TempData["ErrorMessage"] = "Incorrect Email or Password";
                 return View();
             }
         }
@@ -133,6 +134,7 @@ namespace ASI.Basecode.WebApp.Controllers
             try
             {
                 _userService.AddUser(model);
+                TempData["SuccessMessage"] = "Registration successful! You can now log in to access your account.";
                 return RedirectToAction("Login", "Account");
             }
             catch(InvalidDataException ex)
