@@ -17,6 +17,7 @@ namespace ASI.Basecode.Data.Repositories
         List<Ticket> GetTicketsByPriority(string priority);
         List<Ticket> GetTicketsByAssignee(int assignee);
 
+
         //working
     }
 }

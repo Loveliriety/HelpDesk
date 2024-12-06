@@ -15,7 +15,7 @@ namespace ASI.Basecode.Services.Interfaces
         public Team GetTeamById(int id);
         public void UpdateTeam(Team team);
         public void DeleteTeam(int id);
-        public string GetTeamNameById(int? id);
+        public string GetTeamNameById(int id);
 
     }
 }

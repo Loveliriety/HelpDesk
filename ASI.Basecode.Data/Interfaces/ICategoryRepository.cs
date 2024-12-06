@@ -9,11 +9,11 @@ namespace ASI.Basecode.Data.Interfaces
 {
     public interface ICategoryRepository
     {
-        public Category GetCategoryById(int categoryId);
-        public List<Category> GetAllCategories();
-        public void AddCategory(Category category);
-        public void UpdateCategory(Category category);
-        public void DeleteCategory(int categoryId);
+        Category GetCategoryById(int categoryId);
+        List<Category> GetAllCategories();
+        void AddCategory(Category category);
+        void UpdateCategory(Category category);
+        void DeleteCategory(int categoryId);
 
         //working
     }

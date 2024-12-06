@@ -17,15 +17,18 @@ namespace ASI.Basecode.Services.Services
     {
         private readonly IUserRepository _repository;
         private readonly ITeamRepository _teamRepository;
+        private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
 
         public UserService(IUserRepository repository,
                             IMapper mapper,
-                            ITeamRepository teamRepository)
+                            ITeamRepository teamRepository, 
+                            IUserRepository userRepository)
         {
             _mapper = mapper;
             _repository = repository;
             _teamRepository = teamRepository;
+            _userRepository = userRepository;
         }
 
         public LoginResult AuthenticateUser(string email, string password, ref User user)
@@ -38,6 +41,12 @@ namespace ASI.Basecode.Services.Services
             return user != null ? LoginResult.Success : LoginResult.Failed;
         }
 
+        public string GetUserEmailById(int id)
+        {
+            var user = _userRepository.GetUserById(id);
+
+            return user?.Email ?? "Unknown";
+        }
         public void AddUser(UserViewModel model)
         {
             var user = new User();

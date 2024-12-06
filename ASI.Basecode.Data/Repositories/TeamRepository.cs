@@ -48,10 +48,11 @@ namespace ASI.Basecode.Data.Repositories
         {
             var team = _dbContext.Teams.FirstOrDefault(team => team.TeamId == id);
 
-            if (team == null)
-            {
-                throw new Exception("Team not found!");
-            }
+            //if (team == null)
+            //{
+            //    throw new Exception("Team not found!");
+     
+            //}
 
             return team;
         }

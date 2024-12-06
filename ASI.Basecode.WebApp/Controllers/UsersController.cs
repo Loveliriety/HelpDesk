@@ -82,7 +82,6 @@ namespace ASI.Basecode.WebApp.Controllers
                     Description = ticket.Description,
                     Category = ticket.Category,
                     RequesterEmail = ticket.RequesterEmail,
-                    Assignee = ticket.Assignee,
                     Priority = ticket.Priority,
                     CreatedTime = ticket.CreatedTime,
                     UpdatedTime = ticket.UpdatedTime
@@ -137,7 +136,7 @@ namespace ASI.Basecode.WebApp.Controllers
                     Priority = Priority,
                     RequesterEmail = email,
                     Status = "Open",
-                    Assignee = null, 
+                    //Assignee = null, 
                 };
 
                 _ticketService.AddTicket(newTicket);
@@ -211,7 +210,7 @@ namespace ASI.Basecode.WebApp.Controllers
                     Subject = ticket.Subject,
                     Category = ticket.Category,
                     RequesterEmail = ticket.RequesterEmail,
-                    Assignee = ticket.Assignee,
+                    //Assignee = ticket.Assignee,
                     Priority = ticket.Priority,
                     CreatedTime = ticket.CreatedTime,
                     UpdatedTime = ticket.UpdatedTime
@@ -223,7 +222,7 @@ namespace ASI.Basecode.WebApp.Controllers
                     Subject = selectedTicket.Subject,
                     Category = selectedTicket.Category,
                     RequesterEmail = selectedTicket.RequesterEmail,
-                    Assignee = selectedTicket.Assignee,
+                    //Assignee = selectedTicket.Assignee,
                     Priority = selectedTicket.Priority,
                     CreatedTime = selectedTicket.CreatedTime,
                     UpdatedTime = selectedTicket.UpdatedTime,
@@ -233,7 +232,7 @@ namespace ASI.Basecode.WebApp.Controllers
                 {
                     ResponseId = r.ResponseId,
                     TicketId = r.TicketId,
-                    Sender = r.Sender,
+                    //Sender = r.Sender,
                     Description = r.Description,
                     CreatedTime = r.CreatedTime
                 }).ToList()
@@ -268,12 +267,14 @@ namespace ASI.Basecode.WebApp.Controllers
 
             try
             {
-                var fullName = HttpContext.Session.GetString("FullName");
+                var userIdString = HttpContext.Session.GetString("UserId");
+
+                int userId = int.Parse(userIdString);
 
                 var newResponse = new Response
                 {
                     TicketId = ticketId,
-                    Sender = fullName ?? "Unknown",
+                    Sender = userId,
                     Description = description,
                     CreatedTime = DateTime.Now
                 };
@@ -302,7 +303,7 @@ namespace ASI.Basecode.WebApp.Controllers
             try
             {
                 _ticketService.DeleteTicket(ticketId);
-                _responseService.DeleteResponse(ticketId);
+                _responseService.DeleteResponsesByTicketId(ticketId);
                 TempData["SuccessMessage"] = "Ticket has been deleted";
 
                 return RedirectToAction("MyTickets");

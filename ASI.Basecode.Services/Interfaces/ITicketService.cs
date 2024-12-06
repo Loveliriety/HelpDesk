@@ -1,5 +1,6 @@
 ﻿using ASI.Basecode.Data.Models;
 using System.Collections.Generic;
+using ASI.Basecode.Services.ServiceModels;
 
 namespace ASI.Basecode.Services.Interfaces
 {
@@ -14,8 +15,6 @@ namespace ASI.Basecode.Services.Interfaces
         IEnumerable<Ticket> GetTicketsByStatus(string status);
         IEnumerable<Ticket> GetTicketsByPriority(string priority);
         IEnumerable<Ticket> GetTicketsByAssignee(int assignee);
-        //bool DeleteTicketWithResponses(int ticketId);
-
-        //working
+        (bool, IEnumerable<TicketWithResponses>) GetTicketsWithResponses();
     }
 }

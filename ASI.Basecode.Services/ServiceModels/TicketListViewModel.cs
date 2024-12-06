@@ -13,6 +13,10 @@ namespace ASI.Basecode.Services.ServiceModels
         public List<CategoryViewModel> Categories { get; set; }
         public List<UserViewModel> Users { get; set; }
         public List<ResponseViewModel> Responses { get; set; }
+        public List<TeamViewModel> Teams { get; set; }
+
+        public int CurrentPage { get; set; } 
+        public int TotalPages { get; set; }
 
         //working
     }
