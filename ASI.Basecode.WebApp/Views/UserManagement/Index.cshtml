@@ -209,14 +209,18 @@
 
         document.querySelectorAll('.edit-user-btn').forEach(button => {
             button.addEventListener('click', function () {
+                document.getElementById("editUserIdInput").value = this.getAttribute("data-id");
                 document.getElementById("editNameInput").value = this.getAttribute("data-name");
                 document.getElementById("editEmailInput").value = this.getAttribute("data-email");
                 document.getElementById("editTeamSelect").value = this.getAttribute("data-team");
                 document.getElementById("editRoleSelect").value = this.getAttribute("data-role");
-                document.getElementById("editPasswordInput").value = this.getAttribute("data-password");
+
+                document.getElementById("editPasswordInput").value = "";
+
                 toggleEditDrawer();
             });
         });
+
 
         document.getElementById("drawerBackdrop").addEventListener('click', function () {
             const addDrawer = document.getElementById("addUserDrawer");

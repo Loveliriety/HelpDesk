@@ -107,11 +107,10 @@ namespace ASI.Basecode.Services.Services
 
         public void UpdateUser(User user)
         {
-            // Validate if TeamId Exists before adding user
             var team = _teamRepository.GetTeamById(user.TeamId);
             if (team == null)
             {
-                throw new InvalidDataException("invalid TeamId provided!");
+                throw new InvalidDataException("Invalid TeamId provided!");
             }
 
             var existingUser = _repository.GetUsers().FirstOrDefault(u => u.UserId == user.UserId);
@@ -119,10 +118,12 @@ namespace ASI.Basecode.Services.Services
             {
                 existingUser.Name = user.Name;
                 existingUser.Email = user.Email;
+
                 if (!string.IsNullOrEmpty(user.Password))
                 {
-                    existingUser.Password = PasswordManager.EncryptPassword(user.Password); // Optional: Encrypt password if necessary
+                    existingUser.Password = PasswordManager.EncryptPassword(user.Password);
                 }
+
                 existingUser.Role = user.Role;
                 existingUser.TeamId = user.TeamId;
                 existingUser.IsActive = user.IsActive;
@@ -131,7 +132,12 @@ namespace ASI.Basecode.Services.Services
 
                 _repository.UpdateUser(existingUser);
             }
+            else
+            {
+                throw new KeyNotFoundException("User not found!");
+            }
         }
+
 
         public void DeleteUser(User user)
         {
